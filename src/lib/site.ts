@@ -1,4 +1,5 @@
-export const SITE_NAME = "Padel Raquettes";
+export const SITE_NAME = "Sweet Spot";
+export const SITE_NAME_FULL = "Sweet Spot Padel";
 export const SITE_TAGLINE = "Guides, comparatifs et avis pour choisir la bonne raquette de padel";
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000";
 

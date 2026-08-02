@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { SITE_NAME } from "@/lib/site";
+import { SITE_NAME_FULL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Mentions légales & affiliation",
-  description: "Mentions légales et informations sur le programme d'affiliation Amazon de " + SITE_NAME + ".",
+  description: "Mentions légales et informations sur le programme d'affiliation Amazon de " + SITE_NAME_FULL + ".",
 };
 
 export default function MentionsLegalesPage() {
@@ -13,7 +13,7 @@ export default function MentionsLegalesPage() {
 
       <h2>Programme Amazon Associates</h2>
       <p>
-        {SITE_NAME} participe au programme Amazon Associates, un programme d&apos;affiliation
+        {SITE_NAME_FULL} participe au programme Amazon Associates, un programme d&apos;affiliation
         conçu pour permettre à des sites de percevoir une rémunération grâce à la création de
         liens vers Amazon.fr. En tant que partenaire Amazon, nous réalisons un bénéfice sur les
         achats remplissant les conditions requises, sans surcoût pour vous. Amazon et le logo

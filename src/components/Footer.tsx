@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { SITE_NAME } from "@/lib/site";
+import Logo from "@/components/Logo";
+import { SITE_NAME, SITE_NAME_FULL } from "@/lib/site";
 
 const NAV_LINKS = [
   { href: "/guides", label: "Guides" },
@@ -16,9 +17,7 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12">
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-6 pb-8 border-b border-navy-border">
           <Link href="/" className="flex items-center gap-2.5 font-extrabold text-lg text-white">
-            <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-lime text-lime-ink font-black">
-              P
-            </span>
+            <Logo />
             {SITE_NAME}
           </Link>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
@@ -31,11 +30,11 @@ export default function Footer() {
         </div>
         <div className="pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-white/50">
           <p className="max-w-2xl">
-            En tant que partenaire Amazon, {SITE_NAME} réalise un bénéfice sur les achats
+            En tant que partenaire Amazon, {SITE_NAME_FULL} réalise un bénéfice sur les achats
             remplissant les conditions requises. Les prix et disponibilités sont susceptibles
             d&apos;être modifiés après publication.
           </p>
-          <span>© {year} {SITE_NAME}</span>
+          <span>© {year} {SITE_NAME_FULL}</span>
         </div>
       </div>
     </footer>

@@ -1,4 +1,4 @@
-# Padel Raquettes — blog d'affiliation
+# Sweet Spot Padel — blog d'affiliation
 
 Blog Next.js + MDX qui publie automatiquement un article de ~2500 mots par jour (guides,
 comparatifs, articles) sur les raquettes de padel, avec liens affiliés Amazon.
