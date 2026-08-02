@@ -1,5 +1,6 @@
-import { getProductsByIds, buildAffiliateLink } from "@/lib/products";
+import { getProductsByIds, buildAffiliateLink, hasRealImage } from "@/lib/products";
 import Stars from "@/components/Stars";
+import RacketIllustration from "@/components/RacketIllustration";
 
 export default function ComparisonTable({ ids }: { ids: string[] }) {
   const products = getProductsByIds(ids);
@@ -26,7 +27,19 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
                 key={product.id}
                 className={`border-t border-border ${index % 2 === 1 ? "bg-foreground/[0.02]" : ""}`}
               >
-                <td className="px-4 py-3 font-semibold whitespace-nowrap">{product.name}</td>
+                <td className="px-4 py-3">
+                  <div className="flex items-center gap-3">
+                    <div className="hidden sm:flex items-center justify-center h-10 w-8 shrink-0 rounded-md bg-gradient-to-br from-navy to-navy-2 p-1 overflow-hidden">
+                      {hasRealImage(product) ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img src={product.image} alt="" className="h-full w-full object-contain" />
+                      ) : (
+                        <RacketIllustration shape={product.shape} />
+                      )}
+                    </div>
+                    <span className="font-semibold whitespace-nowrap">{product.name}</span>
+                  </div>
+                </td>
                 <td className="px-4 py-3">
                   <Stars score={product.score} />
                 </td>

@@ -31,6 +31,11 @@ export function getProductsByIds(ids: string[]): Product[] {
     .filter((p): p is Product => Boolean(p));
 }
 
+/** Vrai dès que `product.image` pointe vers une vraie photo (pas le placeholder par défaut). */
+export function hasRealImage(product: Product): boolean {
+  return Boolean(product.image) && !product.image.includes("placeholder.svg");
+}
+
 const AMAZON_DOMAIN = "www.amazon.fr";
 
 /**

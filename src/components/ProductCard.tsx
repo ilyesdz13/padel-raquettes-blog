@@ -1,5 +1,6 @@
-import { getProductById, buildAffiliateLink } from "@/lib/products";
+import { getProductById, buildAffiliateLink, hasRealImage } from "@/lib/products";
 import Stars from "@/components/Stars";
+import RacketIllustration from "@/components/RacketIllustration";
 
 export default function ProductCard({ id }: { id: string }) {
   const product = getProductById(id);
@@ -16,15 +17,13 @@ export default function ProductCard({ id }: { id: string }) {
         </span>
       )}
       <div className="shrink-0 mx-auto sm:mx-0">
-        <div className="rounded-xl bg-gradient-to-br from-navy to-navy-2 p-4">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src={product.image}
-            alt={product.name}
-            width={120}
-            height={120}
-            className="rounded-lg"
-          />
+        <div className="w-[120px] h-[150px] rounded-xl bg-gradient-to-br from-navy to-navy-2 p-3 flex items-center justify-center overflow-hidden">
+          {hasRealImage(product) ? (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img src={product.image} alt={product.name} className="h-full w-full object-contain" />
+          ) : (
+            <RacketIllustration shape={product.shape} />
+          )}
         </div>
       </div>
       <div className="flex-1">
