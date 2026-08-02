@@ -13,3 +13,9 @@ export const ROUTE_TO_CATEGORY: Record<string, "guide" | "comparatif" | "article
   comparatifs: "comparatif",
   articles: "article",
 };
+
+export const CATEGORY_STYLES = {
+  guide: { text: "text-cat-guide", bg: "bg-cat-guide/10", dot: "bg-cat-guide", icon: "🎾" },
+  comparatif: { text: "text-cat-comparatif", bg: "bg-cat-comparatif/10", dot: "bg-cat-comparatif", icon: "⚖️" },
+  article: { text: "text-cat-article", bg: "bg-cat-article/10", dot: "bg-cat-article", icon: "💡" },
+} as const;

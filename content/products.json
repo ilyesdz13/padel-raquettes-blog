@@ -9,6 +9,7 @@
     "priceRange": "260-300€",
     "weight": "360-375g",
     "highlight": "Meilleur confort et durabilité de sa catégorie",
+    "score": 4.7,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -22,6 +23,7 @@
     "priceRange": "230-260€",
     "weight": "355-370g",
     "highlight": "Domine les échanges aériens, smash et volées puissantes",
+    "score": 4.5,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -35,6 +37,7 @@
     "priceRange": "270-310€",
     "weight": "360-375g",
     "highlight": "La raquette la plus innovante de la gamme Nox, signature Agustín Tapia",
+    "score": 4.6,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -48,6 +51,7 @@
     "priceRange": "150-180€",
     "weight": "350-365g",
     "highlight": "La référence polyvalente, excellente répartition du poids",
+    "score": 4.8,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -61,6 +65,7 @@
     "priceRange": "250-290€",
     "weight": "355-370g",
     "highlight": "Meilleure raquette offensive polyvalente de la marque",
+    "score": 4.6,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -74,6 +79,7 @@
     "priceRange": "240-280€",
     "weight": "360-375g",
     "highlight": "Puissance et effet lifté pour joueurs confirmés",
+    "score": 4.4,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -87,6 +93,7 @@
     "priceRange": "160-190€",
     "weight": "350-365g",
     "highlight": "Le meilleur compromis pour joueurs polyvalents",
+    "score": 4.5,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -100,6 +107,7 @@
     "priceRange": "110-130€",
     "weight": "345-360g",
     "highlight": "Construction hybride fibre de verre / carbone, confortable et évolutive",
+    "score": 4.6,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -113,6 +121,7 @@
     "priceRange": "120-140€",
     "weight": "335-350g",
     "highlight": "Version allégée de l'Accent, idéale prise en main progressive",
+    "score": 4.4,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -126,6 +135,7 @@
     "priceRange": "90-110€",
     "weight": "330-345g",
     "highlight": "Une des raquettes les plus légères du marché, parfaite pour joueurs occasionnels",
+    "score": 4.3,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -139,6 +149,7 @@
     "priceRange": "65-80€",
     "weight": "345-360g",
     "highlight": "Meilleur rapport légèreté / prix de la sélection",
+    "score": 4.2,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -152,6 +163,7 @@
     "priceRange": "65-80€",
     "weight": "345-360g",
     "highlight": "Forme ronde ultra-tolérante, sweet spot généreux pour débuter",
+    "score": 4.2,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   },
@@ -165,6 +177,7 @@
     "priceRange": "100-120€",
     "weight": "350-365g",
     "highlight": "Choix sûr et polyvalent pour progresser sans se tromper",
+    "score": 4.3,
     "asin": "A_COMPLETER",
     "image": "/images/products/placeholder.svg"
   }

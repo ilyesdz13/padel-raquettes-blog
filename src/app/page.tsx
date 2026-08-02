@@ -1,44 +1,79 @@
 import Link from "next/link";
+import Hero from "@/components/Hero";
+import TrustBar from "@/components/TrustBar";
 import ArticleCard from "@/components/ArticleCard";
 import { getAllArticles } from "@/lib/articles";
-import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 export default function Home() {
   const articles = getAllArticles().slice(0, 9);
 
   return (
-    <div className="mx-auto max-w-5xl px-4 sm:px-6 py-12">
-      <section className="mb-14 text-center">
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight mb-4">
-          {SITE_NAME} : {SITE_TAGLINE}
-        </h1>
-        <p className="text-foreground/70 max-w-2xl mx-auto">
-          Chaque semaine, de nouveaux guides d&apos;achat, comparatifs et tests pour vous
-          aider à choisir la raquette de padel adaptée à votre niveau et à votre style de jeu.
-        </p>
-        <div className="mt-6 flex justify-center gap-3 text-sm font-semibold">
-          <Link href="/guides" className="rounded-lg bg-brand px-4 py-2 text-white hover:bg-brand-dark transition-colors">
-            Voir les guides
-          </Link>
-          <Link href="/comparatifs" className="rounded-lg border border-border px-4 py-2 hover:border-brand transition-colors">
-            Voir les comparatifs
-          </Link>
-        </div>
-      </section>
+    <div>
+      <Hero />
+      <TrustBar />
 
-      <section>
-        <h2 className="text-xl font-bold mb-5">Derniers articles</h2>
-        {articles.length === 0 ? (
-          <p className="text-foreground/60 text-sm">
-            Les premiers articles arrivent très bientôt.
-          </p>
-        ) : (
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {articles.map((article) => (
-              <ArticleCard key={article.slug} article={article} />
-            ))}
+      <div className="mx-auto max-w-5xl px-4 sm:px-6 py-14">
+        <section>
+          <div className="flex items-end justify-between mb-6">
+            <div>
+              <h2 className="text-2xl font-extrabold tracking-tight">Derniers articles</h2>
+              <p className="text-muted text-sm mt-1">Nos guides et comparatifs les plus récents.</p>
+            </div>
+            <Link href="/guides" className="hidden sm:inline text-sm font-semibold text-brand hover:underline">
+              Tout voir →
+            </Link>
           </div>
-        )}
+          {articles.length === 0 ? (
+            <p className="text-muted text-sm">Les premiers articles arrivent très bientôt.</p>
+          ) : (
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+              {articles.map((article) => (
+                <ArticleCard key={article.slug} article={article} />
+              ))}
+            </div>
+          )}
+        </section>
+      </div>
+
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto max-w-5xl px-4 sm:px-6 py-14 grid sm:grid-cols-3 gap-8">
+          <div className="sm:col-span-1">
+            <h2 className="text-xl font-extrabold tracking-tight">Comment on choisit</h2>
+            <p className="text-muted text-sm mt-2">
+              Chaque recommandation est passée au crible des mêmes critères techniques.
+            </p>
+          </div>
+          <div className="sm:col-span-2 grid sm:grid-cols-2 gap-5 text-sm">
+            <div className="flex gap-3">
+              <span className="text-lime-dark text-lg">●</span>
+              <div>
+                <div className="font-bold">Forme &amp; tolérance</div>
+                <div className="text-muted mt-0.5">Ronde, goutte ou diamant : on identifie le sweet spot adapté à votre niveau.</div>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-lime-dark text-lg">●</span>
+              <div>
+                <div className="font-bold">Poids &amp; confort</div>
+                <div className="text-muted mt-0.5">On croise poids, noyau et balance pour limiter la fatigue et les douleurs.</div>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-lime-dark text-lg">●</span>
+              <div>
+                <div className="font-bold">Style de jeu</div>
+                <div className="text-muted mt-0.5">Puissance, contrôle ou polyvalence : on colle à votre façon de jouer.</div>
+              </div>
+            </div>
+            <div className="flex gap-3">
+              <span className="text-lime-dark text-lg">●</span>
+              <div>
+                <div className="font-bold">Rapport qualité / prix</div>
+                <div className="text-muted mt-0.5">On compare toujours à budget équivalent, jamais dans l&apos;absolu.</div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
   );

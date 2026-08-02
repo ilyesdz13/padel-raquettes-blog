@@ -36,9 +36,10 @@ sans supervision humaine par une tâche planifiée Claude Code. Suis chaque éta
   (ne duplique jamais une raquette déjà en base).
 - Si le sujet nécessite un produit absent de la base, ajoute une nouvelle entrée dans
   `content/products.json` avec des informations réalistes (nom de modèle et marque plausibles
-  pour l'année en cours, forme, niveau, style, poids, fourchette de prix). Mets `"asin":
-  "A_COMPLETER"` — ne jamais inventer un ASIN Amazon, c'est le propriétaire du site qui le
-  renseignera après vérification manuelle sur Amazon.
+  pour l'année en cours, forme, niveau, style, poids, fourchette de prix, et un `"score"`
+  éditorial entre 4.0 et 4.8 cohérent avec le positionnement du produit — pas de 5/5 systématique).
+  Mets `"asin": "A_COMPLETER"` — ne jamais inventer un ASIN Amazon, c'est le propriétaire du
+  site qui le renseignera après vérification manuelle sur Amazon.
 
 ## 3. Rédiger l'article (obligatoire : ~2500 mots)
 

@@ -10,6 +10,7 @@ export type Product = {
   priceRange: string;
   weight: string;
   highlight: string;
+  score: number;
   asin: string;
   image: string;
 };
