@@ -1,12 +1,14 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { Article } from "@/lib/articles";
-import { CATEGORY_LABELS } from "@/lib/articles";
+import { CATEGORY_LABELS, getRelatedArticles } from "@/lib/articles";
 import { CATEGORY_STYLES } from "@/lib/site";
 import { mdxComponents } from "@/components/mdx-components";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
+import RelatedArticles from "@/components/RelatedArticles";
 
 export default function ArticleView({ article }: { article: Article }) {
   const style = CATEGORY_STYLES[article.category];
+  const related = getRelatedArticles(article);
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
@@ -40,6 +42,8 @@ export default function ArticleView({ article }: { article: Article }) {
           options={{ mdxOptions: {}, parseFrontmatter: false, blockJS: false }}
         />
       </div>
+
+      <RelatedArticles articles={related} />
     </article>
   );
 }

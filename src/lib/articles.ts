@@ -58,6 +58,14 @@ export function getArticlesByCategory(category: Category): Article[] {
   return getAllArticles().filter((a) => a.category === category);
 }
 
+/** Priorise la même catégorie, puis complète avec les articles les plus récents. */
+export function getRelatedArticles(current: ArticleMeta, count = 3): ArticleMeta[] {
+  const all = getAllArticles().filter((a) => a.slug !== current.slug);
+  const sameCategory = all.filter((a) => a.category === current.category);
+  const others = all.filter((a) => a.category !== current.category);
+  return [...sameCategory, ...others].slice(0, count);
+}
+
 export const CATEGORY_LABELS: Record<Category, { label: string; plural: string; description: string }> = {
   guide: {
     label: "Guide",
