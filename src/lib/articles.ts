@@ -66,6 +66,27 @@ export function getRelatedArticles(current: ArticleMeta, count = 3): ArticleMeta
   return [...sameCategory, ...others].slice(0, count);
 }
 
+export type FAQItem = { question: string; answer: string };
+
+/** Extrait les paires question/réponse de la section "## FAQ" d'un article, pour le balisage FAQPage. */
+export function extractFAQItems(content: string): FAQItem[] {
+  const headingMatch = content.match(/^## FAQ.*$/m);
+  if (!headingMatch || headingMatch.index === undefined) return [];
+
+  const startIndex = headingMatch.index + headingMatch[0].length;
+  const nextHeadingMatch = content.slice(startIndex).match(/^## /m);
+  const endIndex = nextHeadingMatch?.index !== undefined ? startIndex + nextHeadingMatch.index : content.length;
+  const section = content.slice(startIndex, endIndex);
+
+  const items: FAQItem[] = [];
+  const pairRegex = /\*\*(.+?)\*\*\n([\s\S]+?)(?=\n\n|$)/g;
+  let match: RegExpExecArray | null;
+  while ((match = pairRegex.exec(section)) !== null) {
+    items.push({ question: match[1].trim(), answer: match[2].trim() });
+  }
+  return items;
+}
+
 export const CATEGORY_LABELS: Record<Category, { label: string; plural: string; description: string }> = {
   guide: {
     label: "Guide",

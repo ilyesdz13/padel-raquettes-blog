@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ArticleView from "@/components/ArticleView";
-import { getArticleBySlug, getArticlesByCategory, CATEGORY_LABELS } from "@/lib/articles";
+import { getArticleBySlug, getArticlesByCategory, CATEGORY_LABELS, extractFAQItems } from "@/lib/articles";
 import { SITE_URL } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -53,6 +53,17 @@ export default async function GuidePage({ params }: Props) {
     ],
   };
 
+  const faqItems = extractFAQItems(article.content);
+  const faqJsonLd = faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqItems.map((item) => ({
+      "@type": "Question",
+      name: item.question,
+      acceptedAnswer: { "@type": "Answer", text: item.answer },
+    })),
+  } : null;
+
   return (
     <>
       <script
@@ -65,6 +76,13 @@ export default async function GuidePage({ params }: Props) {
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {faqJsonLd && (
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        />
+      )}
       <ArticleView article={article} />
     </>
   );
