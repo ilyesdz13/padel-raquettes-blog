@@ -13,11 +13,7 @@ export default function MentionsLegalesPage() {
 
       <h2>Programme Amazon Associates</h2>
       <p>
-        {SITE_NAME_FULL} participe au programme Amazon Associates, un programme d&apos;affiliation
-        conçu pour permettre à des sites de percevoir une rémunération grâce à la création de
-        liens vers Amazon.fr. En tant que partenaire Amazon, nous réalisons un bénéfice sur les
-        achats remplissant les conditions requises, sans surcoût pour vous. Amazon et le logo
-        Amazon sont des marques d&apos;Amazon.com, Inc. ou de ses filiales.
+        {`${SITE_NAME_FULL} participe au programme Amazon Associates, un programme d'affiliation conçu pour permettre à des sites de percevoir une rémunération grâce à la création de liens vers Amazon.fr. En tant que partenaire Amazon, nous réalisons un bénéfice sur les achats remplissant les conditions requises, sans surcoût pour vous. Amazon et le logo Amazon sont des marques d'Amazon.com, Inc. ou de ses filiales.`}
       </p>
 
       <h2>Indépendance éditoriale</h2>

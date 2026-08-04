@@ -30,9 +30,7 @@ export default function Footer() {
         </div>
         <div className="pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 text-xs text-white/50">
           <p className="max-w-2xl">
-            En tant que partenaire Amazon, {SITE_NAME_FULL} réalise un bénéfice sur les achats
-            remplissant les conditions requises. Les prix et disponibilités sont susceptibles
-            d&apos;être modifiés après publication.
+            {`En tant que partenaire Amazon, ${SITE_NAME_FULL} réalise un bénéfice sur les achats remplissant les conditions requises. Les prix et disponibilités sont susceptibles d'être modifiés après publication.`}
           </p>
           <span>© {year} {SITE_NAME_FULL}</span>
         </div>
