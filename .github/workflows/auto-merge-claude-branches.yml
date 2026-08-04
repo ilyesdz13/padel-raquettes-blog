@@ -1,0 +1,41 @@
+name: Auto-merge Claude article branches
+
+on:
+  push:
+    branches:
+      - "claude/**"
+
+permissions:
+  contents: write
+
+jobs:
+  merge-if-build-passes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Merge branch into main
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git merge "origin/${{ github.ref_name }}" --no-edit
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build
+        run: npm run build
+
+      - name: Push main
+        run: git push origin main
+
+      - name: Delete merged branch
+        if: success()
+        run: git push origin --delete "${{ github.ref_name }}"
