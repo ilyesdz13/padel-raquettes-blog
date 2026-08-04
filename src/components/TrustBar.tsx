@@ -6,7 +6,7 @@ const STATS = [
 
 export default function TrustBar() {
   return (
-    <div className="border-b border-border bg-surface">
+    <div className="border-b border-border bg-surface mt-10 sm:mt-14">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-6 grid grid-cols-3 gap-4 text-center">
         {STATS.map((stat) => (
           <div key={stat.label}>

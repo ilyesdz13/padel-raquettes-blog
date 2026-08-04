@@ -2,14 +2,18 @@ import Link from "next/link";
 import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ArticleCard from "@/components/ArticleCard";
+import FeaturedArticle from "@/components/FeaturedArticle";
 import { getAllArticles } from "@/lib/articles";
 
 export default function Home() {
-  const articles = getAllArticles().slice(0, 9);
+  const allArticles = getAllArticles();
+  const [featured, ...rest] = allArticles;
+  const articles = rest.slice(0, 8);
 
   return (
     <div>
       <Hero />
+      {featured && <FeaturedArticle article={featured} />}
       <TrustBar />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-14">
