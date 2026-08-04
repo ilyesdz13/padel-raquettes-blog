@@ -52,6 +52,10 @@ export function buildAffiliateLink(product: Product): { url: string; isReady: bo
     return { url: `https://${AMAZON_DOMAIN}/dp/${product.asin}?tag=${tag}`, isReady: true };
   }
 
-  const query = encodeURIComponent(`${product.brand} ${product.name}`);
+  const query = encodeURIComponent(
+    product.name.toLowerCase().includes(product.brand.toLowerCase())
+      ? product.name
+      : `${product.brand} ${product.name}`
+  );
   return { url: `https://${AMAZON_DOMAIN}/s?k=${query}`, isReady: false };
 }
