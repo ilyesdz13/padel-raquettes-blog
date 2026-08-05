@@ -1,0 +1,27 @@
+# Sweet Spot Padel
+
+> Guides d'achat, comparatifs et avis pour choisir une raquette de padel, basés sur des critères techniques objectifs (forme, poids, noyau, balance, niveau de jeu).
+
+Sweet Spot Padel est un site indépendant qui aide les joueurs de padel, du débutant à l'expert, à choisir la raquette adaptée à leur niveau, leur style de jeu et leur budget. Le site participe au programme d'affiliation Amazon Associates.
+
+## Guides
+
+- [Meilleure raquette de padel pour débutant](https://padel-raquettes-blog.vercel.app/guides/meilleure-raquette-padel-debutant)
+- [Comment choisir sa raquette de padel](https://padel-raquettes-blog.vercel.app/guides/comment-choisir-sa-raquette-de-padel)
+- [Meilleures raquettes de padel pour femme](https://padel-raquettes-blog.vercel.app/guides/meilleures-raquettes-padel-femme)
+
+## Comparatifs
+
+- [Babolat Technical Viper vs Nox AT10 Genius Attack 18K](https://padel-raquettes-blog.vercel.app/comparatifs/babolat-viper-air-vs-nox-at-genius)
+- [Top 5 des raquettes de padel les plus puissantes](https://padel-raquettes-blog.vercel.app/comparatifs/meilleures-raquettes-padel-puissance-2026)
+- [Meilleures raquettes de padel pas chères](https://padel-raquettes-blog.vercel.app/comparatifs/raquette-padel-pas-cher-bon-rapport-qualite-prix)
+
+## Articles
+
+- [Forme diamant, goutte ou ronde](https://padel-raquettes-blog.vercel.app/articles/forme-diamant-goutte-ronde-raquette-padel)
+- [Quel est le poids idéal pour une raquette de padel](https://padel-raquettes-blog.vercel.app/articles/poids-ideal-raquette-padel)
+- [Contrôle ou puissance : comment trancher](https://padel-raquettes-blog.vercel.app/articles/raquette-padel-controle-vs-puissance)
+
+## Sitemap complet
+
+https://padel-raquettes-blog.vercel.app/sitemap.xml

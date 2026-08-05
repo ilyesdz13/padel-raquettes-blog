@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  alternates: {
+    types: { "application/rss+xml": "/feed.xml" },
+  },
   verification: {
     google: "h00d2R61Bx05jMLvq1CdCiAyVA5QzaVj9yd_mz374CE",
   },
