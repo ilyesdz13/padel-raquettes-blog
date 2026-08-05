@@ -47,6 +47,15 @@ export default function RootLayout({
     name: SITE_NAME_FULL,
     url: SITE_URL,
     description: SITE_TAGLINE,
+    publisher: { "@type": "Organization", name: SITE_NAME_FULL, url: SITE_URL },
+  };
+
+  const organizationJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME_FULL,
+    url: SITE_URL,
+    logo: `${SITE_URL}/opengraph-image`,
   };
 
   return (
@@ -59,6 +68,11 @@ export default function RootLayout({
           type="application/ld+json"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <Header />
         <main className="flex-1 w-full">{children}</main>

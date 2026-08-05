@@ -9,8 +9,37 @@ export default function ProductCard({ id }: { id: string }) {
   const { url, isReady } = buildAffiliateLink(product);
   const isTopPick = product.score >= 4.6;
 
+  const priceMatch = product.priceRange.match(/(\d+)\D+(\d+)/);
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.name,
+    brand: { "@type": "Brand", name: product.brand },
+    category: "Raquette de padel",
+    ...(priceMatch && {
+      offers: {
+        "@type": "AggregateOffer",
+        priceCurrency: "EUR",
+        lowPrice: priceMatch[1],
+        highPrice: priceMatch[2],
+        availability: "https://schema.org/InStock",
+        url,
+      },
+    }),
+    review: {
+      "@type": "Review",
+      author: { "@type": "Organization", name: "Sweet Spot Padel" },
+      reviewRating: { "@type": "Rating", ratingValue: product.score, bestRating: 5 },
+    },
+  };
+
   return (
     <div className="not-prose my-6 relative flex flex-col sm:flex-row gap-5 rounded-2xl border border-border bg-surface p-5 sm:p-6 shadow-sm">
+      <script
+        type="application/ld+json"
+        // eslint-disable-next-line react/no-danger
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       {isTopPick && (
         <span className="absolute -top-3 left-5 rounded-full bg-lime px-3 py-1 text-xs font-bold text-lime-ink shadow">
           Coup de cœur
