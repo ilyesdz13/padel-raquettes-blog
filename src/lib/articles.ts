@@ -66,6 +66,23 @@ export function getRelatedArticles(current: ArticleMeta, count = 3): ArticleMeta
   return [...sameCategory, ...others].slice(0, count);
 }
 
+export function slugifyHeading(text: string): string {
+  return text
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+export type Heading = { text: string; slug: string };
+
+/** Extrait les titres de niveau 2 ("## ") d'un article pour construire un sommaire. */
+export function extractHeadings(content: string): Heading[] {
+  const matches = content.matchAll(/^## (.+)$/gm);
+  return Array.from(matches, (m) => ({ text: m[1].trim(), slug: slugifyHeading(m[1].trim()) }));
+}
+
 export type FAQItem = { question: string; answer: string };
 
 /** Extrait les paires question/réponse de la section "## FAQ" d'un article, pour le balisage FAQPage. */

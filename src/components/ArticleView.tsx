@@ -1,15 +1,17 @@
 import { MDXRemote } from "next-mdx-remote/rsc";
 import type { Article } from "@/lib/articles";
-import { CATEGORY_LABELS, getRelatedArticles } from "@/lib/articles";
+import { CATEGORY_LABELS, getRelatedArticles, extractHeadings } from "@/lib/articles";
 import { CATEGORY_STYLES, CATEGORY_ROUTES } from "@/lib/site";
 import { mdxComponents } from "@/components/mdx-components";
 import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import RelatedArticles from "@/components/RelatedArticles";
 import Breadcrumb from "@/components/Breadcrumb";
+import TableOfContents from "@/components/TableOfContents";
 
 export default function ArticleView({ article }: { article: Article }) {
   const style = CATEGORY_STYLES[article.category];
   const related = getRelatedArticles(article);
+  const headings = extractHeadings(article.content);
 
   return (
     <article className="mx-auto max-w-3xl px-4 sm:px-6 py-12">
@@ -38,6 +40,8 @@ export default function ArticleView({ article }: { article: Article }) {
       <div className="mb-8">
         <AffiliateDisclosure />
       </div>
+
+      <TableOfContents headings={headings} />
 
       <div className="prose-article">
         {/*
