@@ -49,7 +49,15 @@ export default function ProductCard({ id }: { id: string }) {
         <div className="w-[120px] h-[150px] rounded-xl bg-gradient-to-br from-navy to-navy-2 p-3 flex items-center justify-center overflow-hidden">
           {hasRealImage(product) ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={product.image} alt={product.name} className="h-full w-full object-contain" />
+            <img
+              src={product.image}
+              alt={product.name}
+              width={120}
+              height={150}
+              loading="lazy"
+              decoding="async"
+              className="h-full w-full object-contain"
+            />
           ) : (
             <RacketIllustration shape={product.shape} />
           )}
