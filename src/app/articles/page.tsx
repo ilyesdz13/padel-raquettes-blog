@@ -5,6 +5,7 @@ import { CATEGORY_LABELS } from "@/lib/articles";
 export const metadata: Metadata = {
   title: CATEGORY_LABELS.article.plural,
   description: CATEGORY_LABELS.article.description,
+  alternates: { canonical: "/articles" },
 };
 
 export default function ArticlesPage() {

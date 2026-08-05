@@ -4,6 +4,7 @@ import { SITE_NAME_FULL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Mentions légales & affiliation",
   description: "Mentions légales et informations sur le programme d'affiliation Amazon de " + SITE_NAME_FULL + ".",
+  alternates: { canonical: "/mentions-legales" },
 };
 
 export default function MentionsLegalesPage() {

@@ -40,7 +40,11 @@ export default async function ComparatifPage({ params }: Props) {
     headline: article.title,
     description: article.description,
     datePublished: article.date,
+    dateModified: article.date,
     url: `${SITE_URL}/comparatifs/${article.slug}`,
+    image: `${SITE_URL}/comparatifs/${article.slug}/opengraph-image`,
+    author: { "@type": "Organization", name: "Sweet Spot Padel" },
+    publisher: { "@type": "Organization", name: "Sweet Spot Padel" },
   };
 
   const breadcrumbJsonLd = {

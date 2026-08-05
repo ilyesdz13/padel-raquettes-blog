@@ -40,7 +40,11 @@ export default async function GuidePage({ params }: Props) {
     headline: article.title,
     description: article.description,
     datePublished: article.date,
+    dateModified: article.date,
     url: `${SITE_URL}/guides/${article.slug}`,
+    image: `${SITE_URL}/guides/${article.slug}/opengraph-image`,
+    author: { "@type": "Organization", name: "Sweet Spot Padel" },
+    publisher: { "@type": "Organization", name: "Sweet Spot Padel" },
   };
 
   const breadcrumbJsonLd = {

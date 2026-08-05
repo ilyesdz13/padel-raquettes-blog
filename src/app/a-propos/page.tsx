@@ -4,6 +4,7 @@ import { SITE_NAME, SITE_NAME_FULL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "À propos",
   description: `Pourquoi ${SITE_NAME_FULL} existe et comment nous sélectionnons les raquettes de padel que nous recommandons.`,
+  alternates: { canonical: "/a-propos" },
 };
 
 export default function AProposPage() {
