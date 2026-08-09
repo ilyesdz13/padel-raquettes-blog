@@ -1,32 +1,353 @@
 [
-  { "slug": "meilleure-raquette-padel-debutant", "title": "Meilleure raquette de padel pour débutant en 2026", "category": "guide", "targetKeyword": "meilleure raquette padel débutant", "productIds": ["wilson-accent-2026", "wilson-accent-lt-2026", "adidas-match-light-3-5-2026", "adidas-match-noir-vert-3-5-2026", "wilson-optix-v2-lite-lilac-2026"], "published": true },
-  { "slug": "babolat-viper-air-vs-nox-at-genius", "title": "Babolat Viper Air 2026 vs Nox AT Genius 2026 : quel choix pour un joueur offensif ?", "category": "comparatif", "targetKeyword": "babolat viper air vs nox at genius", "productIds": ["babolat-viper-air-2026", "nox-at-genius-2026"], "published": true },
-  { "slug": "comment-choisir-sa-raquette-de-padel", "title": "Comment choisir sa raquette de padel : le guide complet", "category": "guide", "targetKeyword": "comment choisir sa raquette de padel", "productIds": ["nox-at10-12k-alum-2026", "head-extreme-motion-2026", "adidas-drive-black-2026"], "published": true },
-  { "slug": "meilleures-raquettes-padel-puissance-2026", "title": "Top 5 des raquettes de padel les plus puissantes en 2026", "category": "comparatif", "targetKeyword": "raquette padel puissante 2026", "productIds": ["babolat-viper-air-2026", "babolat-air-viper-2-6-2026", "nox-at-genius-2026", "bullpadel-vertex-04-pro-2026", "wilson-bela-pro-v3-2026"], "published": true },
-  { "slug": "forme-diamant-goutte-ronde-raquette-padel", "title": "Forme diamant, goutte ou ronde : quelle forme de raquette de padel choisir ?", "category": "article", "targetKeyword": "forme raquette padel diamant goutte ronde", "productIds": ["babolat-viper-air-2026", "nox-at10-12k-alum-2026", "wilson-accent-2026"], "published": true },
-  { "slug": "bullpadel-vertex-04-pro-test-avis", "title": "Bullpadel Vertex 04 : test complet et avis", "category": "guide", "targetKeyword": "bullpadel vertex 04 pro avis", "productIds": ["bullpadel-vertex-04-pro-2026"], "published": true },
-  { "slug": "raquette-padel-pas-cher-bon-rapport-qualite-prix", "title": "Les meilleures raquettes de padel pas chères en 2026 (bon rapport qualité/prix)", "category": "comparatif", "targetKeyword": "raquette padel pas cher", "productIds": ["adidas-match-light-3-5-2026", "adidas-match-noir-vert-3-5-2026", "wilson-optix-v2-lite-lilac-2026", "adidas-drive-black-2026"], "published": true },
-  { "slug": "poids-ideal-raquette-padel", "title": "Quel est le poids idéal pour une raquette de padel selon votre niveau ?", "category": "article", "targetKeyword": "poids raquette padel", "productIds": ["wilson-accent-lt-2026", "wilson-optix-v2-lite-lilac-2026", "babolat-viper-air-2026"], "published": true },
-  { "slug": "nox-at10-12k-alum-test-avis", "title": "Nox AT10 Genius 12K : la raquette polyvalente la plus vendue, notre avis", "category": "guide", "targetKeyword": "nox at10 12k alum avis", "productIds": ["nox-at10-12k-alum-2026"], "published": true },
-  { "slug": "raquette-padel-controle-vs-puissance", "title": "Raquette de padel contrôle ou puissance : comment trancher ?", "category": "article", "targetKeyword": "raquette padel controle ou puissance", "productIds": ["wilson-accent-2026", "babolat-viper-air-2026", "head-extreme-motion-2026"], "published": true },
-  { "slug": "meilleures-raquettes-padel-femme", "title": "Meilleures raquettes de padel pour femme en 2026 : le guide complet", "category": "guide", "targetKeyword": "raquette padel femme", "productIds": ["wilson-optix-v2-lite-lilac-2026", "adidas-match-light-3-5-2026", "wilson-accent-lt-2026"], "published": true },
-  { "slug": "wilson-bela-pro-v3-vs-bullpadel-vertex-04-pro", "title": "Wilson Bela Pro v3 vs Bullpadel Vertex 04 Pro : duel des raquettes offensives", "category": "comparatif", "targetKeyword": "wilson bela pro vs bullpadel vertex", "productIds": ["wilson-bela-pro-v3-2026", "bullpadel-vertex-04-pro-2026"], "published": true },
-  { "slug": "entretien-raquette-padel-duree-de-vie", "title": "Comment entretenir sa raquette de padel et prolonger sa durée de vie", "category": "article", "targetKeyword": "entretien raquette padel", "productIds": ["nox-at10-12k-alum-2026", "wilson-accent-2026", "adidas-match-light-3-5-2026"], "published": true },
-  { "slug": "meilleures-raquettes-padel-intermediaire", "title": "Meilleures raquettes de padel pour joueur intermédiaire en 2026", "category": "guide", "targetKeyword": "raquette padel intermédiaire", "productIds": ["nox-at10-12k-alum-2026", "head-extreme-motion-2026", "adidas-drive-black-2026"], "published": true },
-  { "slug": "erreurs-a-eviter-achat-raquette-padel", "title": "7 erreurs à éviter avant d'acheter sa raquette de padel", "category": "article", "targetKeyword": "erreurs achat raquette padel", "productIds": ["babolat-viper-air-2026", "wilson-accent-2026", "wilson-optix-v2-lite-lilac-2026", "nox-at10-12k-alum-2026"], "published": true },
-  { "slug": "head-extreme-motion-test-avis", "title": "Head Extreme Motion 2026 : test et avis complet", "category": "guide", "targetKeyword": "head extreme motion avis", "productIds": ["head-extreme-motion-2026"], "published": false },
-  { "slug": "meilleures-raquettes-padel-junior-enfant", "title": "Meilleures raquettes de padel pour junior et enfant en 2026", "category": "guide", "targetKeyword": "raquette padel enfant junior", "productIds": ["adidas-match-light-3-5-2026", "wilson-optix-v2-lite-lilac-2026"], "published": false },
-  { "slug": "balance-en-tete-vs-balance-en-manche", "title": "Balance en tête ou en manche : comment ça change votre jeu au padel", "category": "article", "targetKeyword": "balance raquette padel", "productIds": ["babolat-viper-air-2026", "wilson-accent-2026", "nox-at10-12k-alum-2026"], "published": false },
-  { "slug": "top-raquettes-padel-marques-2026", "title": "Comparatif des meilleures marques de raquettes de padel en 2026", "category": "comparatif", "targetKeyword": "meilleure marque raquette padel", "productIds": ["babolat-viper-air-2026", "nox-at10-12k-alum-2026", "bullpadel-vertex-04-pro-2026", "head-extreme-motion-2026", "wilson-accent-2026", "adidas-drive-black-2026"], "published": false },
-  { "slug": "adidas-drive-black-test-avis", "title": "Adidas Drive Black 2026 : test complet, le choix sûr pour progresser", "category": "guide", "targetKeyword": "adidas drive black avis", "productIds": ["adidas-drive-black-2026"], "published": false },
-  { "slug": "raquette-padel-tennis-de-plage", "title": "Raquette de padel pour joueur de tennis : ce qui change", "category": "article", "targetKeyword": "raquette padel pour joueur de tennis", "productIds": ["nox-at10-12k-alum-2026", "wilson-accent-2026"], "published": false },
-  { "slug": "cordage-tension-raquette-padel", "title": "Cordage et tension de la raquette de padel : ce qu'il faut savoir", "category": "article", "targetKeyword": "cordage raquette padel", "productIds": [], "published": false },
-  { "slug": "nox-at-genius-vs-babolat-air-viper-2-6", "title": "Nox AT Genius vs Babolat Air Viper 2.6 : quelle raquette pour smasher plus fort ?", "category": "comparatif", "targetKeyword": "nox at genius vs babolat air viper", "productIds": ["nox-at-genius-2026", "babolat-air-viper-2-6-2026"], "published": false },
-  { "slug": "raquette-padel-tennis-elbow-confort", "title": "Meilleures raquettes de padel anti-vibrations pour éviter le tennis elbow", "category": "guide", "targetKeyword": "raquette padel confort tennis elbow", "productIds": ["babolat-viper-air-2026", "wilson-accent-2026", "head-extreme-motion-2026"], "published": false },
-  { "slug": "wilson-accent-vs-adidas-drive-black", "title": "Wilson Accent vs Adidas Drive Black : quelle raquette d'évolution choisir ?", "category": "comparatif", "targetKeyword": "wilson accent vs adidas drive black", "productIds": ["wilson-accent-2026", "adidas-drive-black-2026"], "published": false },
-  { "slug": "combien-coute-une-raquette-de-padel", "title": "Combien coûte une raquette de padel ? Le vrai budget par niveau", "category": "article", "targetKeyword": "prix raquette padel", "productIds": ["adidas-match-light-3-5-2026", "wilson-accent-2026", "nox-at10-12k-alum-2026", "babolat-viper-air-2026"], "published": false },
-  { "slug": "meilleures-raquettes-padel-avance-expert", "title": "Meilleures raquettes de padel pour joueur avancé et expert en 2026", "category": "guide", "targetKeyword": "raquette padel avancé expert", "productIds": ["babolat-viper-air-2026", "nox-at-genius-2026", "bullpadel-vertex-04-pro-2026", "wilson-bela-pro-v3-2026"], "published": false },
-  { "slug": "core-mousse-eva-vs-foam-raquette-padel", "title": "Mousse EVA vs Foam : quelle différence pour le noyau de votre raquette", "category": "article", "targetKeyword": "mousse eva foam raquette padel", "productIds": ["babolat-viper-air-2026", "wilson-accent-2026"], "published": false },
-  { "slug": "meilleure-raquette-padel-double-mixte", "title": "Quelle raquette de padel choisir pour jouer en double mixte", "category": "guide", "targetKeyword": "raquette padel double mixte", "productIds": ["head-extreme-motion-2026", "nox-at10-12k-alum-2026", "wilson-accent-lt-2026"], "published": false },
-  { "slug": "raquette-padel-occasion-bon-plan", "title": "Acheter une raquette de padel d'occasion : bonne ou mauvaise idée ?", "category": "article", "targetKeyword": "raquette padel occasion", "productIds": [], "published": false }
+  {
+    "slug": "meilleure-raquette-padel-debutant",
+    "title": "Meilleure raquette de padel pour débutant en 2026",
+    "category": "guide",
+    "targetKeyword": "meilleure raquette padel débutant",
+    "productIds": [
+      "wilson-accent-2026",
+      "wilson-accent-lt-2026",
+      "adidas-match-light-3-5-2026",
+      "adidas-match-noir-vert-3-5-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "babolat-viper-air-vs-nox-at-genius",
+    "title": "Babolat Viper Air 2026 vs Nox AT Genius 2026 : quel choix pour un joueur offensif ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat viper air vs nox at genius",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "comment-choisir-sa-raquette-de-padel",
+    "title": "Comment choisir sa raquette de padel : le guide complet",
+    "category": "guide",
+    "targetKeyword": "comment choisir sa raquette de padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "meilleures-raquettes-padel-puissance-2026",
+    "title": "Top 5 des raquettes de padel les plus puissantes en 2026",
+    "category": "comparatif",
+    "targetKeyword": "raquette padel puissante 2026",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "babolat-air-viper-2-6-2026",
+      "nox-at-genius-2026",
+      "bullpadel-vertex-04-pro-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "forme-diamant-goutte-ronde-raquette-padel",
+    "title": "Forme diamant, goutte ou ronde : quelle forme de raquette de padel choisir ?",
+    "category": "article",
+    "targetKeyword": "forme raquette padel diamant goutte ronde",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "bullpadel-vertex-04-pro-test-avis",
+    "title": "Bullpadel Vertex 04 : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "bullpadel vertex 04 pro avis",
+    "productIds": [
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-pas-cher-bon-rapport-qualite-prix",
+    "title": "Les meilleures raquettes de padel pas chères en 2026 (bon rapport qualité/prix)",
+    "category": "comparatif",
+    "targetKeyword": "raquette padel pas cher",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "adidas-match-noir-vert-3-5-2026",
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "poids-ideal-raquette-padel",
+    "title": "Quel est le poids idéal pour une raquette de padel selon votre niveau ?",
+    "category": "article",
+    "targetKeyword": "poids raquette padel",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "wilson-optix-v2-lite-lilac-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "nox-at10-12k-alum-test-avis",
+    "title": "Nox AT10 Genius 12K : la raquette polyvalente la plus vendue, notre avis",
+    "category": "guide",
+    "targetKeyword": "nox at10 12k alum avis",
+    "productIds": [
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-controle-vs-puissance",
+    "title": "Raquette de padel contrôle ou puissance : comment trancher ?",
+    "category": "article",
+    "targetKeyword": "raquette padel controle ou puissance",
+    "productIds": [
+      "wilson-accent-2026",
+      "babolat-viper-air-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "meilleures-raquettes-padel-femme",
+    "title": "Meilleures raquettes de padel pour femme en 2026 : le guide complet",
+    "category": "guide",
+    "targetKeyword": "raquette padel femme",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-match-light-3-5-2026",
+      "wilson-accent-lt-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "wilson-bela-pro-v3-vs-bullpadel-vertex-04-pro",
+    "title": "Wilson Bela Pro v3 vs Bullpadel Vertex 04 Pro : duel des raquettes offensives",
+    "category": "comparatif",
+    "targetKeyword": "wilson bela pro vs bullpadel vertex",
+    "productIds": [
+      "wilson-bela-pro-v3-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "entretien-raquette-padel-duree-de-vie",
+    "title": "Comment entretenir sa raquette de padel et prolonger sa durée de vie",
+    "category": "article",
+    "targetKeyword": "entretien raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "meilleures-raquettes-padel-intermediaire",
+    "title": "Meilleures raquettes de padel pour joueur intermédiaire en 2026",
+    "category": "guide",
+    "targetKeyword": "raquette padel intermédiaire",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "erreurs-a-eviter-achat-raquette-padel",
+    "title": "7 erreurs à éviter avant d'acheter sa raquette de padel",
+    "category": "article",
+    "targetKeyword": "erreurs achat raquette padel",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026",
+      "wilson-optix-v2-lite-lilac-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "carbone-3k-12k-18k-raquette-padel",
+    "title": "Carbone 3K, 12K ou 18K : quelle différence sur une raquette de padel ?",
+    "category": "guide",
+    "targetKeyword": "carbone 3k 12k 18k raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "nox-at-genius-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-tennis-elbow-confort",
+    "title": "Meilleures raquettes de padel anti-vibrations pour éviter le tennis elbow",
+    "category": "guide",
+    "targetKeyword": "raquette padel confort tennis elbow",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "quand-changer-sa-raquette-de-padel",
+    "title": "Quand changer sa raquette de padel ? Les signes qui ne trompent pas",
+    "category": "article",
+    "targetKeyword": "quand changer raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "head-extreme-motion-test-avis",
+    "title": "Head Extreme Motion : test et avis complet",
+    "category": "guide",
+    "targetKeyword": "head extreme motion avis",
+    "productIds": [
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "mal-au-bras-poignet-apres-padel",
+    "title": "Mal au bras ou au poignet après le padel : la raquette est-elle en cause ?",
+    "category": "article",
+    "targetKeyword": "mal au bras poignet padel raquette",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "head-extreme-motion-2026",
+      "wilson-accent-lt-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nox-at-genius-vs-babolat-air-viper-2-6",
+    "title": "Nox AT10 Genius Attack vs Babolat Air Viper : laquelle pour smasher plus fort ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at genius vs babolat air viper",
+    "productIds": [
+      "nox-at-genius-2026",
+      "babolat-air-viper-2-6-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-drive-black-test-avis",
+    "title": "Adidas Drive Black 3.4 : test complet, le choix sûr pour progresser",
+    "category": "guide",
+    "targetKeyword": "adidas drive black avis",
+    "productIds": [
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-joueur-de-tennis",
+    "title": "Passer du tennis au padel : quelle raquette choisir et quoi désapprendre",
+    "category": "article",
+    "targetKeyword": "raquette padel pour joueur de tennis",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-accent-vs-adidas-drive-black",
+    "title": "Wilson Accent vs Adidas Drive Black : quelle raquette d'évolution choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent vs adidas drive black",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "core-mousse-eva-vs-foam-raquette-padel",
+    "title": "Mousse EVA ou Foam : quelle différence pour le noyau de votre raquette",
+    "category": "article",
+    "targetKeyword": "mousse eva foam raquette padel",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "balance-en-tete-vs-balance-en-manche",
+    "title": "Balance en tête ou en manche : ce que ça change vraiment dans votre jeu",
+    "category": "article",
+    "targetKeyword": "balance raquette padel",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleures-raquettes-padel-junior-enfant",
+    "title": "Meilleures raquettes de padel pour junior et enfant",
+    "category": "guide",
+    "targetKeyword": "raquette padel enfant junior",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-occasion-bon-plan",
+    "title": "Acheter une raquette de padel d'occasion : bonne ou mauvaise idée ?",
+    "category": "article",
+    "targetKeyword": "raquette padel occasion",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleures-raquettes-padel-avance-expert",
+    "title": "Meilleures raquettes de padel pour joueur avancé et expert",
+    "category": "guide",
+    "targetKeyword": "raquette padel avancé expert",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at-genius-2026",
+      "bullpadel-vertex-04-pro-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "combien-coute-une-raquette-de-padel",
+    "title": "Combien coûte une raquette de padel ? Le vrai budget par niveau",
+    "category": "article",
+    "targetKeyword": "prix raquette padel",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  }
 ]

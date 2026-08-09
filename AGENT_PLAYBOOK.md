@@ -28,6 +28,12 @@ sans supervision humaine par une tâche planifiée Claude Code. Suis chaque éta
      `targetKeyword`, `productIds`, `published: false`).
    - Des mots-clés réalistes qu'un joueur de padel taperait sur Google (achat, comparatif,
      conseils, entretien, technique, profils de joueurs, saisons/soldes, etc.).
+   - **Priorité à la longue traîne.** Le site est jeune et n'a pas encore l'autorité pour se
+     positionner sur des requêtes génériques très concurrentielles ("meilleure raquette padel",
+     "meilleure marque raquette padel"). Privilégie systématiquement :
+     questions précises ("carbone 12k ou 18k", "quand changer sa raquette"), duels
+     modèle contre modèle ("X vs Y"), tests d'un modèle unique, et profils de joueurs
+     spécifiques. Ces requêtes sont moins disputées et convertissent mieux.
    Puis reprends l'étape 1 avec la première de ces nouvelles entrées.
 
 ## 2. Vérifier / compléter la base produits
@@ -73,6 +79,16 @@ si besoin) :
 - N'invente jamais de statistique, de citation ou de test précis (ex: "testé pendant 3 mois",
   "92% des joueurs préfèrent...") que tu ne peux pas sourcer. Reste sur des affirmations
   génériques et défendables sur les caractéristiques techniques (forme, poids, noyau, balance).
+- **Exactitude factuelle sur le padel.** Une raquette de padel est **pleine et sans cordage** :
+  c'est une surface percée de trous, jamais un tamis cordé. N'écris jamais sur le « cordage »,
+  la « tension » ou le « remplacement des cordes » d'une raquette de padel — ce sont des notions
+  de tennis qui n'existent pas ici, et ce type d'erreur décrédibilise tout le site. En cas de
+  doute sur un point technique, relis un article déjà publié plutôt que de supposer.
+- **Sujets touchant à la santé** (douleurs au bras, au coude, au poignet, tennis elbow). Reste
+  strictement sur le terrain du matériel : explique en quoi la forme, le poids ou le noyau
+  influencent les vibrations transmises. Ne pose jamais de diagnostic, ne propose ni traitement,
+  ni exercice de rééducation, ni durée de guérison. Invite explicitement à consulter un
+  professionnel de santé en cas de douleur persistante.
 - N'hotlink jamais d'image depuis amazon.fr ou un autre site. Pour l'image produit, réutilise
   `/images/products/placeholder.svg` (champ `"image"` dans `products.json`) tant qu'aucune
   image réelle n'a été fournie par le propriétaire du site.
