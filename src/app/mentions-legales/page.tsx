@@ -33,9 +33,24 @@ export default function MentionsLegalesPage() {
 
       <h2>Cookies et données personnelles</h2>
       <p>
-        Ce site peut utiliser des cookies techniques nécessaires à son fonctionnement et, le cas
-        échéant, des cookies de mesure d&apos;audience. Aucune donnée personnelle n&apos;est
-        vendue à des tiers.
+        Ce site utilise des cookies techniques nécessaires à son fonctionnement, des cookies de
+        mesure d&apos;audience (Vercel Analytics, sans données personnelles identifiables), ainsi
+        que des cookies publicitaires via Google AdSense, qui permettent d&apos;afficher des
+        annonces et de financer la gratuité du site. Ces cookies publicitaires ne sont déposés
+        qu&apos;après votre consentement explicite, recueilli via la bannière affichée lors de
+        votre première visite. Vous pouvez à tout moment revenir sur ce choix en effaçant les
+        cookies de votre navigateur pour ce site. Aucune donnée personnelle n&apos;est vendue à
+        des tiers.
+      </p>
+      <p>
+        Google, en tant que fournisseur tiers, utilise des cookies pour diffuser des annonces sur
+        ce site. L&apos;utilisation par Google du cookie de publicité lui permet, ainsi qu&apos;à
+        ses partenaires, de diffuser des annonces pertinentes pour les utilisateurs. Vous pouvez
+        désactiver la publicité personnalisée en consultant les{" "}
+        <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
+          règles de confidentialité de Google pour les annonces
+        </a>
+        .
       </p>
     </div>
   );
