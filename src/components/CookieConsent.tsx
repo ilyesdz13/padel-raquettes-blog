@@ -2,17 +2,22 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { ADSENSE_CLIENT_ID } from "@/lib/site";
 
 const STORAGE_KEY = "cookie-consent-ads";
 
-function loadAdSense() {
-  if (document.querySelector(`script[src*="adsbygoogle.js"]`)) return;
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
-  script.crossOrigin = "anonymous";
-  document.head.appendChild(script);
+declare global {
+  interface Window {
+    gtag?: (...args: unknown[]) => void;
+  }
+}
+
+function updateConsent(granted: boolean) {
+  const state = granted ? "granted" : "denied";
+  window.gtag?.("consent", "update", {
+    ad_storage: state,
+    ad_user_data: state,
+    ad_personalization: state,
+  });
 }
 
 export default function CookieConsent() {
@@ -21,7 +26,7 @@ export default function CookieConsent() {
   useEffect(() => {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === "accepted") {
-      loadAdSense();
+      updateConsent(true);
     } else if (stored !== "declined") {
       setVisible(true);
     }
@@ -30,7 +35,7 @@ export default function CookieConsent() {
   function accept() {
     localStorage.setItem(STORAGE_KEY, "accepted");
     setVisible(false);
-    loadAdSense();
+    updateConsent(true);
   }
 
   function decline() {
