@@ -7,6 +7,7 @@ import AffiliateDisclosure from "@/components/AffiliateDisclosure";
 import RelatedArticles from "@/components/RelatedArticles";
 import Breadcrumb from "@/components/Breadcrumb";
 import TableOfContents from "@/components/TableOfContents";
+import FinderCTA from "@/components/FinderCTA";
 
 export default function ArticleView({ article }: { article: Article }) {
   const style = CATEGORY_STYLES[article.category];
@@ -54,6 +55,8 @@ export default function ArticleView({ article }: { article: Article }) {
           options={{ mdxOptions: {}, parseFrontmatter: false, blockJS: false }}
         />
       </div>
+
+      <FinderCTA />
 
       <RelatedArticles articles={related} />
     </article>

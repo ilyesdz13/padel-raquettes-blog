@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import TrustBar from "@/components/TrustBar";
 import ArticleCard from "@/components/ArticleCard";
 import FeaturedArticle from "@/components/FeaturedArticle";
+import FinderCTA from "@/components/FinderCTA";
 import { getAllArticles } from "@/lib/articles";
 
 export const metadata: Metadata = {
@@ -19,6 +20,7 @@ export default function Home() {
     <div>
       <Hero />
       {featured && <FeaturedArticle article={featured} />}
+      <FinderCTA variant="section" />
       <TrustBar />
 
       <div className="mx-auto max-w-5xl px-4 sm:px-6 py-14">
