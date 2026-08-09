@@ -5,6 +5,7 @@ import { CATEGORY_ROUTES, SITE_URL } from "@/lib/site";
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, changeFrequency: "daily", priority: 1 },
+    { url: `${SITE_URL}/trouver-ma-raquette`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/guides`, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE_URL}/comparatifs`, changeFrequency: "daily", priority: 0.8 },
     { url: `${SITE_URL}/articles`, changeFrequency: "daily", priority: 0.8 },

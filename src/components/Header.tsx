@@ -37,7 +37,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/guides"
+            href="/trouver-ma-raquette"
             className="ml-2 inline-flex rounded-full bg-navy px-4 py-1.5 text-white hover:bg-navy-2 transition-colors"
           >
             Trouver ma raquette
@@ -74,7 +74,7 @@ export default function Header() {
             </Link>
           ))}
           <Link
-            href="/guides"
+            href="/trouver-ma-raquette"
             onClick={() => setOpen(false)}
             className="mt-1 inline-flex justify-center rounded-full bg-navy px-4 py-2.5 text-white hover:bg-navy-2 transition-colors"
           >

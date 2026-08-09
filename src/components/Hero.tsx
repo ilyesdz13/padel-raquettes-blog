@@ -36,10 +36,10 @@ export default function Hero() {
 
           <div className="mt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-3">
             <Link
-              href="/guides"
+              href="/trouver-ma-raquette"
               className="rounded-full bg-lime px-6 py-3 text-sm font-bold text-lime-ink hover:bg-lime-dark transition-colors shadow-lg shadow-lime/10"
             >
-              Trouver ma raquette idéale
+              Trouver ma raquette en 30 secondes
             </Link>
             <Link
               href="/comparatifs"
