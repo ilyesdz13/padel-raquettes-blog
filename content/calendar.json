@@ -349,5 +349,60 @@
       "babolat-viper-air-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-bela-pro-v3-test-avis",
+    "title": "Wilson Bela Pro V2.5 : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "wilson bela pro v2.5 avis",
+    "productIds": [
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "adidas-match-light-vs-wilson-optix-v2-lite",
+    "title": "Adidas Match Light 3.3 vs Wilson Optix V2 Lite : quelle raquette légère choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "adidas match light vs wilson optix v2 lite",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-gaucher",
+    "title": "Raquette de padel pour gaucher : faut-il un modèle spécifique ?",
+    "category": "article",
+    "targetKeyword": "raquette padel gaucher",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-joueur-filet",
+    "title": "Meilleure raquette de padel pour un joueur qui monte souvent au filet",
+    "category": "guide",
+    "targetKeyword": "raquette padel joueur filet",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at-genius-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "babolat-viper-air-vs-wilson-bela-pro-v3",
+    "title": "Babolat Technical Viper vs Wilson Bela Pro V2.5 : quelle raquette pour un jeu offensif haut de gamme ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat viper air vs wilson bela pro",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
   }
 ]
