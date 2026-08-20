@@ -404,5 +404,61 @@
       "wilson-bela-pro-v3-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-accent-vs-head-extreme-motion",
+    "title": "Wilson Accent vs Head Extreme Motion : quelle raquette choisir pour progresser vers l'intermédiaire ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent vs head extreme motion",
+    "productIds": [
+      "wilson-accent-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "nox-at10-12k-vs-head-extreme-motion",
+    "title": "Nox AT10 Genius 12K vs Head Extreme Motion : quelle raquette polyvalente choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs head extreme motion",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-drive-black-vs-wilson-optix-v2-lite",
+    "title": "Adidas Drive Black vs Wilson Optix V2 Lite : quelle raquette débutant ultra-légère choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "adidas drive black vs wilson optix v2 lite",
+    "productIds": [
+      "adidas-drive-black-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-double-mixte",
+    "title": "Meilleure raquette de padel pour le double mixte : trouver le bon compromis",
+    "category": "guide",
+    "targetKeyword": "raquette padel double mixte",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "grip-raquette-padel-quand-changer",
+    "title": "Faut-il changer le grip de sa raquette de padel ? Quand et comment le remplacer",
+    "category": "article",
+    "targetKeyword": "grip raquette padel quand changer",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
   }
 ]
