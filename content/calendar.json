@@ -460,5 +460,61 @@
       "wilson-accent-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-accent-lt-vs-adidas-match-light",
+    "title": "Wilson Accent LT vs Adidas Match Light 3.3 : quelle raquette légère pour bien débuter ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent lt vs adidas match light",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-indoor-vs-outdoor",
+    "title": "Raquette de padel indoor ou outdoor : faut-il vraiment deux raquettes différentes ?",
+    "category": "article",
+    "targetKeyword": "raquette padel indoor outdoor",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-manque-de-puissance",
+    "title": "Meilleure raquette de padel quand on manque de puissance au smash",
+    "category": "guide",
+    "targetKeyword": "raquette padel manque de puissance smash",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at-genius-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "bullpadel-vertex-04-pro-vs-nox-at-genius",
+    "title": "Bullpadel Vertex 04 vs Nox AT10 Genius Attack : quelle raquette pour les joueurs experts ?",
+    "category": "comparatif",
+    "targetKeyword": "bullpadel vertex 04 vs nox at genius",
+    "productIds": [
+      "bullpadel-vertex-04-pro-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "dragonne-raquette-padel-utilite",
+    "title": "Dragonne de raquette de padel : à quoi ça sert et comment bien l'attacher",
+    "category": "article",
+    "targetKeyword": "dragonne raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
   }
 ]
