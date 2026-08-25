@@ -516,5 +516,61 @@
       "wilson-accent-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "meilleure-raquette-padel-competition-amateur",
+    "title": "Meilleure raquette de padel pour la compétition amateur (tournois P25, P100)",
+    "category": "guide",
+    "targetKeyword": "raquette padel compétition amateur",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "bullpadel-vertex-04-pro-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "nox-at10-12k-vs-bullpadel-vertex-04-pro",
+    "title": "Nox AT10 Genius 12K vs Bullpadel Vertex 04 Pro : polyvalence ou puissance pure ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs bullpadel vertex 04",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-bela-pro-v3-vs-nox-at-genius",
+    "title": "Wilson Bela Pro V2.5 vs Nox AT10 Genius Attack : quelle raquette signature pro choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson bela pro vs nox at genius",
+    "productIds": [
+      "wilson-bela-pro-v3-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-trous-a-quoi-ca-sert",
+    "title": "À quoi servent les trous d'une raquette de padel ?",
+    "category": "article",
+    "targetKeyword": "trous raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-chaleur-froid-saison",
+    "title": "Raquette de padel et température : pourquoi elle joue différemment en été et en hiver",
+    "category": "article",
+    "targetKeyword": "raquette padel chaleur froid",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
   }
 ]
