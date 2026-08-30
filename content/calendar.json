@@ -629,5 +629,63 @@
       "bullpadel-vertex-04-pro-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-flex-rigide-souple",
+    "title": "Raquette de padel rigide ou souple : comment choisir son flex selon son niveau ?",
+    "category": "article",
+    "targetKeyword": "raquette padel rigide souple flex",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "babolat-viper-air-vs-bullpadel-vertex-04-pro",
+    "title": "Babolat Technical Viper vs Bullpadel Vertex 04 : quelle raquette pour un jeu 100% offensif ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat viper air vs bullpadel vertex 04",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nox-at10-12k-vs-wilson-accent",
+    "title": "Nox AT10 Genius 12K vs Wilson Accent : faut-il upgrader sa raquette d'entrée de gamme ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs wilson accent",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-homologuee-fip",
+    "title": "Raquette de padel homologuée FIP : pourquoi c'est important et comment vérifier",
+    "category": "guide",
+    "targetKeyword": "raquette padel homologuée fip",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "babolat-viper-air-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-reprise-apres-pause",
+    "title": "Meilleure raquette de padel pour reprendre après une longue pause",
+    "category": "guide",
+    "targetKeyword": "raquette padel reprise après pause",
+    "productIds": [
+      "wilson-accent-2026",
+      "head-extreme-motion-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
   }
 ]
