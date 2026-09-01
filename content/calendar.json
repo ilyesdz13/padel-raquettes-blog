@@ -687,5 +687,61 @@
       "adidas-drive-black-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-cadre-carbone-fibre-verre",
+    "title": "Raquette de padel : cadre en carbone ou en fibre de verre, quelle différence ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel carbone ou fibre de verre",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "babolat-air-viper-2-6-vs-wilson-accent",
+    "title": "Babolat Air Viper vs Wilson Accent : quelle raquette légère pour progresser en douceur ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat air viper vs wilson accent",
+    "productIds": [
+      "babolat-air-viper-2-6-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-surface-rugueuse-lisse",
+    "title": "Raquette de padel à surface rugueuse ou lisse : quel impact sur l'effet de balle ?",
+    "category": "article",
+    "targetKeyword": "raquette padel surface rugueuse lisse effet",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-match-noir-vert-vs-wilson-optix-v2-lite",
+    "title": "Adidas Match 3.3 Black Lime vs Wilson Optix V2 Lite : quelle raquette pour débuter en douceur ?",
+    "category": "comparatif",
+    "targetKeyword": "adidas match black lime vs wilson optix v2 lite",
+    "productIds": [
+      "adidas-match-noir-vert-3-5-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-systeme-anti-vibrations",
+    "title": "Raquette de padel avec système anti-vibrations : est-ce vraiment utile ?",
+    "category": "article",
+    "targetKeyword": "raquette padel anti-vibrations",
+    "productIds": [
+      "head-extreme-motion-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
   }
 ]
