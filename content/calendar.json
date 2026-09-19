@@ -797,5 +797,63 @@
       "nox-at10-12k-alum-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "taille-grip-manche-raquette-padel",
+    "title": "Quelle taille de grip choisir pour sa raquette de padel ?",
+    "category": "guide",
+    "targetKeyword": "taille grip raquette padel",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "protecteur-cadre-raquette-padel-utile",
+    "title": "Protecteur de cadre sur une raquette de padel : indispensable ou gadget ?",
+    "category": "article",
+    "targetKeyword": "protecteur cadre raquette padel",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-accent-lt-vs-wilson-optix-v2-lite",
+    "title": "Wilson Accent LT vs Wilson Optix V2 Lite : quelle raquette ultra-légère pour débuter ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent lt vs wilson optix v2 lite",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "essayer-raquette-padel-avant-achat",
+    "title": "Faut-il essayer une raquette de padel avant de l'acheter ?",
+    "category": "article",
+    "targetKeyword": "essayer raquette padel avant achat",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-cadeau-quel-modele-offrir",
+    "title": "Offrir une raquette de padel en cadeau : quel modèle choisir selon la personne ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel cadeau idée",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-drive-black-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
   }
 ]
