@@ -855,5 +855,58 @@
       "babolat-viper-air-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-optix-v2-lite-test-avis",
+    "title": "Wilson Optix V2 Lite : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "wilson optix v2 lite avis",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "nox-at10-12k-vs-babolat-air-viper-2-6",
+    "title": "Nox AT10 Genius 12K vs Babolat Air Viper 2.6 : polyvalence ou légèreté offensive ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs babolat air viper",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "babolat-air-viper-2-6-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-silencieuse-jouer-le-soir",
+    "title": "Raquette de padel silencieuse : peut-on vraiment jouer discret en soirée ?",
+    "category": "article",
+    "targetKeyword": "raquette padel silencieuse",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-match-light-test-avis",
+    "title": "Adidas Match Light 3.3 : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "adidas match light 3.3 avis",
+    "productIds": [
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "babolat-air-viper-2-6-vs-adidas-drive-black",
+    "title": "Babolat Air Viper 2.6 vs Adidas Drive Black 3.4 : quelle raquette légère pour progresser ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat air viper vs adidas drive black",
+    "productIds": [
+      "babolat-air-viper-2-6-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
   }
 ]
