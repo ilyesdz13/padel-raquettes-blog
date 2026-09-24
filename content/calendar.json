@@ -908,5 +908,58 @@
       "adidas-drive-black-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-accent-test-avis",
+    "title": "Wilson Accent : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "wilson accent avis",
+    "productIds": [
+      "wilson-accent-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "nox-at-genius-test-avis",
+    "title": "Nox AT10 Genius Attack 18K : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "nox at genius avis",
+    "productIds": [
+      "nox-at-genius-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nox-at10-12k-vs-nox-at-genius",
+    "title": "Nox AT10 Genius 12K vs Nox AT10 Genius Attack 18K : faut-il upgrader au sein de la gamme Nox ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs nox at genius",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "head-extreme-motion-vs-wilson-bela-pro-v3",
+    "title": "Head Extreme Motion vs Wilson Bela Pro V2.5 : du confort intermédiaire à la puissance experte",
+    "category": "comparatif",
+    "targetKeyword": "head extreme motion vs wilson bela pro",
+    "productIds": [
+      "head-extreme-motion-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-secours-double-raquette",
+    "title": "Faut-il avoir une raquette de padel de secours ? Les bonnes raisons d'en posséder deux",
+    "category": "article",
+    "targetKeyword": "raquette padel de secours",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
   }
 ]
