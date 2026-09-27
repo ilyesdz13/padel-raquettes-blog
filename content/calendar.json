@@ -961,5 +961,62 @@
       "nox-at10-12k-alum-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-mal-de-dos",
+    "title": "Meilleure raquette de padel pour un joueur qui a mal au dos",
+    "category": "guide",
+    "targetKeyword": "raquette padel mal de dos",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "wilson-accent-vs-adidas-match-light",
+    "title": "Wilson Accent vs Adidas Match Light 3.3 : quelle raquette d'entrée de gamme choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent vs adidas match light",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adaptation-nouvelle-raquette-padel",
+    "title": "Combien de temps faut-il pour bien prendre en main une nouvelle raquette de padel ?",
+    "category": "article",
+    "targetKeyword": "adaptation nouvelle raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-mains-moites-grip-glissant",
+    "title": "Meilleure raquette de padel quand on a les mains moites : quel grip et quel revêtement choisir ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel mains moites grip",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nox-at10-12k-vs-adidas-drive-black",
+    "title": "Nox AT10 Genius 12K vs Adidas Drive Black : quelle raquette polyvalente choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs adidas drive black",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
   }
 ]
