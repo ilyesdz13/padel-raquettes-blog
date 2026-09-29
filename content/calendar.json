@@ -1018,5 +1018,60 @@
       "adidas-drive-black-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "babolat-air-viper-2-6-test-avis",
+    "title": "Babolat Air Viper 2.6 2026 : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "babolat air viper 2.6 avis",
+    "productIds": [
+      "babolat-air-viper-2-6-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "adidas-match-noir-vert-test-avis",
+    "title": "Adidas Match 3.3 Black Lime : test complet et avis",
+    "category": "guide",
+    "targetKeyword": "adidas match 3.3 black lime avis",
+    "productIds": [
+      "adidas-match-noir-vert-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-manche-court-vs-long",
+    "title": "Manche court ou manche long sur une raquette de padel : quelle différence pour votre prise en main ?",
+    "category": "article",
+    "targetKeyword": "manche raquette padel court long",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-densite-mousse-eva-soft-medium-hard",
+    "title": "Mousse EVA soft, medium ou hard : quelle densité choisir pour sa raquette de padel ?",
+    "category": "article",
+    "targetKeyword": "densité mousse eva raquette padel",
+    "productIds": [
+      "wilson-accent-2026",
+      "babolat-viper-air-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "babolat-air-viper-2-6-vs-nox-at-genius",
+    "title": "Babolat Air Viper 2.6 vs Nox AT10 Genius Attack : légèreté polyvalente ou puissance pure ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat air viper 2.6 vs nox at genius",
+    "productIds": [
+      "babolat-air-viper-2-6-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": false
   }
 ]
