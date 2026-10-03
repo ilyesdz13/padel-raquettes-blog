@@ -1073,5 +1073,63 @@
       "nox-at-genius-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-vibora-quel-materiel-pour-progresser",
+    "title": "Quelle raquette de padel pour progresser sur la víbora ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel progresser vibora",
+    "productIds": [
+      "wilson-bela-pro-v3-2026",
+      "nox-at-genius-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "head-extreme-motion-vs-adidas-drive-black",
+    "title": "Head Extreme Motion vs Adidas Drive Black 3.4 : quelle raquette intermédiaire choisir pour passer un cap ?",
+    "category": "comparatif",
+    "targetKeyword": "head extreme motion vs adidas drive black",
+    "productIds": [
+      "head-extreme-motion-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-optix-v2-lite-vs-wilson-accent",
+    "title": "Wilson Optix V2 Lite vs Wilson Accent : quelle raquette d'entrée de gamme Wilson choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson optix v2 lite vs wilson accent",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-housse-rigide-ou-souple",
+    "title": "Housse de raquette de padel : faut-il choisir un modèle rigide ou souple ?",
+    "category": "article",
+    "targetKeyword": "housse raquette padel rigide ou souple",
+    "productIds": [
+      "adidas-drive-black-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "revente-raquette-padel-valeur-occasion",
+    "title": "Revendre sa raquette de padel : comment préserver sa valeur de revente ?",
+    "category": "article",
+    "targetKeyword": "revendre raquette padel valeur",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "babolat-viper-air-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
   }
 ]
