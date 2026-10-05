@@ -1131,5 +1131,63 @@
       "bullpadel-vertex-04-pro-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-avion-bagage-cabine",
+    "title": "Peut-on emmener sa raquette de padel en bagage cabine en avion ?",
+    "category": "article",
+    "targetKeyword": "raquette padel avion bagage cabine",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "meilleure-raquette-padel-petites-mains",
+    "title": "Meilleure raquette de padel pour un joueur qui a de petites mains",
+    "category": "guide",
+    "targetKeyword": "raquette padel petites mains",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "wilson-accent-lt-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "babolat-air-viper-2-6-vs-head-extreme-motion",
+    "title": "Babolat Air Viper 2.6 vs Head Extreme Motion : quelle raquette polyvalente légère choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat air viper 2.6 vs head extreme motion",
+    "productIds": [
+      "babolat-air-viper-2-6-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-soldes-black-friday-bon-moment-acheter",
+    "title": "Quand acheter sa raquette de padel au meilleur prix : soldes, Black Friday et fins de série",
+    "category": "article",
+    "targetKeyword": "quand acheter raquette padel soldes",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-drive-black-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-joueur-squash-badminton",
+    "title": "Padel après le squash ou le badminton : quelle raquette choisir pour bien démarrer ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel squash badminton transition",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
   }
 ]
