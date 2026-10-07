@@ -51,7 +51,7 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
                     href={url}
                     target="_blank"
                     rel="nofollow sponsored noopener noreferrer"
-                    className="inline-flex items-center justify-center rounded-full bg-lime px-3.5 py-1.5 text-xs font-bold text-lime-ink hover:bg-lime-dark transition-colors whitespace-nowrap"
+                    className="inline-flex items-center justify-center rounded-full bg-lime px-4 py-2.5 text-xs font-bold text-lime-ink hover:bg-lime-dark transition-colors whitespace-nowrap"
                   >
                     {isReady ? "Voir le prix" : "Rechercher"}
                   </a>

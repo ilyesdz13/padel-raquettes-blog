@@ -3,6 +3,20 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-07 (2)
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation
+  (« Voir le prix » / « Rechercher ») dans chaque ligne du `ComparisonTable`. Le bouton
+  utilisait un padding vertical très réduit (`py-1.5`) combiné à un texte `text-xs`, ce qui
+  donnait une cible tactile d'environ 28px de hauteur sur mobile — nettement sous le minimum
+  recommandé d'environ 44px, alors qu'il s'agit du lien affilié principal de ce composant et
+  qu'il se trouve dans un tableau qui défile horizontalement sur petit écran. Le padding passe
+  à `py-2.5` (et `px-4`), sans changer la couleur, la forme ou le texte du bouton.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : mobile / conversion — la majorité du trafic du site vient du mobile, et ce
+  bouton porte directement un lien affilié ; une cible tactile trop petite augmente le risque
+  de clic manqué ou frustrant sur l'élément le plus important du tableau comparatif.
+
 ## 2026-10-07
 
 - **Amélioration** : ajout d'un style de focus clavier visible et cohérent (`:focus-visible`)
