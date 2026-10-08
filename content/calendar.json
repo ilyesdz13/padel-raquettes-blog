@@ -1189,5 +1189,62 @@
       "head-extreme-motion-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "comment-ranger-et-stocker-sa-raquette-de-padel",
+    "title": "Comment bien ranger et stocker sa raquette de padel entre deux sessions ?",
+    "category": "article",
+    "targetKeyword": "comment ranger stocker raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "reconnaitre-fausse-raquette-padel-contrefacon",
+    "title": "Comment reconnaître une fausse raquette de padel (contrefaçon) avant d'acheter ?",
+    "category": "guide",
+    "targetKeyword": "fausse raquette padel contrefaçon",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "overgrip-ou-grip-raquette-padel-difference",
+    "title": "Overgrip ou grip sur une raquette de padel : quelle différence et lequel choisir ?",
+    "category": "article",
+    "targetKeyword": "overgrip grip raquette padel différence",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "garantie-raquette-padel-casse-que-faire",
+    "title": "Raquette de padel cassée sous garantie : que faire et quels sont vos droits ?",
+    "category": "guide",
+    "targetKeyword": "garantie raquette padel cassée",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-bela-pro-v3-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-match-light-vs-adidas-drive-black",
+    "title": "Adidas Match Light 3.3 vs Adidas Drive Black 3.4 : quelle raquette d'entrée de gamme Adidas choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "adidas match light vs adidas drive black",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
   }
 ]
