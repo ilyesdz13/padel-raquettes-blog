@@ -3,6 +3,18 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-08 (2)
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton burger (menu mobile) dans
+  le `Header`. Ce bouton icône faisait `h-9 w-9`, soit environ 36px de côté, nettement sous le
+  minimum recommandé d'environ 44px pour une cible tactile — alors qu'il s'agit du seul moyen
+  d'accéder à la navigation (Guides, Comparatifs, Articles, Trouver ma raquette) sur mobile,
+  où arrive la majorité du trafic. La taille passe à `h-11 w-11` (44px), sans changer la taille
+  de l'icône (`h-6 w-6`) ni sa position visuelle dans l'en-tête.
+- **Fichiers** : `src/components/Header.tsx`.
+- **Pourquoi** : mobile / accessibilité — une cible tactile trop petite sur le bouton qui ouvre
+  toute la navigation mobile pénalise directement l'exploration du site sur les petits écrans.
+
 ## 2026-10-08
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton « ← Question précédente »
