@@ -3,6 +3,21 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-08
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton « ← Question précédente »
+  dans l'outil `RacketFinder`. Ce bouton était un simple lien texte sans padding
+  (`text-sm text-muted`, aucune marge interne), ce qui donnait une cible tactile d'environ
+  20px de hauteur sur mobile — nettement sous le minimum recommandé d'environ 44px. Le bouton
+  se trouve dans le quiz de recommandation qui mène directement aux liens affiliés, donc une
+  cible manquée oblige l'utilisateur à retaper plusieurs fois ou à abandonner le test. La zone
+  cliquable passe à `px-2 py-2.5` avec des marges négatives (`-mx-2 -my-2`) qui compensent
+  visuellement l'ajout de padding, pour que le texte garde exactement la même position qu'avant.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : mobile / conversion — la majorité du trafic du site vient du mobile, et ce
+  bouton se situe dans le tunnel de recommandation de raquettes, l'un des principaux leviers
+  de conversion affiliée du site.
+
 ## 2026-10-07 (2)
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation

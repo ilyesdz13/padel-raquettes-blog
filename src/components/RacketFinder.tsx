@@ -169,7 +169,7 @@ export default function RacketFinder() {
       {step > 0 && (
         <button
           onClick={() => setStep((s) => s - 1)}
-          className="mt-6 text-sm text-muted hover:text-foreground transition-colors"
+          className="mt-6 -mx-2 -my-2 inline-flex items-center rounded-lg px-2 py-2.5 text-sm text-muted hover:text-foreground transition-colors"
         >
           ← Question précédente
         </button>
