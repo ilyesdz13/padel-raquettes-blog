@@ -3,6 +3,21 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-09
+
+- **Amélioration** : agrandissement de la zone cliquable des boutons « Refuser » et
+  « Accepter » de la bannière de consentement aux cookies (`CookieConsent`). Ces deux
+  boutons utilisaient un padding vertical réduit (`py-2`) combiné à un texte `text-sm`, ce
+  qui donnait une cible tactile d'environ 36px de hauteur sur mobile — sous le minimum
+  recommandé d'environ 44px, alors que cette bannière s'affiche à chaque nouvelle visite et
+  que ces boutons sont les tout premiers éléments interactifs rencontrés par un visiteur
+  mobile. Le padding passe à `py-3` (~44px de hauteur), sans changer la taille du texte, les
+  couleurs ni la position de la bannière.
+- **Fichiers** : `src/components/CookieConsent.tsx`.
+- **Pourquoi** : mobile / accessibilité — une cible tactile trop petite sur les boutons de
+  consentement, qui apparaissent avant même que le visiteur ait pu lire un article ou une
+  fiche produit, pénalise directement la première interaction sur mobile.
+
 ## 2026-10-08 (2)
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton burger (menu mobile) dans
