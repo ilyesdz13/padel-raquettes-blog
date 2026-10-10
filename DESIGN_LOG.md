@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-10
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton « Sommaire » (`<summary>`)
+  du composant `TableOfContents`, affiché en haut de chaque article comportant au moins trois
+  titres. Le texte n'avait aucun padding (`font-bold text-sm` seul), ce qui donnait une cible
+  tactile d'environ 20px de hauteur pour l'élément qui permet de replier/déplier le sommaire —
+  nettement sous le minimum recommandé d'environ 44px, alors que ce bouton apparaît en tout
+  début de la quasi-totalité des pages d'article du site. La zone cliquable passe à
+  `px-2 py-2.5` avec des marges négatives (`-mx-2 -my-2`) qui compensent visuellement l'ajout
+  de padding, et un retour visuel au survol (`hover:bg-foreground/5`) est ajouté pour rester
+  cohérent avec les autres éléments interactifs du site.
+- **Fichiers** : `src/components/TableOfContents.tsx`.
+- **Pourquoi** : mobile / accessibilité — une cible tactile trop petite sur un élément présent
+  en haut de la majorité des pages d'article pénalise l'une des interactions les plus fréquentes
+  du site sur petit écran.
+
 ## 2026-10-09
 
 - **Amélioration** : agrandissement de la zone cliquable des boutons « Refuser » et
