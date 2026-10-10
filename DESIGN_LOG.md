@@ -3,6 +3,21 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-10 (2)
+
+- **Amélioration** : ajout de la sémantique ARIA manquante sur la barre de progression du
+  quiz `RacketFinder` (« Trouver ma raquette »). La barre n'était qu'un `<div>` purement
+  visuel, sans aucun moyen pour un lecteur d'écran de connaître la progression dans le test en
+  cinq questions — seul le texte « Question X sur Y » à côté était lisible, pas l'équivalent de
+  la barre elle-même. Ajout de `role="progressbar"`, `aria-valuenow`/`aria-valuemin`/
+  `aria-valuemax` et d'un `aria-label` explicite (« Progression du test : question X sur Y »)
+  sur le conteneur de la barre.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité — le quiz de recommandation est l'outil de conversion principal
+  du site ; un utilisateur de lecteur d'écran n'avait aucune confirmation de sa progression
+  dans le test au-delà du texte adjacent, ce qui nuit à la clarté de l'un des parcours les plus
+  importants du site.
+
 ## 2026-10-10
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton « Sommaire » (`<summary>`)

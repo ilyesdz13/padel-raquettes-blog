@@ -139,7 +139,14 @@ export default function RacketFinder() {
           <span>Question {step + 1} sur {total}</span>
           <span>{progress}%</span>
         </div>
-        <div className="h-1.5 rounded-full bg-border overflow-hidden">
+        <div
+          className="h-1.5 rounded-full bg-border overflow-hidden"
+          role="progressbar"
+          aria-valuenow={progress}
+          aria-valuemin={0}
+          aria-valuemax={100}
+          aria-label={`Progression du test : question ${step + 1} sur ${total}`}
+        >
           <div
             className="h-full rounded-full bg-lime transition-all duration-300"
             style={{ width: `${progress}%` }}
