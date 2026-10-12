@@ -1246,5 +1246,62 @@
       "adidas-drive-black-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-partenaire-niveau-different",
+    "title": "Quelle raquette de padel choisir quand on joue avec un partenaire de niveau différent ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel partenaire niveau différent",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "nox-at10-12k-vs-wilson-bela-pro-v3",
+    "title": "Nox AT10 Genius 12K vs Wilson Bela Pro V2.5 : faut-il upgrader vers le haut de gamme ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at10 12k vs wilson bela pro",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "duree-vie-heures-jeu-raquette-padel",
+    "title": "Combien d'heures de jeu dure vraiment une raquette de padel ?",
+    "category": "article",
+    "targetKeyword": "durée de vie raquette padel heures",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-durable-resistante-casse",
+    "title": "Meilleure raquette de padel résistante pour un joueur qui casse souvent son matériel",
+    "category": "guide",
+    "targetKeyword": "raquette padel résistante solide ne pas casser",
+    "productIds": [
+      "bullpadel-vertex-04-pro-2026",
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "bruit-impact-balle-qualite-raquette-padel",
+    "title": "Le bruit au contact de la balle est-il un bon indicateur de la qualité d'une raquette de padel ?",
+    "category": "article",
+    "targetKeyword": "bruit raquette padel qualité",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
   }
 ]
