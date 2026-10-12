@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-12
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation principal
+  (« Voir le prix sur Amazon » / « Rechercher sur Amazon ») du composant `ProductCard`. Ce
+  bouton utilisait `py-2.5` combiné à un texte `text-sm`, ce qui donnait une cible tactile
+  d'environ 40px de hauteur sur mobile — juste sous le minimum recommandé d'environ 44px déjà
+  appliqué à d'autres boutons du site (bannière cookies, bouton burger). `ProductCard` est le
+  composant qui porte le plus grand nombre de liens affiliés du site (2 à 5 occurrences par
+  article) et n'avait pourtant pas encore reçu cette correction. Le padding passe à `py-3`
+  (~44px de hauteur), sans changer la couleur, la forme ni le texte du bouton.
+- **Fichiers** : `src/components/ProductCard.tsx`.
+- **Pourquoi** : mobile / conversion — ce bouton est le principal point de clic vers les liens
+  affiliés Amazon du site, présent dans la quasi-totalité des guides et articles ; une cible
+  tactile légèrement sous le seuil recommandé pénalise directement le taux de clic sur mobile,
+  d'où la majorité du trafic.
+
 ## 2026-10-10 (2)
 
 - **Amélioration** : ajout de la sémantique ARIA manquante sur la barre de progression du
