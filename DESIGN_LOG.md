@@ -3,6 +3,20 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-13 (2)
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation principal
+  (« Voir le prix sur Amazon » / « Rechercher sur Amazon ») affiché dans les résultats de
+  l'outil de recommandation `RacketFinder`. Ce bouton utilisait encore `py-2.5` (~40px de
+  hauteur sur mobile), alors que le même bouton avait déjà été corrigé à `py-3` (~44px) dans
+  `ProductCard` le 2026-10-12 — la correction n'avait pas été répercutée sur cette occurrence
+  du quiz, qui est pourtant l'outil de conversion principal du site. Le padding passe à `py-3`,
+  sans changer la couleur, la forme ni le texte du bouton.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : mobile / conversion / cohérence — ce bouton porte le lien affilié final du
+  quiz de recommandation ; une cible tactile sous le seuil recommandé pénalise le taux de clic
+  sur mobile, et l'incohérence avec `ProductCard` cassait l'uniformité du principal CTA du site.
+
 ## 2026-10-13
 
 - **Amélioration** : agrandissement de la zone cliquable des liens du fil d'Ariane
