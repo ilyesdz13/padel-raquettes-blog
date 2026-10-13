@@ -3,6 +3,21 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-13
+
+- **Amélioration** : agrandissement de la zone cliquable des liens du fil d'Ariane
+  (`Breadcrumb`), affiché en haut de chaque page d'article (guide, comparatif, article). Les
+  liens « Accueil » et vers la catégorie n'avaient aucun padding (`text-sm` seul), ce qui
+  donnait une cible tactile d'environ 20px de hauteur — nettement sous le minimum recommandé
+  d'environ 44px, alors que ce composant apparaît en tout début de la quasi-totalité des pages
+  d'article du site, juste au-dessus du titre. La zone cliquable passe à `px-1 py-2` avec des
+  marges négatives (`-mx-1 -my-2`) qui compensent visuellement l'ajout de padding, pour que le
+  texte garde exactement la même position qu'avant.
+- **Fichiers** : `src/components/Breadcrumb.tsx`.
+- **Pourquoi** : mobile / accessibilité — une cible tactile trop petite sur un élément de
+  navigation présent en haut de la majorité des pages pénalise l'une des interactions les plus
+  fréquentes du site sur petit écran.
+
 ## 2026-10-12
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation principal

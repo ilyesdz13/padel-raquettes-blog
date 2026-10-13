@@ -10,7 +10,10 @@ export default function Breadcrumb({
       {items.map((item, i) => (
         <span key={i}>
           {item.href ? (
-            <Link href={item.href} className="hover:text-foreground transition-colors">
+            <Link
+              href={item.href}
+              className="-mx-1 -my-2 inline-block px-1 py-2 hover:text-foreground transition-colors"
+            >
               {item.label}
             </Link>
           ) : (
