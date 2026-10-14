@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-14 (2)
+
+- **Amélioration** : agrandissement de la zone cliquable des boutons « Refaire le test » et
+  « Comprendre les critères en détail », affichés sur l'écran de résultat du quiz
+  `RacketFinder` (une fois les 5 questions répondues). Ces deux boutons utilisaient encore
+  `py-2.5` (~40px de hauteur sur mobile), alors que le bouton d'affiliation du même écran
+  (« Voir le prix sur Amazon ») avait déjà été corrigé à `py-3` (~44px) le 2026-10-13 — la
+  correction n'avait pas été répercutée sur ces deux boutons, pourtant présents sur le même
+  écran de fin de test. Le padding passe à `py-3`, sans changer la couleur, la forme ni le
+  texte des boutons.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : mobile / conversion / cohérence — cet écran est l'aboutissement du principal
+  outil de conversion du site ; une cible tactile sous le seuil recommandé sur des boutons qui
+  y figurent pénalise l'expérience mobile juste après que l'utilisateur a terminé le test, et
+  l'incohérence avec le bouton Amazon voisin cassait l'uniformité visuelle de l'écran.
+
 ## 2026-10-14
 
 - **Amélioration** : agrandissement de la zone cliquable des liens de navigation du pied de

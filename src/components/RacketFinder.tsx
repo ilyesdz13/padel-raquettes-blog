@@ -109,13 +109,13 @@ export default function RacketFinder() {
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={restart}
-            className="rounded-full border border-border px-5 py-2.5 text-sm font-bold hover:bg-foreground/5 transition-colors"
+            className="rounded-full border border-border px-5 py-3 text-sm font-bold hover:bg-foreground/5 transition-colors"
           >
             Refaire le test
           </button>
           <Link
             href="/guides/comment-choisir-sa-raquette-de-padel"
-            className="rounded-full bg-navy px-5 py-2.5 text-sm font-bold text-white hover:bg-navy-2 transition-colors text-center"
+            className="rounded-full bg-navy px-5 py-3 text-sm font-bold text-white hover:bg-navy-2 transition-colors text-center"
           >
             Comprendre les critères en détail
           </Link>
