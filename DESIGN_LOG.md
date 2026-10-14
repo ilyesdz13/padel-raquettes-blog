@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-14
+
+- **Amélioration** : agrandissement de la zone cliquable des liens de navigation du pied de
+  page (`Footer`). Ces liens (« Guides », « Comparatifs », « Articles », « À propos »,
+  « Mentions légales & affiliation ») n'avaient aucun padding (`text-sm font-medium` seul),
+  ce qui donnait une cible tactile d'environ 20px de hauteur — nettement sous le minimum
+  recommandé d'environ 44px, alors que ce footer est présent sur l'intégralité des pages du
+  site. La zone cliquable passe à `px-1 py-2` avec des marges négatives (`-mx-1 -my-2`) qui
+  compensent visuellement l'ajout de padding, selon le même principe déjà appliqué au fil
+  d'Ariane (2026-10-13) et au bouton Sommaire (2026-10-10), pour que le texte garde exactement
+  la même position qu'avant.
+- **Fichiers** : `src/components/Footer.tsx`.
+- **Pourquoi** : mobile / accessibilité — une cible tactile trop petite sur des liens de
+  navigation présents sur toutes les pages (y compris le lien vers les mentions légales et
+  l'affiliation) pénalise l'une des zones de navigation les plus fréquemment visibles du site
+  sur petit écran.
+
 ## 2026-10-13 (2)
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation principal

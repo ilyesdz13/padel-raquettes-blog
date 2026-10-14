@@ -22,7 +22,11 @@ export default function Footer() {
           </Link>
           <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
             {NAV_LINKS.map((link) => (
-              <Link key={link.href} href={link.href} className="hover:text-lime transition-colors">
+              <Link
+                key={link.href}
+                href={link.href}
+                className="px-1 py-2 -mx-1 -my-2 hover:text-lime transition-colors"
+              >
                 {link.label}
               </Link>
             ))}
