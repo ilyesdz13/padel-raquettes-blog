@@ -1303,5 +1303,63 @@
       "babolat-viper-air-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "couleur-raquette-padel-esthetique-ou-performance",
+    "title": "La couleur d'une raquette de padel a-t-elle un impact sur le jeu, ou est-ce purement esthétique ?",
+    "category": "article",
+    "targetKeyword": "couleur raquette padel performance",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-match-noir-vert-3-5-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-revers-deux-mains",
+    "title": "Quelle raquette de padel choisir quand on joue le revers à deux mains ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel revers à deux mains",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-jouer-grand-vent",
+    "title": "Jouer au padel par grand vent : la raquette change-t-elle vraiment quelque chose ?",
+    "category": "article",
+    "targetKeyword": "raquette padel vent extérieur",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-stage-intensif-plusieurs-heures",
+    "title": "Meilleure raquette de padel pour un stage intensif ou plusieurs heures de jeu par jour",
+    "category": "guide",
+    "targetKeyword": "raquette padel stage intensif longue session",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "head-extreme-motion-2026",
+      "wilson-optix-v2-lite-lilac-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-accent-vs-wilson-bela-pro-v3",
+    "title": "Wilson Accent vs Wilson Bela Pro V2.5 : faut-il upgrader vers le haut de gamme chez Wilson ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent vs wilson bela pro",
+    "productIds": [
+      "wilson-accent-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
   }
 ]
