@@ -11,7 +11,10 @@ export default function TableOfContents({ headings }: { headings: Heading[] }) {
       <ol className="mt-3 space-y-1.5 text-sm">
         {headings.map((h) => (
           <li key={h.slug}>
-            <a href={`#${h.slug}`} className="text-brand hover:underline">
+            <a
+              href={`#${h.slug}`}
+              className="-mx-1 -my-2 inline-block px-1 py-2 text-brand hover:underline"
+            >
               {h.text}
             </a>
           </li>

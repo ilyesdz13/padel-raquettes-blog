@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-19
+
+- **Amélioration** : agrandissement de la zone cliquable des liens vers chaque section dans le
+  `Sommaire` (`TableOfContents`) affiché en haut de chaque article. Ces liens n'avaient aucun
+  padding (`text-sm` seul), ce qui donnait une cible tactile d'une vingtaine de pixels de
+  hauteur sur mobile — nettement sous le minimum recommandé d'environ 44px, alors que ce
+  composant est le premier élément interactif rencontré sur la quasi-totalité des pages
+  d'article (guides, comparatifs, articles) du site. La zone cliquable passe à `px-1 py-2` avec
+  des marges négatives (`-mx-1 -my-2`) qui compensent visuellement l'ajout de padding, selon le
+  même principe déjà appliqué au fil d'Ariane (2026-10-13) et aux liens du footer (2026-10-14),
+  pour que le texte garde exactement la même position qu'avant.
+- **Fichiers** : `src/components/TableOfContents.tsx`.
+- **Pourquoi** : mobile / accessibilité — une cible tactile trop petite sur un composant de
+  navigation présent en tête de chaque page d'article pénalise l'une des premières
+  interactions possibles sur mobile, là où arrive la majorité du trafic du site.
+
 ## 2026-10-14 (2)
 
 - **Amélioration** : agrandissement de la zone cliquable des boutons « Refaire le test » et
