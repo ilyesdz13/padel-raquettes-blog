@@ -68,7 +68,7 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-lg px-3 py-2.5 text-foreground/80 hover:bg-foreground/5 transition-colors"
+              className="rounded-lg px-3 py-3 text-foreground/80 hover:bg-foreground/5 transition-colors"
             >
               {link.label}
             </Link>
@@ -76,7 +76,7 @@ export default function Header() {
           <Link
             href="/trouver-ma-raquette"
             onClick={() => setOpen(false)}
-            className="mt-1 inline-flex justify-center rounded-full bg-navy px-4 py-2.5 text-white hover:bg-navy-2 transition-colors"
+            className="mt-1 inline-flex justify-center rounded-full bg-navy px-4 py-3 text-white hover:bg-navy-2 transition-colors"
           >
             Trouver ma raquette
           </Link>

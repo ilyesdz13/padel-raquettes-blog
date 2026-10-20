@@ -3,6 +3,24 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-20 (2)
+
+- **Amélioration** : agrandissement de la zone cliquable des liens de navigation du menu
+  mobile (`Header`), affiché au clic sur le bouton burger. Les trois liens de navigation
+  (« Guides », « Comparatifs », « Articles ») ainsi que le bouton d'appel à l'action
+  « Trouver ma raquette » utilisaient encore `py-2.5` (~40px de hauteur sur mobile), alors que
+  ce même seuil avait déjà été corrigé à `py-3` (~44px) sur des composants équivalents ailleurs
+  sur le site (boutons du quiz `RacketFinder`, bannière cookies). Le menu mobile du `Header` —
+  présent sur toutes les pages et seul point d'accès à la navigation principale sur petit
+  écran — n'avait pas encore reçu cette correction. Le padding passe à `py-3` sur les quatre
+  liens concernés, sans changer la couleur, la forme ni le texte.
+- **Fichiers** : `src/components/Header.tsx`.
+- **Pourquoi** : mobile / accessibilité / cohérence — le menu mobile est le seul accès à la
+  navigation principale (y compris vers l'outil de recommandation `RacketFinder`) sur les
+  petits écrans, d'où vient la majorité du trafic du site ; une cible tactile sous le seuil
+  recommandé y est plus pénalisante que sur un composant secondaire, et l'incohérence avec les
+  autres boutons déjà corrigés cassait l'uniformité du site.
+
 ## 2026-10-20
 
 - **Amélioration** : ajout d'un libellé accessible explicite (`role="img"` + `aria-label`) sur
