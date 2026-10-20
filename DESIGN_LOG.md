@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-20
+
+- **Amélioration** : ajout d'un libellé accessible explicite (`role="img"` + `aria-label`) sur
+  le composant `Stars`, qui affiche la note sur 5 d'une raquette dans `ProductCard` et
+  `ComparisonTable`. Jusqu'ici, les étoiles visuelles étaient correctement masquées aux
+  lecteurs d'écran (`aria-hidden`), mais le chiffre de note affiché à côté (ex. « 4.6 ») ne
+  portait aucun contexte : un lecteur d'écran l'annonçait comme un nombre isolé, sans indiquer
+  qu'il s'agit d'une note sur 5. Le conteneur porte désormais `aria-label="Note : 4.6 sur 5"`
+  (valeur dynamique) et le texte visuel du chiffre est à son tour masqué (`aria-hidden`) pour
+  éviter une double annonce. Aucun changement visuel : les étoiles et le chiffre restent
+  identiques à l'écran.
+- **Fichiers** : `src/components/Stars.tsx`.
+- **Pourquoi** : accessibilité — `Stars` est utilisé dans les deux composants qui portent le
+  plus de liens affiliés du site (`ProductCard`, `ComparisonTable`), où la note éditoriale est
+  un argument de conversion ; un lecteur d'écran qui ne reçoit qu'un chiffre nu sans unité ni
+  contexte perd une information utile à la décision d'achat.
+
 ## 2026-10-19
 
 - **Amélioration** : agrandissement de la zone cliquable des liens vers chaque section dans le

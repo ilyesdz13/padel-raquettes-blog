@@ -3,7 +3,11 @@ export default function Stars({ score, size = "sm" }: { score: number; size?: "s
   const dimension = size === "md" ? "text-base" : "text-sm";
 
   return (
-    <span className={`inline-flex items-center gap-1 ${dimension}`}>
+    <span
+      className={`inline-flex items-center gap-1 ${dimension}`}
+      role="img"
+      aria-label={`Note : ${score.toFixed(1)} sur 5`}
+    >
       <span className="flex" aria-hidden="true">
         {Array.from({ length: 5 }).map((_, i) => {
           const fill = Math.min(1, Math.max(0, rounded - i));
@@ -20,7 +24,9 @@ export default function Stars({ score, size = "sm" }: { score: number; size?: "s
           );
         })}
       </span>
-      <span className="font-semibold text-foreground/80">{score.toFixed(1)}</span>
+      <span className="font-semibold text-foreground/80" aria-hidden="true">
+        {score.toFixed(1)}
+      </span>
     </span>
   );
 }
