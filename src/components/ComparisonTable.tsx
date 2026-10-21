@@ -32,7 +32,13 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
                     <div className="hidden sm:flex items-center justify-center h-10 w-8 shrink-0 rounded-md bg-gradient-to-br from-navy to-navy-2 p-1 overflow-hidden">
                       {hasRealImage(product) ? (
                         // eslint-disable-next-line @next/next/no-img-element
-                        <img src={product.image} alt="" className="h-full w-full object-contain" />
+                        <img
+                          src={product.image}
+                          alt=""
+                          loading="lazy"
+                          decoding="async"
+                          className="h-full w-full object-contain"
+                        />
                       ) : (
                         <RacketIllustration shape={product.shape} />
                       )}

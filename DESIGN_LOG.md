@@ -3,6 +3,20 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-21 (2)
+
+- **Amélioration** : ajout de `loading="lazy"` et `decoding="async"` sur l'image produit du
+  `ComparisonTable`. `ProductCard` applique déjà ces deux attributs sur son image équivalente
+  (depuis sa création), mais l'image du tableau comparatif ne les avait jamais reçus — une
+  incohérence entre deux composants qui affichent la même image produit. Le tableau comparatif
+  apparaît le plus souvent en milieu d'article, après le texte d'introduction : charger ses
+  images produit en différé plutôt qu'immédiatement allège le chargement initial de la page.
+  Aucun changement visuel, de couleur ni de mise en page.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : performance perçue / cohérence — aligne le chargement d'image du
+  `ComparisonTable` sur celui déjà en place dans `ProductCard`, deux composants qui jouent un
+  rôle équivalent (présentation produit) et qui devraient se comporter de la même façon.
+
 ## 2026-10-21
 
 - **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation
