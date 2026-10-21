@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-21
+
+- **Amélioration** : agrandissement de la zone cliquable du bouton d'affiliation
+  (« Voir le prix » / « Rechercher ») dans chaque ligne du `ComparisonTable`. Ce bouton avait
+  déjà été corrigé une première fois le 2026-10-07 (de `py-1.5` à `py-2.5`), mais n'avait pas
+  reçu la correction finale appliquée depuis à tous les boutons équivalents du site (`py-3`),
+  déjà en place sur `ProductCard` (2026-10-12), `RacketFinder` (2026-10-13 et 2026-10-14) et le
+  menu mobile du `Header` (2026-10-20) — ce bouton du tableau comparatif restait donc la seule
+  cible tactile de ce type encore sous le seuil déjà corrigé partout ailleurs. Le padding passe
+  à `py-3`, sans changer la couleur, la forme ni le texte du bouton.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : mobile / conversion / cohérence — ce bouton porte le lien affilié principal de
+  chaque ligne du tableau comparatif, l'un des composants les plus engageants pour la conversion
+  selon `DESIGN_PLAYBOOK.md` ; une cible tactile sous le seuil recommandé pénalise le taux de
+  clic sur mobile, et l'incohérence avec les boutons équivalents déjà corrigés cassait
+  l'uniformité des CTA du site.
+
 ## 2026-10-20 (2)
 
 - **Amélioration** : agrandissement de la zone cliquable des liens de navigation du menu
