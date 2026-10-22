@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-22
+
+- **Amélioration** : ajout d'un texte accessible masqué (« (ouvre un nouvel onglet) ») sur les
+  trois boutons d'affiliation Amazon du site (`ProductCard`, `ComparisonTable`, `RacketFinder`).
+  Ces liens portent tous `target="_blank"` pour ouvrir Amazon dans un nouvel onglet, mais rien
+  ne signalait ce changement de contexte à un utilisateur de lecteur d'écran : il découvre le
+  changement d'onglet après coup, sans avoir pu l'anticiper. Le texte ajouté est masqué
+  visuellement (`sr-only`), donc perçu uniquement par les technologies d'assistance — aucun
+  changement visuel, de couleur ni de mise en page sur les trois boutons.
+- **Fichiers** : `src/components/ProductCard.tsx`, `src/components/ComparisonTable.tsx`,
+  `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité — ces trois composants portent la quasi-totalité des liens
+  affiliés du site, les points de conversion les plus importants ; un utilisateur de lecteur
+  d'écran qui ne sait pas qu'un lien va ouvrir un nouvel onglet perd le fil de sa navigation
+  (retour en arrière qui ne fonctionne pas comme attendu), ce qui est particulièrement
+  pénalisant juste avant un clic vers Amazon.
+
 ## 2026-10-21 (2)
 
 - **Amélioration** : ajout de `loading="lazy"` et `decoding="async"` sur l'image produit du

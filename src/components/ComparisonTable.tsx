@@ -60,6 +60,7 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
                     className="inline-flex items-center justify-center rounded-full bg-lime px-4 py-3 text-xs font-bold text-lime-ink hover:bg-lime-dark transition-colors whitespace-nowrap"
                   >
                     {isReady ? "Voir le prix" : "Rechercher"}
+                    <span className="sr-only"> (ouvre un nouvel onglet)</span>
                   </a>
                 </td>
               </tr>
