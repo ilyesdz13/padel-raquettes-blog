@@ -1361,5 +1361,62 @@
       "wilson-bela-pro-v3-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "plombage-lester-raquette-padel",
+    "title": "Plomber sa raquette de padel : à quoi sert le plombage et comment l'utiliser",
+    "category": "guide",
+    "targetKeyword": "plomber raquette padel lead tape plombage",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "sweet-spot-zone-de-frappe-raquette-padel",
+    "title": "Le sweet spot d'une raquette de padel : pourquoi la taille de la zone de frappe change tout",
+    "category": "article",
+    "targetKeyword": "sweet spot raquette padel zone de frappe",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "nox-at10-12k-alum-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-jaunit-decolore-soleil",
+    "title": "Raquette de padel qui jaunit ou se décolore au soleil : faut-il s'inquiéter ?",
+    "category": "article",
+    "targetKeyword": "raquette padel jaunit soleil UV décoloration",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-match-noir-vert-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-match-noir-vert-vs-adidas-drive-black",
+    "title": "Adidas Match 3.3 Black Lime vs Adidas Drive Black 3.4 : quel modèle Adidas débutant choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "adidas match noir vert vs adidas drive black",
+    "productIds": [
+      "adidas-match-noir-vert-3-5-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-accent-vs-nox-at-genius",
+    "title": "Wilson Accent vs Nox AT Genius : du contrôle pur à la puissance totale, quand sauter le pas ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent vs nox at genius",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": false
   }
 ]
