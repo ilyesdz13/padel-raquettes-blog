@@ -68,7 +68,7 @@ export default function ProductCard({ id }: { id: string }) {
           <span className="text-xs font-bold uppercase tracking-wide text-brand">{product.brand}</span>
           <Stars score={product.score} />
         </div>
-        <h4 className="text-lg font-bold mt-1">{product.name}</h4>
+        <h3 className="text-lg font-bold mt-1">{product.name}</h3>
         <p className="text-sm text-muted mt-1">{product.highlight}</p>
         <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
           <dt className="text-muted">Niveau</dt>

@@ -3,6 +3,24 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-22 (2)
+
+- **Amélioration** : correction d'un saut dans la hiérarchie des titres sur le composant
+  `ProductCard`. Le nom du produit (ex. « Wilson Accent LT ») était rendu avec un `<h4>`, alors
+  que la quasi-totalité des articles du site insèrent ce composant soit directement après un
+  titre `##` (`<h2>`), soit même avant tout titre de section — passant directement de `<h1>`
+  (titre de l'article) ou `<h2>` à `<h4>` sans `<h3>` intermédiaire. Ce saut de niveau est
+  repéré par les outils d'audit d'accessibilité et nuit à la navigation par lecteur d'écran, qui
+  s'appuie sur la hiérarchie des titres pour se déplacer dans la page. Le `<h4>` devient `<h3>`,
+  ce qui rend la hiérarchie strictement séquentielle dans tous les cas observés (après un `<h2>`
+  ou en tout début d'article). Aucun changement visuel : la taille, le poids et la couleur du
+  texte restent identiques (classes Tailwind inchangées).
+- **Fichiers** : `src/components/ProductCard.tsx`.
+- **Pourquoi** : accessibilité — `ProductCard` est le composant qui porte le plus grand nombre
+  de liens affiliés du site, présent dans la quasi-totalité des articles ; une hiérarchie de
+  titres incohérente y pénalise directement la navigation des utilisateurs de lecteur d'écran,
+  qui s'en servent pour comprendre et parcourir la structure de chaque page.
+
 ## 2026-10-22
 
 - **Amélioration** : ajout d'un texte accessible masqué (« (ouvre un nouvel onglet) ») sur les
