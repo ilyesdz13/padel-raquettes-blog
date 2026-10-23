@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-23 (2)
+
+- **Amélioration** : ajout d'une sémantique de région accessible (`role="region"`,
+  `aria-label="Tableau comparatif des raquettes"`, `tabIndex={0}`) sur le conteneur
+  `overflow-x-auto` du `ComparisonTable`. Ce tableau déborde horizontalement sur mobile et sur
+  les écrans étroits (6 colonnes : raquette, note, niveau, style, prix, bouton), mais le simple
+  `overflow-x-auto` d'un `<div>` n'est pas focusable au clavier : un utilisateur qui navigue au
+  clavier (ou à l'aide d'un lecteur d'écran couplé à une navigation séquentielle), sans souris
+  ni geste tactile pour faire défiler horizontalement, ne pouvait jusqu'ici ni atteindre ni
+  parcourir les colonnes masquées par le débordement. Le conteneur est désormais identifié comme
+  une région nommée et reçoit le focus clavier (`Tab`), ce qui permet de le faire défiler avec
+  les flèches une fois focus. Aucun changement visuel : la mise en page, les couleurs et le
+  contenu du tableau restent identiques.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : accessibilité / conversion — `ComparisonTable` est l'un des composants qui
+  porte le plus de liens affiliés par occurrence (jusqu'à plusieurs raquettes comparées dans une
+  seule ligne de colonnes), et il est systématiquement placé en tout début des articles
+  `comparatif` ; un contenu horizontalement scrollable inaccessible au clavier pénalise
+  directement la lecture et la conversion pour cette catégorie de visiteurs.
+
 ## 2026-10-23
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur trois emojis décoratifs qui n'en

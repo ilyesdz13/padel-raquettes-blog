@@ -7,7 +7,12 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
   if (products.length === 0) return null;
 
   return (
-    <div className="not-prose my-6 overflow-x-auto rounded-2xl border border-border shadow-sm">
+    <div
+      className="not-prose my-6 overflow-x-auto rounded-2xl border border-border shadow-sm"
+      role="region"
+      aria-label="Tableau comparatif des raquettes"
+      tabIndex={0}
+    >
       <table className="w-full text-sm">
         <thead>
           <tr className="bg-navy text-left text-white">
