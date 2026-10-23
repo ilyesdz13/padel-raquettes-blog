@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-23
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur trois emojis décoratifs qui n'en
+  bénéficiaient pas encore, par cohérence avec le traitement déjà appliqué partout ailleurs sur
+  le site (icônes des catégories dans `CATEGORY_STYLES`, coche décorative de `RacketFinder`,
+  icône "ℹ️" de `AffiliateDisclosure`). Les trois cas concernés : le badge "🎾 Le blog qui parle
+  vraiment padel" du `Hero` (l'emoji était lu par un lecteur d'écran juste avant le texte,
+  l'annonçant deux fois en quelque sorte — une fois via l'emoji, une fois via le mot « padel »
+  qui suit), la coche "✓" de chacun des trois points de confiance du `Hero` (« Comparatifs
+  indépendants », etc. — exactement le même motif de coche déjà masqué dans `RacketFinder`
+  depuis une précédente itération, mais pas encore corrigé ici), et l'emoji "🎾" affiché seul
+  au-dessus du titre de la page 404 (`not-found.tsx`), purement décoratif puisque le titre
+  « Balle hors du court » qui suit porte déjà tout le sens utile. Aucun changement visuel : le
+  texte affiché à l'écran reste strictement identique.
+- **Fichiers** : `src/components/Hero.tsx`, `src/app/not-found.tsx`.
+- **Pourquoi** : accessibilité — un lecteur d'écran annonce par défaut la description de chaque
+  emoji (« tennis », « coche blanche », etc.), ce qui ajoute un bruit redondant avant un texte
+  qui porte déjà toute l'information utile ; masquer ces emojis purement décoratifs aligne ces
+  trois occurrences sur la convention déjà en place ailleurs sur le site.
+
 ## 2026-10-22 (2)
 
 - **Amélioration** : correction d'un saut dans la hiérarchie des titres sur le composant

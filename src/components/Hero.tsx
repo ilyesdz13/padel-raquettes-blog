@@ -20,7 +20,7 @@ export default function Hero() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6 py-16 sm:py-24 relative grid lg:grid-cols-[1.1fr_0.9fr] items-center gap-10">
         <div className="text-center lg:text-left">
           <span className="inline-flex items-center gap-2 rounded-full border border-navy-border bg-white/5 px-3.5 py-1.5 text-xs font-semibold uppercase tracking-wide text-lime">
-            🎾 Le blog qui parle vraiment padel
+            <span aria-hidden="true">🎾</span> Le blog qui parle vraiment padel
           </span>
 
           <h1 className="mt-6 text-4xl sm:text-5xl font-extrabold tracking-tight text-balance leading-[1.1]">
@@ -52,7 +52,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-wrap justify-center lg:justify-start gap-x-8 gap-y-2 text-sm text-white/60">
             {TRUST_POINTS.map((point) => (
               <span key={point} className="inline-flex items-center gap-2">
-                <span className="text-lime">✓</span>
+                <span className="text-lime" aria-hidden="true">✓</span>
                 {point}
               </span>
             ))}

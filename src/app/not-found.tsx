@@ -12,7 +12,7 @@ export default function NotFound() {
 
   return (
     <div className="mx-auto max-w-3xl px-4 sm:px-6 py-20 text-center">
-      <span className="text-6xl">🎾</span>
+      <span className="text-6xl" aria-hidden="true">🎾</span>
       <h1 className="mt-6 text-3xl font-extrabold tracking-tight">Balle hors du court</h1>
       <p className="mt-3 text-muted max-w-md mx-auto">
         Cette page n&apos;existe pas ou plus. Mais on a sûrement le guide ou le comparatif qu&apos;il te faut.
