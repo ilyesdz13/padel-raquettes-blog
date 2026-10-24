@@ -1418,5 +1418,61 @@
       "nox-at-genius-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-accent-lt-vs-adidas-match-noir-vert",
+    "title": "Wilson Accent LT vs Adidas Match 3.3 Black Lime : quelle raquette légère pour débuter en douceur ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent lt vs adidas match noir vert",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "adidas-match-noir-vert-3-5-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "babolat-air-viper-2-6-vs-wilson-bela-pro-v3",
+    "title": "Babolat Air Viper 2.6 vs Wilson Bela Pro V2.5 : quelle raquette avancée choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat air viper 2.6 vs wilson bela pro",
+    "productIds": [
+      "babolat-air-viper-2-6-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "meilleure-raquette-padel-joueur-occasionnel",
+    "title": "Meilleure raquette de padel pour un joueur occasionnel qui joue peu souvent",
+    "category": "guide",
+    "targetKeyword": "raquette padel joueur occasionnel",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "wilson-accent-lt-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-pluie-humidite",
+    "title": "Peut-on jouer au padel sous la pluie ? Ce que l'humidité fait à votre raquette",
+    "category": "article",
+    "targetKeyword": "raquette padel pluie humidité",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "personnaliser-raquette-padel-stickers",
+    "title": "Personnaliser sa raquette de padel : stickers, overgrip coloré et protections",
+    "category": "article",
+    "targetKeyword": "personnaliser raquette padel stickers",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
   }
 ]
