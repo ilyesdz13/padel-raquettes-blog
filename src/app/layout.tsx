@@ -99,8 +99,14 @@ window.gtag = gtag;`,
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
+        <a
+          href="#contenu-principal"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-full focus:bg-lime focus:px-4 focus:py-2 focus:text-sm focus:font-bold focus:text-lime-ink"
+        >
+          Aller au contenu principal
+        </a>
         <Header />
-        <main className="flex-1 w-full">{children}</main>
+        <main id="contenu-principal" className="flex-1 w-full">{children}</main>
         <Footer />
         <CookieConsent />
         <Analytics />

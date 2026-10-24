@@ -3,6 +3,24 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-24
+
+- **Amélioration** : ajout d'un lien « Aller au contenu principal » (skip link) juste avant le
+  `Header`, dans `layout.tsx`, qui s'applique à toutes les pages du site. Jusqu'ici, un
+  utilisateur naviguant au clavier (ou un utilisateur de lecteur d'écran) devait parcourir tous
+  les liens du `Header` (logo, navigation desktop, bouton « Trouver ma raquette » ou burger
+  mobile) avant d'atteindre le contenu de la page — répétitif sur chacune des pages du site,
+  d'autant plus pénalisant sur les pages d'article où le contenu utile commence loin derrière
+  l'en-tête. Le lien est masqué visuellement par défaut (`sr-only`) et devient visible
+  uniquement au focus clavier (`focus:not-sr-only`, positionné en haut à gauche avec le style
+  des autres badges du site), pointant vers un nouvel `id="contenu-principal"` ajouté sur la
+  balise `<main>`. Aucun changement visuel pour un visiteur à la souris ou au tactile.
+- **Fichiers** : `src/app/layout.tsx`.
+- **Pourquoi** : accessibilité clavier — un lien d'évitement vers le contenu principal est une
+  pratique standard qui manquait entièrement au site, alors qu'il réduit directement la charge
+  de navigation répétitive pour les utilisateurs clavier et lecteur d'écran sur l'intégralité
+  des pages, y compris les pages d'article qui portent les liens affiliés.
+
 ## 2026-10-23 (2)
 
 - **Amélioration** : ajout d'une sémantique de région accessible (`role="region"`,
