@@ -46,7 +46,11 @@ export default function CookieConsent() {
   if (!visible) return null;
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-surface p-4 sm:p-5 shadow-lg">
+    <div
+      role="region"
+      aria-label="Consentement aux cookies"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-surface p-4 sm:p-5 shadow-lg"
+    >
       <div className="mx-auto max-w-5xl flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <p className="text-sm text-muted flex-1">
           Ce site utilise des cookies publicitaires (Google AdSense) pour afficher des

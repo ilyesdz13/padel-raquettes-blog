@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-25
+
+- **Amélioration** : ajout d'une sémantique de région accessible (`role="region"`,
+  `aria-label="Consentement aux cookies"`) sur le conteneur de la bannière de consentement
+  aux cookies (`CookieConsent`). Cette bannière s'affiche en superposition fixe en bas de
+  l'écran à chaque nouvelle visite, mais n'était jusqu'ici qu'un simple `<div>` sans aucune
+  sémantique de landmark : un utilisateur de lecteur d'écran qui navigue par régions ne
+  pouvait pas l'identifier comme un bloc distinct du reste de la page, ni la retrouver
+  facilement après l'avoir quittée au clavier. Le même principe de région nommée avait déjà
+  été appliqué au tableau comparatif (`ComparisonTable`, 2026-10-23). Aucun changement
+  visuel : la mise en page, les couleurs et le texte de la bannière restent identiques.
+- **Fichiers** : `src/components/CookieConsent.tsx`.
+- **Pourquoi** : accessibilité — cette bannière est l'un des tout premiers éléments
+  rencontrés par un visiteur de lecteur d'écran sur chaque nouvelle visite ; lui donner une
+  sémantique de région nommée facilite son repérage et sa navigation, par cohérence avec les
+  autres zones déjà identifiées de cette façon sur le site.
+
 ## 2026-10-24
 
 - **Amélioration** : ajout d'un lien « Aller au contenu principal » (skip link) juste avant le
