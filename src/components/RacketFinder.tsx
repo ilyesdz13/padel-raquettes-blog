@@ -155,6 +155,10 @@ export default function RacketFinder() {
         </div>
       </div>
 
+      <p className="sr-only" aria-live="polite">
+        {`Question ${step + 1} sur ${total} : ${current.question}`}
+      </p>
+
       <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight mb-6 text-balance">
         {current.question}
       </h2>

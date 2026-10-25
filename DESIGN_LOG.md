@@ -3,6 +3,25 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-25 (2)
+
+- **Amélioration** : ajout d'une annonce accessible (`aria-live="polite"`) lors du changement de
+  question dans le quiz `RacketFinder`. Jusqu'ici, lorsqu'un utilisateur sélectionnait une
+  réponse, le composant affichait la question suivante en remplaçant simplement le texte du
+  `<h2>` — un changement purement visuel qu'un utilisateur de lecteur d'écran ne pouvait pas
+  percevoir sans reprendre une lecture manuelle de la page, faute de tout signal annonçant la
+  mise à jour. Un paragraphe masqué visuellement (`sr-only`), placé juste avant le titre et
+  reprenant le numéro et le texte de la nouvelle question, est désormais mis à jour à chaque
+  changement d'étape et annoncé automatiquement grâce à `aria-live="polite"`. Cette amélioration
+  complète la barre de progression déjà rendue accessible (`role="progressbar"`, 2026-10-10) sur
+  ce même composant. Aucun changement visuel : le texte affiché à l'écran reste strictement
+  identique.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité — le quiz de recommandation est l'outil de conversion principal
+  du site ; un utilisateur de lecteur d'écran qui ne reçoit aucune confirmation du passage à la
+  question suivante perd le fil de sa progression dans l'un des parcours les plus importants du
+  site, malgré la barre de progression déjà accessible.
+
 ## 2026-10-25
 
 - **Amélioration** : ajout d'une sémantique de région accessible (`role="region"`,
