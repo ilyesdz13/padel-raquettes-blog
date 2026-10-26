@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-26
+
+- **Amélioration** : ajout d'un libellé accessible masqué (`sr-only`, « Lien d'achat ») sur
+  l'en-tête de la dernière colonne du `ComparisonTable`, jusqu'ici un `<th>` entièrement vide.
+  Ce tableau est déjà identifié comme une région nommée au clavier (2026-10-23), mais la colonne
+  qui porte le bouton d'affiliation de chaque ligne n'avait aucun nom de colonne perceptible par
+  un lecteur d'écran naviguant le tableau par en-têtes — un `<th>` vide ne permet pas d'associer
+  le contenu de la cellule (le lien Amazon) à une colonne identifiée. Aucun changement visuel : le
+  texte masqué n'apparaît que pour les technologies d'assistance, l'en-tête reste visuellement
+  vide comme avant.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : accessibilité — `ComparisonTable` porte le lien affilié principal de chaque
+  ligne, c'est l'un des composants les plus engageants pour la conversion selon
+  `DESIGN_PLAYBOOK.md` ; un en-tête de colonne sans nom perceptible nuit à la compréhension du
+  tableau pour un utilisateur de lecteur d'écran qui navigue par colonnes.
+
 ## 2026-10-25 (2)
 
 - **Amélioration** : ajout d'une annonce accessible (`aria-live="polite"`) lors du changement de

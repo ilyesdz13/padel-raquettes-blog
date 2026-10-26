@@ -21,7 +21,9 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
             <th className="px-4 py-3 font-bold">Niveau</th>
             <th className="px-4 py-3 font-bold">Style</th>
             <th className="px-4 py-3 font-bold">Prix</th>
-            <th className="px-4 py-3 font-bold"></th>
+            <th className="px-4 py-3 font-bold">
+              <span className="sr-only">Lien d&apos;achat</span>
+            </th>
           </tr>
         </thead>
         <tbody>
