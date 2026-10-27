@@ -3,6 +3,29 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-27
+
+- **Amélioration** : marquage sémantique de la date de publication avec l'élément HTML
+  `<time>` (attribut `dateTime` au format ISO `AAAA-MM-JJ` déjà disponible dans les
+  métadonnées de chaque article), à la place d'un simple texte formaté en français. Trois
+  occurrences concernées : la carte d'article (`ArticleCard`, utilisée dans les listings de
+  catégories et la page d'accueil), le bloc « À la une » de la page d'accueil
+  (`FeaturedArticle`) et l'en-tête de chaque page d'article (`ArticleView`). Jusqu'ici, la
+  date n'existait que comme texte visuel localisé (« 27 octobre 2026 ») sans aucune valeur
+  machine-lisible associée — un lecteur d'écran ou un outil d'analyse ne pouvait pas
+  distinguer cette date d'un texte quelconque, ni la relier de façon fiable à une date
+  calendaire. Le texte affiché reste strictement identique ; seul l'élément porteur change
+  (`<span>`/`<div>` → `<time dateTime="...">` autour du texte de date uniquement, la mention
+  du temps de lecture reste hors de l'élément `<time>`).
+- **Fichiers** : `src/components/ArticleCard.tsx`, `src/components/FeaturedArticle.tsx`,
+  `src/components/ArticleView.tsx`.
+- **Pourquoi** : accessibilité / cohérence sémantique — ces trois emplacements affichent la
+  date de publication sur la quasi-totalité des pages du site (accueil, listings de
+  catégories, pages d'article) ; leur donner une sémantique HTML standard (`<time>` avec une
+  valeur machine-lisible) aligne le balisage sur les bonnes pratiques et facilite
+  l'interprétation de la date par les technologies d'assistance et les outils externes,
+  sans aucun changement visuel.
+
 ## 2026-10-26
 
 - **Amélioration** : ajout d'un libellé accessible masqué (`sr-only`, « Lien d'achat ») sur

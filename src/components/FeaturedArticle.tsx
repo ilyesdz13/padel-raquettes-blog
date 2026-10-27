@@ -30,7 +30,9 @@ export default function FeaturedArticle({ article }: { article: ArticleMeta }) {
           <p className="mt-3 text-muted line-clamp-2 max-w-2xl">{article.description}</p>
           <div className="mt-4 flex items-center gap-4 text-sm text-muted">
             <span>
-              {new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+              <time dateTime={article.date}>
+                {new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+              </time>
               {" · "}
               {article.readingMinutes} min de lecture
             </span>

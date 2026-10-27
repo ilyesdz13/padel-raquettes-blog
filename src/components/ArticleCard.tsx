@@ -22,7 +22,9 @@ export default function ArticleCard({ article }: { article: ArticleMeta }) {
       <p className="text-sm text-muted line-clamp-3">{article.description}</p>
       <div className="mt-4 flex items-center justify-between text-xs text-muted">
         <span>
-          {new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+          <time dateTime={article.date}>
+            {new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+          </time>
           {" · "}
           {article.readingMinutes} min
         </span>
