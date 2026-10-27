@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-27 (2)
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur les quatre puces décoratives « ● » de
+  la section « Comment on choisit » de la page d'accueil (critères « Forme & tolérance »,
+  « Poids & confort », « Style de jeu », « Rapport qualité / prix »). Ces puces n'avaient
+  jamais reçu ce traitement, alors que le même motif (icônes et symboles purement décoratifs
+  précédant un texte qui porte déjà tout le sens utile) avait déjà été corrigé partout
+  ailleurs sur le site — coche « ✓ » du `Hero` et du `RacketFinder`, émoji de la bannière du
+  `Hero` et de la page 404 (2026-10-23) — sans que cette occurrence de la page d'accueil n'ait
+  été repérée à l'époque. Aucun changement visuel : le texte affiché reste strictement
+  identique.
+- **Fichiers** : `src/app/page.tsx`.
+- **Pourquoi** : accessibilité — un lecteur d'écran annonçait jusqu'ici « point rond » avant
+  chacun des quatre critères de la section qui explique la méthode de recommandation du site,
+  un bruit redondant déjà éliminé sur toutes les autres puces et coches décoratives du site ;
+  cette correction aligne la dernière occurrence manquante sur la convention déjà en place.
+
 ## 2026-10-27
 
 - **Amélioration** : marquage sémantique de la date de publication avec l'élément HTML

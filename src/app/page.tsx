@@ -56,28 +56,28 @@ export default function Home() {
           </div>
           <div className="sm:col-span-2 grid sm:grid-cols-2 gap-5 text-sm">
             <div className="flex gap-3">
-              <span className="text-lime-dark text-lg">●</span>
+              <span className="text-lime-dark text-lg" aria-hidden="true">●</span>
               <div>
                 <div className="font-bold">Forme &amp; tolérance</div>
                 <div className="text-muted mt-0.5">Ronde, goutte ou diamant : on identifie le sweet spot adapté à votre niveau.</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-lime-dark text-lg">●</span>
+              <span className="text-lime-dark text-lg" aria-hidden="true">●</span>
               <div>
                 <div className="font-bold">Poids &amp; confort</div>
                 <div className="text-muted mt-0.5">On croise poids, noyau et balance pour limiter la fatigue et les douleurs.</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-lime-dark text-lg">●</span>
+              <span className="text-lime-dark text-lg" aria-hidden="true">●</span>
               <div>
                 <div className="font-bold">Style de jeu</div>
                 <div className="text-muted mt-0.5">Puissance, contrôle ou polyvalence : on colle à votre façon de jouer.</div>
               </div>
             </div>
             <div className="flex gap-3">
-              <span className="text-lime-dark text-lg">●</span>
+              <span className="text-lime-dark text-lg" aria-hidden="true">●</span>
               <div>
                 <div className="font-bold">Rapport qualité / prix</div>
                 <div className="text-muted mt-0.5">On compare toujours à budget équivalent, jamais dans l&apos;absolu.</div>
