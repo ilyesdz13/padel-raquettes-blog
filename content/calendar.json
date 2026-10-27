@@ -1473,6 +1473,61 @@
       "wilson-accent-2026",
       "nox-at10-12k-alum-2026"
     ],
+    "published": true
+  },
+  {
+    "slug": "adidas-match-noir-vert-vs-wilson-accent",
+    "title": "Adidas Match 3.3 Black Lime vs Wilson Accent : quelle raquette débutante choisir pour progresser vite ?",
+    "category": "comparatif",
+    "targetKeyword": "adidas match noir vert vs wilson accent",
+    "productIds": [
+      "adidas-match-noir-vert-3-5-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "adidas-drive-black-vs-wilson-accent-lt",
+    "title": "Adidas Drive Black 3.4 vs Wilson Accent LT : duel entre deux raquettes légères pour débuter",
+    "category": "comparatif",
+    "targetKeyword": "adidas drive black vs wilson accent lt",
+    "productIds": [
+      "adidas-drive-black-2026",
+      "wilson-accent-lt-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "accessoires-indispensables-raquette-padel-debutant",
+    "title": "Quels accessoires indispensables pour accompagner sa raquette de padel ?",
+    "category": "guide",
+    "targetKeyword": "accessoires indispensables raquette padel",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-fissuree-signes-reconnaitre",
+    "title": "Raquette de padel fissurée : comment reconnaître les signes avant qu'elle ne casse complètement ?",
+    "category": "article",
+    "targetKeyword": "raquette padel fissurée signes",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "preter-sa-raquette-padel-a-un-ami",
+    "title": "Peut-on prêter sa raquette de padel à un ami ? Ce qu'il faut savoir avant de la confier",
+    "category": "article",
+    "targetKeyword": "prêter raquette padel ami",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-match-light-3-5-2026"
+    ],
     "published": false
   }
 ]
