@@ -3,6 +3,29 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-28
+
+- **Amélioration** : remplacement par le composant `Link` de Next.js des cinq liens internes
+  qui utilisaient encore une balise `<a>` classique — dans le corps de la page « Trouver ma
+  raquette » (vers un article sur les formes de raquette, un guide sur le poids idéal et la
+  liste des comparatifs), de la page « À propos » (vers les mentions légales) et de la page
+  « Mentions légales » (vers la page À propos). Partout ailleurs sur le site (`Header`,
+  `Footer`, `Breadcrumb`, `ArticleCard`, `RelatedArticles`, `TableOfContents`...), la navigation
+  interne passe systématiquement par `Link`, qui évite un rechargement complet de la page et
+  profite du préchargement automatique des pages liées ; ces cinq liens, situés dans des pages
+  statiques rédigées directement en JSX plutôt qu'en MDX, n'avaient jamais reçu cette
+  conversion. Le lien externe vers les règles de confidentialité publicitaires de Google, sur
+  la page « Mentions légales », reste une balise `<a>` classique à juste titre puisqu'il quitte
+  le site. Aucun changement visuel : le texte et l'apparence des liens restent identiques.
+- **Fichiers** : `src/app/trouver-ma-raquette/page.tsx`, `src/app/a-propos/page.tsx`,
+  `src/app/mentions-legales/page.tsx`.
+- **Pourquoi** : performance perçue / cohérence — une navigation interne en balise `<a>` simple
+  déclenche un rechargement complet de la page (perte de l'état client, re-téléchargement des
+  assets déjà en cache) et ne bénéficie pas du préchargement au survol qu'offre `Link`,
+  contrairement à la quasi-totalité des autres liens internes du site ; cette correction aligne
+  les dernières occurrences manquantes sur la convention de navigation déjà en place partout
+  ailleurs.
+
 ## 2026-10-27 (2)
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur les quatre puces décoratives « ● » de

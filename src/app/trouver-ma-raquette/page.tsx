@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import RacketFinder from "@/components/RacketFinder";
 import Breadcrumb from "@/components/Breadcrumb";
 import { SITE_URL, SITE_NAME_FULL } from "@/lib/site";
@@ -104,9 +105,9 @@ export default function TrouverMaRaquettePage() {
           La forme détermine où se situe le point d&apos;équilibre, donc le compromis entre puissance
           et contrôle. La forme ronde privilégie la tolérance, la forme diamant la puissance, et la
           forme goutte se place entre les deux. Notre article dédié détaille{" "}
-          <a href="/articles/forme-diamant-goutte-ronde-raquette-padel">
+          <Link href="/articles/forme-diamant-goutte-ronde-raquette-padel">
             l&apos;influence de chaque forme sur les coups techniques du padel
-          </a>
+          </Link>
           .
         </p>
 
@@ -124,7 +125,7 @@ export default function TrouverMaRaquettePage() {
           la recherche de puissance : les formes tolérantes et les poids contenus limitent les
           vibrations transmises au bras. C&apos;est le facteur le plus souvent négligé, et celui qui
           interrompt le plus de pratiques. Notre{" "}
-          <a href="/articles/poids-ideal-raquette-padel">guide sur le poids idéal</a> détaille ces
+          <Link href="/articles/poids-ideal-raquette-padel">guide sur le poids idéal</Link> détaille ces
           repères.
         </p>
 
@@ -159,7 +160,7 @@ export default function TrouverMaRaquettePage() {
           <br />
           Refaites le test en ajustant le critère dont vous êtes le moins sûr, souvent le style de
           jeu. Vous pouvez aussi parcourir directement nos{" "}
-          <a href="/comparatifs">comparatifs par catégorie</a> pour explorer plus de modèles.
+          <Link href="/comparatifs">comparatifs par catégorie</Link> pour explorer plus de modèles.
         </p>
       </div>
     </>

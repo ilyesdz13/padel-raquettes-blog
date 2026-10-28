@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SITE_NAME, SITE_NAME_FULL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -22,7 +23,7 @@ export default function AProposPage() {
         Nos recommandations s&apos;appuient sur les caractéristiques techniques publiques des
         raquettes (forme, poids, noyau, niveau visé) et sur des comparatifs croisés entre marques.
         Le site est financé par les commissions du programme Amazon Associates — voir notre page{" "}
-        <a href="/mentions-legales">mentions légales</a>.
+        <Link href="/mentions-legales">mentions légales</Link>.
       </p>
     </div>
   );

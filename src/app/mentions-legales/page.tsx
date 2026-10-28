@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { SITE_NAME_FULL } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -28,7 +29,7 @@ export default function MentionsLegalesPage() {
       <h2>Éditeur du site</h2>
       <p>
         Ce site est édité à titre personnel. Pour toute question, vous pouvez nous contacter via
-        la page <a href="/a-propos">À propos</a>.
+        la page <Link href="/a-propos">À propos</Link>.
       </p>
 
       <h2>Cookies et données personnelles</h2>
