@@ -3,6 +3,24 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-28 (2)
+
+- **Amélioration** : chargement du script Google AdSense (`adsbygoogle.js`) via le composant
+  `<Script>` de Next.js (`strategy="afterInteractive"`) à la place d'une balise `<script async>`
+  classique posée directement dans le `<head>` du layout racine. Cette balise brute échappait
+  au système d'injection de scripts de Next.js, qui priorise et planifie le chargement des
+  scripts tiers pour ne jamais retarder l'hydratation de la page — le script se charge
+  désormais après l'hydratation plutôt que de façon totalement indépendante au niveau du
+  `<head>`. Le script de consentement par défaut (`gtag('consent', 'default', ...)`), qui doit
+  s'exécuter avant toute requête publicitaire, reste une balise `<script>` classique inline dans
+  le `<head>` : il continue de s'exécuter en premier, avant même l'hydratation, donc l'ordre de
+  chargement (consentement d'abord, AdSense ensuite) reste garanti. Aucun changement visuel.
+- **Fichiers** : `src/app/layout.tsx`.
+- **Pourquoi** : performance perçue — le script AdSense est présent sur l'intégralité des pages
+  du site ; le faire passer par le composant `<Script>` officiel de Next.js, déjà la méthode
+  recommandée par le framework pour les scripts tiers, limite son impact sur le temps
+  d'interactivité de la page sans rien changer à l'affichage des annonces.
+
 ## 2026-10-28
 
 - **Amélioration** : remplacement par le composant `Link` de Next.js des cinq liens internes

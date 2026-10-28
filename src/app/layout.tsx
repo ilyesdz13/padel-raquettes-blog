@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 import Header from "@/components/Header";
@@ -82,11 +83,6 @@ gtag('consent', 'default', {
 window.gtag = gtag;`,
           }}
         />
-        <script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-          crossOrigin="anonymous"
-        />
       </head>
       <body className="min-h-full flex flex-col">
         <script
@@ -109,6 +105,11 @@ window.gtag = gtag;`,
         <main id="contenu-principal" className="flex-1 w-full">{children}</main>
         <Footer />
         <CookieConsent />
+        <Script
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <Analytics />
       </body>
     </html>
