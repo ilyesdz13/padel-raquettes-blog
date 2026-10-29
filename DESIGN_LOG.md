@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-29
+
+- **Amélioration** : prise en compte de la préférence système « réduire les animations »
+  (`prefers-reduced-motion: reduce`) au niveau global du site. Jusqu'ici, aucune règle CSS ne
+  tenait compte de cette préférence, alors que le site multiplie les transitions et animations
+  déclenchées au survol ou au changement d'état (`transition-all`, `hover:-translate-y-0.5` sur
+  les cartes d'article et l'article à la une, changement de question du quiz `RacketFinder`,
+  barre de progression animée, survols des boutons d'affiliation...). Un visiteur ayant activé
+  cette préférence système — généralement pour des raisons vestibulaires ou de sensibilité aux
+  mouvements — continuait de recevoir toutes ces animations sans distinction. Une règle globale
+  réduit désormais la durée de toutes les transitions et animations CSS à une valeur quasi nulle
+  pour ces visiteurs, selon le motif standard recommandé pour cette préférence. Aucun changement
+  visuel ni de comportement pour l'immense majorité des visiteurs qui n'activent pas cette
+  préférence système.
+- **Fichiers** : `src/app/globals.css`.
+- **Pourquoi** : accessibilité — le site s'appuie sur de nombreuses micro-interactions animées
+  sans qu'aucune d'elles ne respecte jusqu'ici la préférence système « réduire les animations » ;
+  cette règle globale couvre d'un coup l'ensemble des composants concernés, présents et futurs,
+  sans avoir à corriger chaque transition individuellement.
+
 ## 2026-10-28 (2)
 
 - **Amélioration** : chargement du script Google AdSense (`adsbygoogle.js`) via le composant

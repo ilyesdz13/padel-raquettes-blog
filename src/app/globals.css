@@ -75,6 +75,20 @@ summary:focus-visible,
   outline-offset: 2px;
 }
 
+/* Respecte la préférence système "réduire les animations" : neutralise les transitions
+   et animations CSS (survols, changement de question du quiz, défilement du sommaire...)
+   pour les visiteurs sensibles aux mouvements, sans changer l'apparence statique des pages. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
 /* Motif "court de padel" utilisé en fond du hero et du footer */
 .court-pattern {
   background-image:
