@@ -49,6 +49,7 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={open}
+          aria-controls="menu-mobile"
           className="sm:hidden inline-flex h-11 w-11 items-center justify-center rounded-full text-foreground/80 hover:bg-foreground/5 transition-colors"
         >
           <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
@@ -62,7 +63,10 @@ export default function Header() {
       </div>
 
       {open && (
-        <nav className="sm:hidden border-t border-border px-4 py-3 flex flex-col gap-1 text-sm font-semibold bg-surface">
+        <nav
+          id="menu-mobile"
+          className="sm:hidden border-t border-border px-4 py-3 flex flex-col gap-1 text-sm font-semibold bg-surface"
+        >
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}

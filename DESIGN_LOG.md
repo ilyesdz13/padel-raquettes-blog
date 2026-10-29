@@ -3,6 +3,24 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-29 (2)
+
+- **Amélioration** : ajout d'un lien `aria-controls` entre le bouton burger du `Header` et le
+  menu de navigation mobile qu'il ouvre et ferme. Le bouton portait déjà `aria-expanded` pour
+  signaler son état ouvert/fermé, mais rien ne reliait explicitement ce bouton à l'élément de
+  navigation qu'il contrôle : un utilisateur de lecteur d'écran percevait le changement d'état
+  du bouton sans pouvoir identifier avec certitude quel contenu de la page ce bouton fait
+  apparaître ou disparaître. Le menu de navigation mobile reçoit désormais un `id="menu-mobile"`
+  référencé par l'attribut `aria-controls` du bouton. Aucun changement visuel : le bouton et le
+  menu gardent exactement la même apparence et le même comportement au clic.
+- **Fichiers** : `src/components/Header.tsx`.
+- **Pourquoi** : accessibilité — le bouton burger est le seul moyen d'accéder à la navigation
+  principale (y compris vers l'outil de recommandation `RacketFinder`) sur les petits écrans,
+  d'où vient la majorité du trafic du site ; une relation `aria-controls` manquante sur un
+  bouton qui ouvre/ferme un panneau est un motif de signalement fréquent des audits
+  d'accessibilité, et sa présence aide les technologies d'assistance à annoncer correctement la
+  relation entre le déclencheur et le contenu contrôlé.
+
 ## 2026-10-29
 
 - **Amélioration** : prise en compte de la préférence système « réduire les animations »
