@@ -1529,5 +1529,62 @@
       "adidas-match-light-3-5-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "raquette-padel-mal-epaule",
+    "title": "Meilleure raquette de padel quand on a mal à l'épaule",
+    "category": "guide",
+    "targetKeyword": "raquette padel mal à l'épaule",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "wilson-optix-v2-lite-lilac-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-swing-lent-manque-vitesse-bras",
+    "title": "Meilleure raquette de padel pour un joueur avec un swing lent, qui manque de vitesse de bras",
+    "category": "guide",
+    "targetKeyword": "raquette padel swing lent vitesse de bras",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at-genius-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-optix-v2-lite-vs-nox-at10-12k",
+    "title": "Wilson Optix V2 Lite vs Nox AT10 Genius 12K : du loisir occasionnel à la polyvalence sérieuse",
+    "category": "comparatif",
+    "targetKeyword": "wilson optix v2 lite vs nox at10 12k",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nouveau-modele-raquette-padel-attendre-ou-acheter",
+    "title": "Nouvelle raquette de padel chaque année : faut-il attendre le nouveau modèle avant d'acheter ?",
+    "category": "article",
+    "targetKeyword": "nouvelle raquette padel acheter attendre nouveau modèle",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-stockage-longue-duree-vieillissement",
+    "title": "Une raquette de padel peut-elle vieillir ou se dégrader en restant stockée sans qu'on y joue ?",
+    "category": "article",
+    "targetKeyword": "raquette padel vieillit stockage sans jouer",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
   }
 ]
