@@ -29,7 +29,7 @@ export default function ArticleCard({ article }: { article: ArticleMeta }) {
           {article.readingMinutes} min
         </span>
         <span className="font-semibold text-foreground/70 group-hover:translate-x-0.5 transition-transform">
-          Lire →
+          Lire <span aria-hidden="true">→</span>
         </span>
       </div>
     </Link>

@@ -31,7 +31,7 @@ export default function Home() {
               <p className="text-muted text-sm mt-1">Nos guides et comparatifs les plus récents.</p>
             </div>
             <Link href="/guides" className="hidden sm:inline text-sm font-semibold text-brand hover:underline">
-              Tout voir →
+              Tout voir <span aria-hidden="true">→</span>
             </Link>
           </div>
           {articles.length === 0 ? (

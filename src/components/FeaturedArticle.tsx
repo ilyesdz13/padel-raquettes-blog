@@ -37,7 +37,7 @@ export default function FeaturedArticle({ article }: { article: ArticleMeta }) {
               {article.readingMinutes} min de lecture
             </span>
             <span className="font-semibold text-foreground/70 group-hover:translate-x-0.5 transition-transform">
-              Lire l&apos;article →
+              Lire l&apos;article <span aria-hidden="true">→</span>
             </span>
           </div>
         </div>

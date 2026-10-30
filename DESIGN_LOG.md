@@ -3,6 +3,25 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-30 (2)
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur la flèche « → » décorative qui suit le
+  texte des trois liens « Lire plus » du site : « Lire → » (`ArticleCard`, utilisé dans tous les
+  listings de catégories et la page d'accueil), « Lire l'article → » (`FeaturedArticle`, le bloc
+  « À la une » de la page d'accueil) et « Tout voir → » (lien vers la liste des guides sur la
+  page d'accueil). Cette flèche n'avait jamais reçu ce traitement, alors que le même motif
+  (symbole purement décoratif accolé à un texte qui porte déjà tout le sens utile) avait déjà été
+  corrigé à de nombreuses reprises ailleurs sur le site — coches « ✓ », puces « ● », émojis
+  décoratifs. Un lecteur d'écran annonçait jusqu'ici « Lire flèche vers la droite » ou
+  « Tout voir flèche vers la droite », un bruit redondant puisque le verbe seul indique déjà
+  l'action. Aucun changement visuel : le texte et la flèche restent affichés à l'identique.
+- **Fichiers** : `src/components/ArticleCard.tsx`, `src/components/FeaturedArticle.tsx`,
+  `src/app/page.tsx`.
+- **Pourquoi** : accessibilité — ces trois liens apparaissent sur la page d'accueil et sur tous
+  les listings de catégories, parmi les pages les plus consultées du site ; cette correction
+  aligne la dernière occurrence manquante de ce motif décoratif sur la convention déjà en place
+  partout ailleurs.
+
 ## 2026-10-30
 
 - **Amélioration** : ajout d'un préfixe accessible masqué (« À noter : », `sr-only`) devant
