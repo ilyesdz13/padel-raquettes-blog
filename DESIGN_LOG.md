@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-30
+
+- **Amélioration** : ajout d'un préfixe accessible masqué (« À noter : », `sr-only`) devant
+  chaque point d'avertissement listé sous une raquette recommandée, sur l'écran de résultat du
+  quiz `RacketFinder`. Sur cet écran, chaque raquette affiche une liste de points positifs
+  précédés d'une coche « ✓ » et, le cas échéant, des points de vigilance précédés d'un « ! » —
+  les deux icônes étaient déjà correctement masquées aux lecteurs d'écran (`aria-hidden`), mais
+  rien ne venait remplacer, pour ces technologies d'assistance, la distinction que ces icônes
+  apportent visuellement entre un argument favorable et une réserve. Un utilisateur de lecteur
+  d'écran entendait donc les deux types de puces de façon strictement identique, sans percevoir
+  la nuance de prudence que l'icône « ! » signale aux visiteurs voyants. Aucun changement
+  visuel : le texte affiché à l'écran reste strictement identique, seul un texte masqué
+  supplémentaire est ajouté avant chaque avertissement.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité / conversion — le quiz de recommandation est l'outil de
+  conversion principal du site, et c'est sur cet écran de résultat, juste avant le lien
+  d'affiliation, que la nuance entre un point fort et un point de vigilance a le plus
+  d'importance pour la décision d'achat ; un utilisateur de lecteur d'écran qui ne perçoit pas
+  cette nuance perd une information utile au moment précis où elle compte le plus.
+
 ## 2026-10-29 (2)
 
 - **Amélioration** : ajout d'un lien `aria-controls` entre le bouton burger du `Header` et le

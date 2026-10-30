@@ -81,7 +81,10 @@ export default function RacketFinder() {
                       {warnings.map((warning) => (
                         <li key={warning} className="flex gap-2 text-muted">
                           <span aria-hidden="true">!</span>
-                          <span>{warning}</span>
+                          <span>
+                            <span className="sr-only">À noter : </span>
+                            {warning}
+                          </span>
                         </li>
                       ))}
                     </ul>
