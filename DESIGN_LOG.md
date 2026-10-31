@@ -3,6 +3,27 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-31 (2)
+
+- **Amélioration** : agrandissement de la zone cliquable des deux derniers boutons du site
+  encore à `py-2.5` (~40px de hauteur sur mobile) : le bouton « ← Question précédente » du quiz
+  `RacketFinder` et le bouton « Sommaire » (`<summary>`) de `TableOfContents`. Ce même seuil avait
+  déjà été corrigé à `py-3` (~44px) sur tous les autres boutons équivalents du site au fil de
+  nombreuses itérations précédentes (bannière cookies, bouton d'affiliation de `ProductCard`,
+  `ComparisonTable` et `RacketFinder`, menu mobile du `Header`...), mais ces deux occurrences,
+  qui compensent leur padding par une marge négative pour ne pas déplacer le texte visuellement
+  (`-mx-2 -my-2`), n'avaient jamais reçu cette dernière correction. La marge négative verticale
+  passe de `-my-2` à `-my-3` pour compenser exactement le nouveau padding `py-3`, afin que le
+  texte garde très précisément la même position qu'avant (l'ancien couple `py-2.5` / `-my-2`
+  n'était déjà pas une compensation exacte, ce qui décalait très légèrement le texte vers le bas ;
+  ce correctif élimine ce décalage au passage).
+- **Fichiers** : `src/components/RacketFinder.tsx`, `src/components/TableOfContents.tsx`.
+- **Pourquoi** : mobile / accessibilité / cohérence — ces deux boutons figurent respectivement
+  dans l'outil de conversion principal du site et en tout début de la quasi-totalité des pages
+  d'article ; une cible tactile sous le seuil recommandé y pénalise des interactions fréquentes
+  sur mobile, et c'étaient les deux dernières occurrences de ce motif à ne pas avoir reçu la
+  correction déjà appliquée partout ailleurs sur le site.
+
 ## 2026-10-31
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur la flèche « ← » décorative du bouton
