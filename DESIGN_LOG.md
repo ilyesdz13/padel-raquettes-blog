@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-10-31
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur la flèche « ← » décorative du bouton
+  « ← Question précédente » de l'outil de recommandation `RacketFinder`. Ce motif (symbole
+  purement décoratif accolé à un texte qui porte déjà tout le sens utile) avait déjà été
+  corrigé sur les trois flèches « → » du site le 2026-10-30 ainsi que sur de nombreuses autres
+  icônes décoratives, mais cette flèche « ← », orientée dans l'autre sens et placée avant le
+  texte plutôt qu'après, n'avait pas été repérée à l'époque. Un lecteur d'écran annonçait
+  jusqu'ici « flèche vers la gauche Question précédente », un bruit redondant puisque le texte
+  seul indique déjà l'action. Aucun changement visuel : le texte et la flèche restent affichés
+  à l'identique.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité — ce bouton apparaît sur chaque question du quiz `RacketFinder`,
+  l'outil de conversion principal du site ; cette correction aligne la dernière occurrence
+  manquante de ce motif décoratif sur la convention déjà en place partout ailleurs.
+
 ## 2026-10-30 (2)
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur la flèche « → » décorative qui suit le
