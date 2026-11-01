@@ -3,6 +3,27 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-01
+
+- **Amélioration** : alignement du texte alternatif de la miniature produit du
+  `ComparisonTable` sur celui déjà utilisé dans `ProductCard`. Les deux composants affichent la
+  même image produit (ou son illustration de substitution tant qu'aucune photo réelle n'est
+  disponible), mais traitaient cette image de façon opposée : `ProductCard` lui donne un texte
+  alternatif significatif (`alt={product.name}`), tandis que `ComparisonTable` la déclarait
+  entièrement décorative (`alt=""`), comme si elle n'apportait aucune information distincte du
+  nom du produit affiché juste à côté. Cette incohérence correspond exactement à l'exemple cité
+  par `DESIGN_PLAYBOOK.md` (« incohérences ... entre composants qui devraient se ressembler, ex.
+  `ProductCard`, `ComparisonTable` »). Une photo de produit n'est pas une icône purement
+  décorative comme une flèche ou une puce déjà corrigées sur le site : elle reste porteuse
+  d'information visuelle propre (couleur, forme du cadre) une fois que de vraies photos
+  remplaceront les illustrations de substitution actuelles. Aucun changement visuel : l'image et
+  la mise en page du tableau restent identiques.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : accessibilité / cohérence — `ComparisonTable` et `ProductCard` affichent le même
+  type de contenu (photo produit) et devraient donc traiter son texte alternatif de la même
+  façon ; un lecteur d'écran qui parcourt le tableau comparatif perdait jusqu'ici une information
+  que la fiche produit équivalente fournit déjà.
+
 ## 2026-10-31 (2)
 
 - **Amélioration** : agrandissement de la zone cliquable des deux derniers boutons du site

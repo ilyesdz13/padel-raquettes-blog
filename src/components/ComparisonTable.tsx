@@ -41,7 +41,7 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
                         // eslint-disable-next-line @next/next/no-img-element
                         <img
                           src={product.image}
-                          alt=""
+                          alt={product.name}
                           loading="lazy"
                           decoding="async"
                           className="h-full w-full object-contain"
