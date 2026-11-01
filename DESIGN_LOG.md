@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-01 (2)
+
+- **Amélioration** : ajout du texte accessible masqué (« (ouvre un nouvel onglet) ») sur le lien
+  externe vers les règles de confidentialité publicitaires de Google, sur la page « Mentions
+  légales ». Ce lien ouvre déjà Google dans un nouvel onglet (`target="_blank"`), exactement
+  comme les trois boutons d'affiliation Amazon du site (`ProductCard`, `ComparisonTable`,
+  `RacketFinder`), qui avaient reçu ce même texte masqué le 2026-10-22 — mais cette occurrence,
+  la seule autre balise `target="_blank"` de tout le site, n'avait jamais été repérée à
+  l'époque. Un lecteur d'écran ne signalait jusqu'ici ce changement de contexte sur aucun des
+  deux liens de la page « Mentions légales » qui quittent le site. Aucun changement visuel : le
+  texte et l'apparence du lien restent identiques.
+- **Fichiers** : `src/app/mentions-legales/page.tsx`.
+- **Pourquoi** : accessibilité — un utilisateur de lecteur d'écran qui ne sait pas qu'un lien va
+  ouvrir un nouvel onglet perd le fil de sa navigation ; cette correction aligne la dernière
+  occurrence manquante de ce motif déjà corrigé ailleurs sur le site.
+
 ## 2026-11-01
 
 - **Amélioration** : alignement du texte alternatif de la miniature produit du

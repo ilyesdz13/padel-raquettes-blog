@@ -50,6 +50,7 @@ export default function MentionsLegalesPage() {
         désactiver la publicité personnalisée en consultant les{" "}
         <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">
           règles de confidentialité de Google pour les annonces
+          <span className="sr-only"> (ouvre un nouvel onglet)</span>
         </a>
         .
       </p>
