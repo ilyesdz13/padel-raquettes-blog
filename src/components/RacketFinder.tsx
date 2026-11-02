@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { FINDER_QUESTIONS, recommendRackets, type FinderAnswers } from "@/lib/finder";
-import { buildAffiliateLink } from "@/lib/products";
+import { buildAffiliateLink, hasRealImage } from "@/lib/products";
 import RacketIllustration from "@/components/RacketIllustration";
 import Stars from "@/components/Stars";
 
@@ -59,8 +59,21 @@ export default function RacketFinder() {
                   </span>
                 )}
                 <div className="flex flex-col sm:flex-row gap-5">
-                  <div className="shrink-0 mx-auto sm:mx-0 w-[92px] h-[118px] rounded-xl bg-gradient-to-br from-navy to-navy-2 p-2.5">
-                    <RacketIllustration shape={product.shape} />
+                  <div className="shrink-0 mx-auto sm:mx-0 w-[92px] h-[118px] rounded-xl bg-gradient-to-br from-navy to-navy-2 p-2.5 flex items-center justify-center overflow-hidden">
+                    {hasRealImage(product) ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        width={92}
+                        height={118}
+                        loading="lazy"
+                        decoding="async"
+                        className="h-full w-full object-contain"
+                      />
+                    ) : (
+                      <RacketIllustration shape={product.shape} />
+                    )}
                   </div>
                   <div className="flex-1">
                     <div className="flex flex-wrap items-center gap-2">

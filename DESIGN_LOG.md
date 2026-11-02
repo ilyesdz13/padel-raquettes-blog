@@ -3,6 +3,27 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-02
+
+- **Amélioration** : affichage de la vraie photo produit (dès qu'elle sera renseignée dans
+  `content/products.json`) sur l'écran de résultat de l'outil de recommandation `RacketFinder`,
+  à la place de l'illustration générique systématique. `ProductCard` et `ComparisonTable`
+  vérifient déjà `hasRealImage(product)` pour afficher la photo réelle du produit dès qu'elle
+  est disponible, et ne retombent sur l'illustration SVG de substitution (`RacketIllustration`)
+  qu'en son absence — mais `RacketFinder`, qui présente pourtant le même type de contenu (marque,
+  nom, étoiles, image), affichait toujours l'illustration générique sans jamais vérifier la
+  présence d'une vraie photo. Resté inchangé aujourd'hui (tous les produits utilisent encore le
+  placeholder), ce correctif évite que cette incohérence ne devienne visible silencieusement le
+  jour où une première photo réelle sera ajoutée à la base produits : sans lui, `ProductCard` et
+  `ComparisonTable` l'afficheraient correctement tandis que `RacketFinder`, l'outil de conversion
+  principal du site, continuerait d'afficher l'illustration générique pour ce même produit.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : cohérence — `RacketFinder`, `ProductCard` et `ComparisonTable` présentent le
+  même type de contenu produit et doivent donc se comporter de la même façon face à une vraie
+  photo ; corriger cette incohérence maintenant, avant qu'elle ne soit visible sur le site,
+  évite un décalage silencieux entre composants équivalents le jour où une photo réelle sera
+  ajoutée.
+
 ## 2026-11-01 (2)
 
 - **Amélioration** : ajout du texte accessible masqué (« (ouvre un nouvel onglet) ») sur le lien
