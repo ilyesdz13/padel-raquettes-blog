@@ -1586,5 +1586,63 @@
       "babolat-viper-air-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "babolat-viper-air-vs-wilson-accent",
+    "title": "Babolat Technical Viper vs Wilson Accent : vaut-il le coup de sauter plusieurs gammes dès le premier achat ?",
+    "category": "comparatif",
+    "targetKeyword": "babolat viper air vs wilson accent",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "wilson-accent-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-americano-tournoi-format-court",
+    "title": "Quelle raquette de padel choisir pour jouer l'americano ou un tournoi au format court ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel americano tournoi format court",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nox-at-genius-vs-adidas-drive-black",
+    "title": "Nox AT10 Genius Attack vs Adidas Drive Black : la signature pro vaut-elle 4 fois le prix de l'entrée de gamme ?",
+    "category": "comparatif",
+    "targetKeyword": "nox at genius vs adidas drive black",
+    "productIds": [
+      "nox-at-genius-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "nettoyer-raquette-padel-apres-session",
+    "title": "Comment bien nettoyer sa raquette de padel après chaque session ?",
+    "category": "guide",
+    "targetKeyword": "nettoyer raquette padel",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-simple-1-contre-1",
+    "title": "Faut-il une raquette de padel différente pour jouer en simple (1 contre 1) ?",
+    "category": "article",
+    "targetKeyword": "raquette padel simple 1 contre 1",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
   }
 ]
