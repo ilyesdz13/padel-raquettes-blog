@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Logo from "@/components/Logo";
 import { SITE_NAME } from "@/lib/site";
 
@@ -13,6 +14,8 @@ const NAV_LINKS = [
 
 export default function Header() {
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
+  const isActive = (href: string) => pathname === href || pathname.startsWith(`${href}/`);
 
   return (
     <header className="sticky top-0 z-40 border-b border-border bg-surface/85 backdrop-blur supports-[backdrop-filter]:bg-surface/70">
@@ -31,13 +34,19 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-full px-3.5 py-1.5 text-foreground/70 hover:text-foreground hover:bg-foreground/5 transition-colors"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`rounded-full px-3.5 py-1.5 transition-colors ${
+                isActive(link.href)
+                  ? "text-foreground bg-foreground/5"
+                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+              }`}
             >
               {link.label}
             </Link>
           ))}
           <Link
             href="/trouver-ma-raquette"
+            aria-current={isActive("/trouver-ma-raquette") ? "page" : undefined}
             className="ml-2 inline-flex rounded-full bg-navy px-4 py-1.5 text-white hover:bg-navy-2 transition-colors"
           >
             Trouver ma raquette
@@ -72,7 +81,12 @@ export default function Header() {
               key={link.href}
               href={link.href}
               onClick={() => setOpen(false)}
-              className="rounded-lg px-3 py-3 text-foreground/80 hover:bg-foreground/5 transition-colors"
+              aria-current={isActive(link.href) ? "page" : undefined}
+              className={`rounded-lg px-3 py-3 transition-colors ${
+                isActive(link.href)
+                  ? "text-foreground bg-foreground/5"
+                  : "text-foreground/80 hover:bg-foreground/5"
+              }`}
             >
               {link.label}
             </Link>
@@ -80,6 +94,7 @@ export default function Header() {
           <Link
             href="/trouver-ma-raquette"
             onClick={() => setOpen(false)}
+            aria-current={isActive("/trouver-ma-raquette") ? "page" : undefined}
             className="mt-1 inline-flex justify-center rounded-full bg-navy px-4 py-3 text-white hover:bg-navy-2 transition-colors"
           >
             Trouver ma raquette

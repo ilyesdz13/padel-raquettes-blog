@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-03
+
+- **Amélioration** : mise en évidence de la section active dans la navigation du `Header`, en
+  desktop comme en mobile. Jusqu'ici, un visiteur sur la page « Guides », « Comparatifs » ou
+  « Articles » (y compris sur une page d'article individuelle de cette catégorie) ne voyait
+  aucune différence visuelle entre le lien de navigation correspondant et les deux autres : les
+  trois liens restaient identiques quelle que soit la page consultée, sans aucun repère de
+  localisation dans le site. Le lien actif reçoit désormais un fond discret et un texte plus
+  contrasté (mêmes tokens de couleur déjà utilisés pour l'état `hover`, aucune nouvelle couleur
+  introduite), et chaque lien de navigation (y compris le bouton « Trouver ma raquette ») porte
+  `aria-current="page"` quand il correspond à la page courante, pour que cette information soit
+  aussi perceptible par les technologies d'assistance. Aucun changement sur les pages elles-mêmes
+  ni sur la structure de navigation.
+- **Fichiers** : `src/components/Header.tsx`.
+- **Pourquoi** : accessibilité (repère de localisation, `aria-current` recommandé par les
+  pratiques WCAG pour la navigation courante) / cohérence visuelle — le `Header` est présent sur
+  toutes les pages du site, et l'absence de tout repère de section active y pénalisait
+  l'orientation des visiteurs, en particulier sur les pages d'article où la navigation reste le
+  seul indice de la catégorie consultée.
+
 ## 2026-11-02
 
 - **Amélioration** : affichage de la vraie photo produit (dès qu'elle sera renseignée dans
