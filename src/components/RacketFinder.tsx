@@ -175,11 +175,11 @@ export default function RacketFinder() {
         {`Question ${step + 1} sur ${total} : ${current.question}`}
       </p>
 
-      <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight mb-6 text-balance">
+      <h2 id="finder-question" className="text-xl sm:text-2xl font-extrabold tracking-tight mb-6 text-balance">
         {current.question}
       </h2>
 
-      <div className="space-y-3">
+      <div className="space-y-3" role="group" aria-labelledby="finder-question">
         {current.options.map((option) => (
           <button
             key={option.value}

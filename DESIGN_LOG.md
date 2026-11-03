@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-03 (2)
+
+- **Amélioration** : regroupement sémantique des réponses du quiz `RacketFinder` sous leur
+  question. Chaque question affiche trois à quatre boutons de réponse dans une simple liste de
+  `<button>`, sans aucune relation explicite avec la question à laquelle ils répondent : un
+  utilisateur de lecteur d'écran qui navigue par élément interactif (plutôt qu'en lisant toute la
+  page dans l'ordre) entendait une suite de boutons isolés, sans savoir à quelle question ils se
+  rapportent. Le conteneur des options reçoit désormais `role="group"` et `aria-labelledby`
+  pointant vers l'`id` du titre de la question (`<h2 id="finder-question">`), pour que la relation
+  entre la question et ses réponses soit explicite pour les technologies d'assistance. Aucun
+  changement visuel : les boutons de réponse restent affichés à l'identique.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité — le quiz de recommandation est l'outil de conversion principal
+  du site ; un utilisateur de lecteur d'écran qui ne perçoit pas le lien entre une question et
+  ses réponses perd un repère de navigation important dans l'un des parcours les plus
+  déterminants pour la conversion.
+
 ## 2026-11-03
 
 - **Amélioration** : mise en évidence de la section active dans la navigation du `Header`, en
