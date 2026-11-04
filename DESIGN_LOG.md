@@ -3,6 +3,25 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-04
+
+- **Amélioration** : ajout d'une annonce accessible (`aria-live="polite"`) lors du passage de la
+  dernière question à l'écran de résultat dans le quiz `RacketFinder`. Le changement de question
+  en question avait déjà reçu cette annonce le 2026-10-25 (un paragraphe masqué, repris à chaque
+  étape), mais ce mécanisme n'existait que dans la branche « question en cours » du composant :
+  la transition vers l'écran final (les 3 raquettes recommandées), qui remplace entièrement le
+  contenu affiché par un sous-arbre différent, ne déclenchait jusqu'ici aucune annonce. Un
+  utilisateur de lecteur d'écran qui validait sa dernière réponse n'avait donc aucune confirmation
+  sonore que le test était terminé et que le résultat venait de s'afficher, à l'inverse de toutes
+  les transitions précédentes du même quiz. Un paragraphe masqué identique au mécanisme existant
+  annonce désormais l'arrivée sur l'écran de résultat. Aucun changement visuel : le texte affiché
+  à l'écran reste strictement identique.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité — le quiz de recommandation est l'outil de conversion principal du
+  site ; la dernière étape, celle qui aboutit aux liens affiliés, était la seule transition du
+  parcours à ne pas être annoncée aux utilisateurs de lecteur d'écran, malgré le même mécanisme
+  déjà en place sur toutes les étapes précédentes.
+
 ## 2026-11-03 (2)
 
 - **Amélioration** : regroupement sémantique des réponses du quiz `RacketFinder` sous leur

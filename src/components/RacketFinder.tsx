@@ -30,6 +30,9 @@ export default function RacketFinder() {
     const results = recommendRackets(answers as FinderAnswers);
     return (
       <div>
+        <p className="sr-only" aria-live="polite">
+          Résultat du test : vos 3 raquettes recommandées pour votre profil.
+        </p>
         <div className="text-center mb-8">
           <span className="inline-flex rounded-full bg-lime px-3 py-1 text-xs font-bold text-lime-ink mb-3">
             VOTRE RÉSULTAT
