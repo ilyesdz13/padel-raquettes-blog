@@ -3,6 +3,25 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-04 (2)
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur le séparateur « / » du fil d'Ariane
+  (`Breadcrumb`), affiché en haut de chaque page d'article (guide, comparatif, article). Ce
+  composant est une `<nav>` qui enchaîne des liens (ou le libellé de la page courante) séparés
+  visuellement par une simple barre oblique entre deux `<span>` — un symbole purement décoratif
+  qui ne porte aucune information que la structure de la navigation (liens successifs) ne porte
+  déjà. Un lecteur d'écran qui parcourt ce fil d'Ariane annonçait jusqu'ici chaque « / » comme
+  un caractère à part (« barre oblique »), un bruit répété à chaque niveau de la navigation. Ce
+  même motif (symbole décoratif accolé à un contenu qui porte déjà tout le sens utile) avait
+  déjà été corrigé à de nombreuses reprises ailleurs sur le site (coches, puces, flèches,
+  emojis), mais ce séparateur n'avait jamais été repéré à l'époque. Aucun changement visuel : le
+  texte et les « / » restent affichés à l'identique.
+- **Fichiers** : `src/components/Breadcrumb.tsx`.
+- **Pourquoi** : accessibilité — `Breadcrumb` apparaît en tout début de la quasi-totalité des
+  pages d'article du site ; un séparateur purement visuel annoncé à chaque niveau par un lecteur
+  d'écran ajoute un bruit redondant déjà éliminé sur tous les autres symboles décoratifs
+  équivalents du site, sans qu'aucune information ne soit perdue en le masquant.
+
 ## 2026-11-04
 
 - **Amélioration** : ajout d'une annonce accessible (`aria-live="polite"`) lors du passage de la

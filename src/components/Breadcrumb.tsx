@@ -19,7 +19,11 @@ export default function Breadcrumb({
           ) : (
             <span className="text-foreground/70">{item.label}</span>
           )}
-          {i < items.length - 1 && <span className="mx-2 text-border">/</span>}
+          {i < items.length - 1 && (
+            <span className="mx-2 text-border" aria-hidden="true">
+              /
+            </span>
+          )}
         </span>
       ))}
     </nav>
