@@ -1644,5 +1644,65 @@
       "head-extreme-motion-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "budget-couple-famille-deux-raquettes-padel",
+    "title": "Petit budget pour deux raquettes de padel en couple ou en famille : comment bien répartir l'investissement ?",
+    "category": "guide",
+    "targetKeyword": "budget deux raquettes padel couple famille",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "wilson-accent-lt-2026",
+      "wilson-accent-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "manche-raquette-padel-octogonal-ou-rond",
+    "title": "Manche de raquette de padel octogonal ou rond : quelle différence pour la prise en main ?",
+    "category": "guide",
+    "targetKeyword": "manche raquette padel octogonal rond",
+    "productIds": [
+      "nox-at10-12k-alum-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "top-5-raquettes-padel-legeres-2026",
+    "title": "Top 5 des raquettes de padel les plus légères en 2026",
+    "category": "comparatif",
+    "targetKeyword": "raquette padel la plus légère",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "wilson-accent-lt-2026",
+      "adidas-match-light-3-5-2026",
+      "babolat-air-viper-2-6-2026",
+      "adidas-drive-black-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-accent-lt-vs-wilson-bela-pro-v3",
+    "title": "Wilson Accent LT vs Wilson Bela Pro V2.5 : faut-il sauter du niveau débutant au haut de gamme chez Wilson ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent lt vs wilson bela pro",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-adulte-junior-echange",
+    "title": "Peut-on jouer avec la raquette de padel de son enfant, ou un junior avec une raquette adulte ?",
+    "category": "article",
+    "targetKeyword": "raquette padel adulte junior échange",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-match-light-3-5-2026"
+    ],
+    "published": false
   }
 ]
