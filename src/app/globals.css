@@ -161,3 +161,19 @@ summary:focus-visible,
   font-style: italic;
   color: var(--muted);
 }
+
+/* Liens de texte courant (renvois internes vers d'autres articles, mentions légales...) :
+   sans cette règle, un <a> sans classe hérite de la couleur du texte via le preflight
+   Tailwind et devient visuellement indissociable du paragraphe qui l'entoure. Même
+   convention que les autres liens de texte du site (TableOfContents, "Tout voir") :
+   couleur de marque au repos, souligné au survol/focus. Les composants déjà stylés
+   (ProductCard, ComparisonTable...) portent toujours une classe et ne sont donc jamais
+   concernés par ce sélecteur. */
+.prose-article :where(a:not([class])) {
+  color: var(--brand);
+}
+
+.prose-article :where(a:not([class]):hover),
+.prose-article :where(a:not([class]):focus-visible) {
+  text-decoration: underline;
+}

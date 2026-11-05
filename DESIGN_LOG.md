@@ -3,6 +3,32 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-05 (2)
+
+- **Amélioration** : ajout d'une couleur et d'un soulignement au survol pour les liens de texte
+  courant sans classe CSS dédiée — les renvois internes entre articles rédigés en Markdown
+  (`[texte](/articles/...)`) dans le corps des articles, ainsi que les quelques liens identiques
+  codés en dur sur `/trouver-ma-raquette`, `/a-propos` et `/mentions-legales`. Sans règle dédiée,
+  un `<a>` sans classe hérite de la couleur et de l'absence de soulignement du texte environnant
+  via le reset Tailwind, et devient donc visuellement indissociable du paragraphe qui l'entoure :
+  vérifié concrètement sur `/guides/comment-choisir-sa-raquette-de-padel`, où le lien vers
+  « l'influence de chaque forme sur les coups techniques du padel » avait exactement la même
+  couleur que le texte autour de lui (aucun repère visuel de clic, hors changement de curseur).
+  Au moins 13 articles contiennent ce type de lien de renvoi interne, en plus des 3 pages
+  statiques citées. La nouvelle règle reprend la convention déjà en place ailleurs sur le site
+  pour ce type de lien de texte courant (`TableOfContents`, lien « Tout voir » de la page
+  d'accueil) : couleur de marque (`--brand`) au repos, soulignement au survol et au focus clavier.
+  Le sélecteur cible précisément `a:not([class])`, pour ne jamais affecter les liens déjà stylés
+  (boutons d'affiliation de `ProductCard` et `ComparisonTable`, qui portent toujours leurs propres
+  classes) — vérifié à l'écran : le bouton « Rechercher sur Amazon » d'un `ProductCard` affiché
+  dans un article conserve son fond citron et son texte navy inchangés.
+- **Fichiers** : `src/app/globals.css`.
+- **Pourquoi** : accessibilité et lisibilité — un lien qui ne se distingue pas du texte environnant
+  (WCAG 1.4.1, usage de la couleur) prive un visiteur du repère visuel lui indiquant qu'un contenu
+  est cliquable ; ce défaut touchait les liens de maillage interne vers d'autres guides et
+  comparatifs du site, un levier de découverte de contenu et de répartition de l'autorité SEO
+  entre les pages.
+
 ## 2026-11-05
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur l'icône SVG (hamburger / croix) du bouton
