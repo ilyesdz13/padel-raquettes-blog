@@ -3,6 +3,22 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-05
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur l'icône SVG (hamburger / croix) du bouton
+  de menu mobile dans `Header`. Ce bouton porte déjà un `aria-label` explicite (« Ouvrir le
+  menu » / « Fermer le menu »), mais son icône SVG décorative (trois traits ou croix selon
+  l'état `open`) n'était jusqu'ici pas masquée aux technologies d'assistance, à la différence de
+  toutes les autres icônes purement visuelles du site (logo, puces de catégorie, flèches de
+  liens, séparateurs) qui reçoivent systématiquement cet attribut. Même motif que les
+  corrections précédentes sur des symboles décoratifs oubliés : aucune information perdue,
+  aucun changement visuel.
+- **Fichiers** : `src/components/Header.tsx`.
+- **Pourquoi** : accessibilité et cohérence — `Header` apparaît sur toutes les pages du site et
+  son bouton de menu mobile est un point d'interaction fréquent sur le trafic mobile (majoritaire
+  pour ce blog) ; aligner cette icône sur la convention déjà appliquée à toutes les autres icônes
+  décoratives du site évite tout bruit résiduel pour les lecteurs d'écran.
+
 ## 2026-11-04 (2)
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur le séparateur « / » du fil d'Ariane
