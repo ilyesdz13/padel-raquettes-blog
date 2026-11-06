@@ -3,6 +3,25 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-06
+
+- **Amélioration** : ajout de `aria-current="page"` sur l'élément courant (dernier maillon,
+  sans lien) du fil d'Ariane (`Breadcrumb`). Ce composant distinguait déjà visuellement la page
+  courante du reste du fil (texte plus contrasté, `text-foreground/70`, contre `text-muted`
+  pour les liens), mais ne portait aucune information explicite pour les technologies
+  d'assistance indiquant qu'il s'agit bien de la page actuellement affichée — à la différence
+  de la navigation principale du `Header`, qui applique déjà `aria-current="page"` sur son lien
+  actif depuis le 2026-11-03. `Breadcrumb` apparaît en tout début de la quasi-totalité des
+  pages d'article (guide, comparatif, article) ainsi que sur `/trouver-ma-raquette` ; harmoniser
+  ce repère avec celui déjà en place dans `Header` permet à un utilisateur de lecteur d'écran
+  d'identifier sans ambiguïté, à la fois dans la navigation principale et dans le fil d'Ariane,
+  sur quelle page il se trouve. Aucun changement visuel : le texte et le style du dernier
+  maillon restent strictement identiques.
+- **Fichiers** : `src/components/Breadcrumb.tsx`.
+- **Pourquoi** : accessibilité — pratique recommandée du WAI-ARIA Authoring Practices pour le
+  motif « fil d'Ariane » (marquer l'élément courant avec `aria-current="page"`), et cohérence
+  avec la convention déjà appliquée à la navigation principale du site.
+
 ## 2026-11-05 (2)
 
 - **Amélioration** : ajout d'une couleur et d'un soulignement au survol pour les liens de texte

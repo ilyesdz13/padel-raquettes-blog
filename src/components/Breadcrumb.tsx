@@ -17,7 +17,9 @@ export default function Breadcrumb({
               {item.label}
             </Link>
           ) : (
-            <span className="text-foreground/70">{item.label}</span>
+            <span aria-current="page" className="text-foreground/70">
+              {item.label}
+            </span>
           )}
           {i < items.length - 1 && (
             <span className="mx-2 text-border" aria-hidden="true">
