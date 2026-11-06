@@ -3,6 +3,34 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-06 (2)
+
+- **Amélioration** : correction du contraste insuffisant du texte secondaire (`--muted`, classe
+  `text-muted`) en thème clair, de `#64748b` à `#5e6e86`. Cette couleur habille une vingtaine
+  d'usages à travers le site (date et temps de lecture sur `ArticleCard`, `FeaturedArticle` et
+  `ArticleView`, libellés de `TrustBar`, texte de la bannière `CookieConsent`, description de
+  catégorie sur `CategoryListing`, fil d'Ariane, etc.), posée aussi bien sur `--surface` (blanc,
+  `#ffffff`) que directement sur `--background` (`#f7f8fa`, légèrement plus sombre) selon
+  l'emplacement — par exemple la description de catégorie en tête de page sur `CategoryListing`
+  ou la ligne date/temps de lecture de `ArticleView`, qui n'ont pas de carte blanche derrière
+  elles. Calcul du ratio de contraste WCAG : l'ancienne valeur donnait 4.48:1 sur `--background`,
+  juste **sous** le seuil minimal de 4.5:1 requis par WCAG 2 AA pour du texte de taille normale
+  (et 4.76:1 sur `--surface`, conforme). La nouvelle valeur, à peine plus sombre, donne 4.88:1 sur
+  `--background` et 5.18:1 sur `--surface` : conforme dans les deux cas, avec une marge de
+  sécurité raisonnable. Le thème sombre (`--muted: #94a3b8`, 7.34:1 sur son fond) était déjà
+  largement conforme et n'a pas été modifié. `--muted` est une couleur de texte neutre, pas une
+  couleur d'identité de marque (`--navy`, `--lime`, `--brand`, `--cat-*`) : son ajustement n'est
+  pas concerné par l'interdiction de toucher à la palette de marque, et correspond précisément à
+  l'exception prévue par `DESIGN_PLAYBOOK.md` pour « un problème de contraste avéré ». Changement
+  à peine perceptible à l'œil (quelques nuances plus sombre sur un gris déjà neutre), aucune
+  structure ni mise en page modifiée.
+- **Fichiers** : `src/app/globals.css`.
+- **Pourquoi** : accessibilité et lisibilité — `text-muted` est l'une des couleurs de texte les
+  plus utilisées du site (dates de publication, temps de lecture, descriptions de catégorie,
+  bannière de cookies...) ; un contraste sous le seuil WCAG AA, même de peu, pénalise la
+  lisibilité pour les visiteurs malvoyants ou en conditions d'éclairage difficiles, sur un
+  élément présent sur la quasi-totalité des pages du site.
+
 ## 2026-11-06
 
 - **Amélioration** : ajout de `aria-current="page"` sur l'élément courant (dernier maillon,
