@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-07
+
+- **Amélioration** : ajout d'un `aria-label` distinctif sur chacun des trois éléments `<nav>`
+  du site — la navigation principale desktop et son équivalent mobile dans `Header`
+  (`aria-label="Navigation principale"`, la même étiquette pour les deux puisqu'un seul des deux
+  est exposé aux technologies d'assistance à la fois, l'autre étant masqué via `display: none`),
+  et la navigation du pied de page dans `Footer` (`aria-label="Pied de page"`). Jusqu'ici, un
+  utilisateur de lecteur d'écran qui navigue par landmarks (une pratique courante pour se
+  déplacer rapidement dans une page sans tout lire séquentiellement) voyait deux régions
+  « Navigation » strictement identiques et indifférenciées sur chaque page du site — impossible
+  de savoir laquelle mène à la navigation principale du site et laquelle mène aux liens du pied
+  de page sans les ouvrir toutes les deux. Aucun changement visuel : les trois `<nav>` gardent
+  exactement la même apparence et le même comportement.
+- **Fichiers** : `src/components/Header.tsx`, `src/components/Footer.tsx`.
+- **Pourquoi** : accessibilité — `Header` et `Footer` apparaissent sur l'intégralité des pages du
+  site ; nommer explicitement chaque région de navigation est une pratique WAI-ARIA standard pour
+  les pages qui comportent plusieurs landmarks de même type, et permet à un utilisateur de
+  lecteur d'écran de choisir directement la bonne navigation plutôt que de les distinguer par
+  essai-erreur.
+
 ## 2026-11-06 (2)
 
 - **Amélioration** : correction du contraste insuffisant du texte secondaire (`--muted`, classe

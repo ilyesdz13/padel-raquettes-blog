@@ -29,7 +29,7 @@ export default function Header() {
           {SITE_NAME}
         </Link>
 
-        <nav className="hidden sm:flex items-center gap-1 text-sm font-semibold">
+        <nav aria-label="Navigation principale" className="hidden sm:flex items-center gap-1 text-sm font-semibold">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
@@ -74,6 +74,7 @@ export default function Header() {
       {open && (
         <nav
           id="menu-mobile"
+          aria-label="Navigation principale"
           className="sm:hidden border-t border-border px-4 py-3 flex flex-col gap-1 text-sm font-semibold bg-surface"
         >
           {NAV_LINKS.map((link) => (

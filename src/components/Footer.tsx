@@ -20,7 +20,7 @@ export default function Footer() {
             <Logo />
             {SITE_NAME}
           </Link>
-          <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
+          <nav aria-label="Pied de page" className="flex flex-wrap gap-x-6 gap-y-2 text-sm font-medium">
             {NAV_LINKS.map((link) => (
               <Link
                 key={link.href}
