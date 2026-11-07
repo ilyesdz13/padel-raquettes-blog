@@ -7,8 +7,8 @@ export default function RelatedArticles({ articles }: { articles: ArticleMeta[] 
   if (articles.length === 0) return null;
 
   return (
-    <aside className="not-prose mt-14 border-t border-border pt-10">
-      <h2 className="text-xl font-extrabold tracking-tight mb-5">À lire aussi</h2>
+    <aside className="not-prose mt-14 border-t border-border pt-10" aria-labelledby="related-articles-heading">
+      <h2 id="related-articles-heading" className="text-xl font-extrabold tracking-tight mb-5">À lire aussi</h2>
       <div className="grid gap-4 sm:grid-cols-3">
         {articles.map((article) => {
           const style = CATEGORY_STYLES[article.category];

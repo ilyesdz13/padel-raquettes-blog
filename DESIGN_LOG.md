@@ -3,6 +3,25 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-07 (2)
+
+- **Amélioration** : ajout d'un lien explicite (`aria-labelledby`) entre la région « À lire
+  aussi » (`RelatedArticles`, un `<aside>` affiché en bas de chaque page d'article) et son
+  titre `<h2>`. Ce bloc apparaît sur la quasi-totalité des pages d'article du site (guide,
+  comparatif, article), mais son landmark `aside` n'était jusqu'ici identifié par aucun nom
+  perceptible pour les technologies d'assistance : un utilisateur de lecteur d'écran qui
+  navigue par régions voyait une zone « complementary » anonyme, sans pouvoir la distinguer
+  d'une autre region sans l'ouvrir. Le titre reçoit désormais un `id="related-articles-heading"`
+  référencé par l'attribut `aria-labelledby` du `<aside>`, selon le même principe déjà appliqué
+  au regroupement question/réponses du quiz `RacketFinder` (`role="group"` +
+  `aria-labelledby`). Aucun changement visuel : le texte et la mise en page du bloc restent
+  identiques.
+- **Fichiers** : `src/components/RelatedArticles.tsx`.
+- **Pourquoi** : accessibilité — `RelatedArticles` figure en fin de la quasi-totalité des pages
+  d'article du site ; nommer explicitement cette région facilite son repérage par un utilisateur
+  de lecteur d'écran qui navigue par landmarks, au même titre que les autres régions déjà
+  nommées du site (tableau comparatif, bannière de cookies).
+
 ## 2026-11-07
 
 - **Amélioration** : ajout d'un `aria-label` distinctif sur chacun des trois éléments `<nav>`
