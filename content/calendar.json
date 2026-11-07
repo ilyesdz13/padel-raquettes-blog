@@ -1704,5 +1704,63 @@
       "adidas-match-light-3-5-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "meilleure-raquette-padel-jeu-offensif-attaquant",
+    "title": "Meilleure raquette de padel pour un jeu offensif et attaquant",
+    "category": "guide",
+    "targetKeyword": "raquette padel jeu offensif attaquant",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at-genius-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "raquette-padel-cote-droit-revers-position-terrain",
+    "title": "Faut-il une raquette différente selon qu'on joue côté droit (attaque) ou côté revers (gauche) ?",
+    "category": "article",
+    "targetKeyword": "raquette padel côté droit revers position terrain",
+    "productIds": [
+      "babolat-viper-air-2026",
+      "nox-at10-12k-alum-2026",
+      "wilson-bela-pro-v3-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "bullpadel-vertex-04-pro-vs-wilson-accent",
+    "title": "Bullpadel Vertex 04 Pro vs Wilson Accent : du modèle d'initiation à la raquette de compétition",
+    "category": "comparatif",
+    "targetKeyword": "bullpadel vertex 04 pro vs wilson accent",
+    "productIds": [
+      "bullpadel-vertex-04-pro-2026",
+      "wilson-accent-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "head-extreme-motion-vs-wilson-accent-lt",
+    "title": "Head Extreme Motion vs Wilson Accent LT : deux goutte polyvalentes, laquelle choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "head extreme motion vs wilson accent lt",
+    "productIds": [
+      "head-extreme-motion-2026",
+      "wilson-accent-lt-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "difference-prix-raquette-padel-50-euros-300-euros-justifiee",
+    "title": "Raquette de padel à 50 € ou à 300 € : qu'est-ce qui justifie vraiment l'écart de prix ?",
+    "category": "article",
+    "targetKeyword": "différence prix raquette padel justifiée",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "wilson-accent-2026",
+      "babolat-viper-air-2026"
+    ],
+    "published": false
   }
 ]
