@@ -3,6 +3,23 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-08 (2)
+
+- **Amélioration** : fermeture du menu de navigation mobile du `Header` avec la touche
+  `Échap`. Ce menu portait déjà `aria-expanded`, `aria-controls` et un `aria-label` distinctif
+  (itérations précédentes), mais rien ne permettait à un utilisateur clavier de le refermer
+  autrement qu'en rouvrant le bouton burger ou en activant un des liens qu'il contient — un
+  comportement standard pour tout panneau de type disclosure/menu selon les pratiques WAI-ARIA,
+  qui manquait encore ici. Un `useEffect` écoute désormais la touche `Échap` tant que le menu
+  est ouvert et referme le menu (`setOpen(false)`), avec nettoyage de l'écouteur à la fermeture
+  ou au démontage. Aucun changement visuel : l'apparence et le comportement au clic restent
+  identiques.
+- **Fichiers** : `src/components/Header.tsx`.
+- **Pourquoi** : accessibilité clavier — le menu mobile est le seul accès à la navigation
+  principale sur les petits écrans, d'où vient la majorité du trafic du site ; un utilisateur
+  qui navigue au clavier s'attend à pouvoir fermer un panneau ouvert avec `Échap`, un raccourci
+  standard pour ce type de composant qui n'était pas encore pris en charge.
+
 ## 2026-11-08
 
 - **Amélioration** : ajout des attributs `width` et `height` sur l'image produit du
