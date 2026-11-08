@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-08
+
+- **Amélioration** : ajout des attributs `width` et `height` sur l'image produit du
+  `ComparisonTable`. `ProductCard` (`width={120} height={150}`) et `RacketFinder`
+  (`width={92} height={118}`) précisent déjà ces dimensions sur leur image équivalente — une
+  pratique qui permet au navigateur de réserver l'espace de l'image avant son chargement et
+  d'éviter un décalage de mise en page (CLS). `ComparisonTable` avait pourtant déjà reçu
+  `loading="lazy"` et `decoding="async"` sur cette même image le 2026-10-21, exactement pour
+  aligner son comportement de chargement sur celui de `ProductCard`, mais sans les attributs de
+  dimensions qui complètent cette optimisation. Les nouvelles valeurs (`width={32} height={40}`)
+  reprennent le ratio du conteneur existant (`h-10 w-8`, soit 40px sur 32px). Aucun changement
+  visuel : la taille affichée de l'image reste identique, contrôlée par les classes `h-full
+  w-full object-contain` déjà en place.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : cohérence / performance perçue — `ProductCard`, `ComparisonTable` et
+  `RacketFinder` affichent le même type de contenu (image produit) et devraient se comporter de
+  la même façon ; l'absence de dimensions explicites sur cette occurrence était la dernière
+  restante parmi les trois composants équivalents, et expose au risque de décalage de mise en
+  page que les deux autres évitent déjà.
+
 ## 2026-11-07 (2)
 
 - **Amélioration** : ajout d'un lien explicite (`aria-labelledby`) entre la région « À lire

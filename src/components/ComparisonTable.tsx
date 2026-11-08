@@ -42,6 +42,8 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
                         <img
                           src={product.image}
                           alt={product.name}
+                          width={32}
+                          height={40}
                           loading="lazy"
                           decoding="async"
                           className="h-full w-full object-contain"
