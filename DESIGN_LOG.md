@@ -3,6 +3,30 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-09
+
+- **Amélioration** : agrandissement de la zone cliquable des liens de texte courant restés à
+  `py-2` (~36px de hauteur sur mobile) : les liens du fil d'Ariane (`Breadcrumb`), les liens de
+  navigation du pied de page (`Footer`) et les liens du sommaire d'article (`TableOfContents`).
+  Ce même seuil avait déjà été corrigé à `py-3` (~44px) sur de très nombreux boutons et liens
+  équivalents du site au fil des itérations précédentes (menu mobile du `Header`, boutons
+  d'affiliation de `ProductCard`, `ComparisonTable` et `RacketFinder`, bouton « Sommaire » de
+  `TableOfContents` lui-même le 2026-10-31...), mais ces trois liens de texte, qui compensent
+  déjà leur padding par une marge négative pour ne pas déplacer le texte visuellement
+  (`-mx-1 -my-2` / `px-1 py-2`), n'avaient jamais reçu cette dernière correction — c'étaient les
+  trois dernières occurrences de ce motif sur l'ensemble du site. Le padding passe à `py-3` et la
+  marge négative verticale à `-my-3` sur les trois composants, pour que le texte garde exactement
+  la même position qu'avant. Aucun changement visuel au-delà de la taille de la zone cliquable :
+  texte, couleurs et mise en page restent identiques.
+- **Fichiers** : `src/components/Breadcrumb.tsx`, `src/components/Footer.tsx`,
+  `src/components/TableOfContents.tsx`.
+- **Pourquoi** : mobile / accessibilité / cohérence — ces trois liens apparaissent respectivement
+  en tout début de la quasi-totalité des pages d'article, sur l'intégralité des pages du site
+  (pied de page) et en tête de nombreux articles (sommaire) ; une cible tactile sous le seuil
+  recommandé y pénalise des interactions fréquentes sur mobile, d'où vient la majorité du trafic
+  du site, et c'étaient les trois dernières occurrences de ce motif à ne pas avoir reçu la
+  correction déjà appliquée partout ailleurs.
+
 ## 2026-11-08 (2)
 
 - **Amélioration** : fermeture du menu de navigation mobile du `Header` avec la touche

@@ -13,7 +13,7 @@ export default function TableOfContents({ headings }: { headings: Heading[] }) {
           <li key={h.slug}>
             <a
               href={`#${h.slug}`}
-              className="-mx-1 -my-2 inline-block px-1 py-2 text-brand hover:underline"
+              className="-mx-1 -my-3 inline-block px-1 py-3 text-brand hover:underline"
             >
               {h.text}
             </a>
