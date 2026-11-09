@@ -16,12 +16,12 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
       <table className="w-full text-sm">
         <thead>
           <tr className="bg-navy text-left text-white">
-            <th className="px-4 py-3 font-bold">Raquette</th>
-            <th className="px-4 py-3 font-bold">Note</th>
-            <th className="px-4 py-3 font-bold">Niveau</th>
-            <th className="px-4 py-3 font-bold">Style</th>
-            <th className="px-4 py-3 font-bold">Prix</th>
-            <th className="px-4 py-3 font-bold">
+            <th scope="col" className="px-4 py-3 font-bold">Raquette</th>
+            <th scope="col" className="px-4 py-3 font-bold">Note</th>
+            <th scope="col" className="px-4 py-3 font-bold">Niveau</th>
+            <th scope="col" className="px-4 py-3 font-bold">Style</th>
+            <th scope="col" className="px-4 py-3 font-bold">Prix</th>
+            <th scope="col" className="px-4 py-3 font-bold">
               <span className="sr-only">Lien d&apos;achat</span>
             </th>
           </tr>

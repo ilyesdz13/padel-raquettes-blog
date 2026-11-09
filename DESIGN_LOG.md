@@ -3,6 +3,27 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-09 (2)
+
+- **Amélioration** : ajout de l'attribut `scope="col"` sur les six `<th>` de l'en-tête du
+  `ComparisonTable` (Raquette, Note, Niveau, Style, Prix, et la colonne du lien d'achat déjà
+  nommée par un libellé masqué depuis le 2026-10-26). Ce tableau avait déjà reçu plusieurs
+  améliorations d'accessibilité ciblées (région nommée et focusable au clavier le 2026-10-23,
+  libellé masqué sur la dernière colonne le 2026-10-26), mais aucun de ses en-têtes de colonne
+  n'avait jusqu'ici reçu l'attribut `scope`, qui indique explicitement à un lecteur d'écran
+  qu'une cellule est l'en-tête de toute sa colonne plutôt qu'une simple cellule en gras parmi
+  d'autres — une pratique de base pour tout tableau de données, distincte de la sémantique de
+  région déjà en place. Sans cet attribut, un utilisateur qui navigue le tableau par en-têtes
+  (une fonctionnalité standard des lecteurs d'écran sur les tableaux de données) ne pouvait pas
+  faire annoncer automatiquement le nom de la colonne (ex. « Niveau », « Prix ») en se déplaçant
+  cellule par cellule. Aucun changement visuel : le texte, la mise en page et le style du
+  tableau restent strictement identiques.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : accessibilité — `ComparisonTable` porte le lien affilié principal de chaque
+  ligne et s'affiche systématiquement en tête des articles `comparatif` ; un en-tête de colonne
+  sans `scope` prive un utilisateur de lecteur d'écran d'un repère standard pour comprendre à
+  quelle donnée (niveau, style, prix...) correspond chaque cellule du tableau comparatif.
+
 ## 2026-11-09
 
 - **Amélioration** : agrandissement de la zone cliquable des liens de texte courant restés à
