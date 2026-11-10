@@ -1762,5 +1762,63 @@
       "babolat-viper-air-2026"
     ],
     "published": true
+  },
+  {
+    "slug": "wilson-accent-lt-vs-bullpadel-vertex-04-pro",
+    "title": "Wilson Accent LT vs Bullpadel Vertex 04 : raquette d'initiation légère contre modèle offensif premium",
+    "category": "comparatif",
+    "targetKeyword": "wilson accent lt vs bullpadel vertex 04 pro",
+    "productIds": [
+      "wilson-accent-lt-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": true
+  },
+  {
+    "slug": "adidas-match-light-vs-head-extreme-motion",
+    "title": "Adidas Match Light 3.3 vs Head Extreme Motion : deux raquettes polyvalentes pour progresser",
+    "category": "comparatif",
+    "targetKeyword": "adidas match light vs head extreme motion",
+    "productIds": [
+      "adidas-match-light-3-5-2026",
+      "head-extreme-motion-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-classement-fip-niveau-materiel",
+    "title": "Raquette de padel et classement FIP : comment adapter son matériel à son niveau de classement ?",
+    "category": "guide",
+    "targetKeyword": "raquette padel classement fip niveau",
+    "productIds": [
+      "wilson-accent-2026",
+      "nox-at10-12k-alum-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-intermediaire-vers-avance-quand-passer",
+    "title": "Raquette de padel : les signes qu'il est temps de passer du niveau intermédiaire au niveau avancé",
+    "category": "guide",
+    "targetKeyword": "raquette padel intermédiaire vers avancé",
+    "productIds": [
+      "wilson-bela-pro-v3-2026",
+      "nox-at10-12k-alum-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "evolution-formes-raquette-padel-histoire",
+    "title": "Pourquoi les trois formes de raquette de padel (diamant, goutte, ronde) coexistent encore aujourd'hui",
+    "category": "article",
+    "targetKeyword": "formes raquette padel évolution histoire",
+    "productIds": [
+      "wilson-accent-2026",
+      "adidas-match-light-3-5-2026",
+      "wilson-accent-lt-2026"
+    ],
+    "published": false
   }
 ]
