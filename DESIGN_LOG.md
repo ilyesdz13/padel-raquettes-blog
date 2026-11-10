@@ -3,6 +3,26 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-10
+
+- **Amélioration** : ajout d'une couleur de thème (`theme-color`) pour la barre d'interface du
+  navigateur mobile (barre d'adresse sur Chrome Android, barre de statut sur Safari iOS), via le
+  nouvel export `viewport` de Next.js dans le layout racine. Jusqu'ici, aucune valeur
+  `theme-color` n'était définie, ce qui laissait le navigateur mobile afficher sa couleur de
+  chrome par défaut (généralement blanc) — une teinte qui ne correspondait pas au fond du site et
+  créait une rupture visuelle entre la barre du navigateur et la page, en particulier au premier
+  chargement avant que le contenu n'apparaisse. Deux valeurs sont désormais déclarées selon le
+  thème système (`prefers-color-scheme`), chacune reprenant exactement le token `--background`
+  déjà existant pour ce thème : `#f7f8fa` en clair, `#0b1120` en sombre (`src/app/globals.css`).
+  Aucune nouvelle couleur n'est introduite, aucune valeur de la palette de marque n'est modifiée :
+  ce réglage ne fait que réutiliser des tokens déjà en place pour harmoniser le chrome du
+  navigateur avec le fond réel de chaque thème. Aucun changement visuel sur la page elle-même.
+- **Fichiers** : `src/app/layout.tsx`.
+- **Pourquoi** : cohérence visuelle / mobile — la majorité du trafic du site vient du mobile, où
+  la couleur de thème du navigateur est directement visible au-dessus du contenu ; l'absence de
+  cette valeur laissait une zone d'interface non harmonisée avec l'identité du site, un détail
+  présent sur l'intégralité des pages.
+
 ## 2026-11-09 (2)
 
 - **Amélioration** : ajout de l'attribut `scope="col"` sur les six `<th>` de l'en-tête du
