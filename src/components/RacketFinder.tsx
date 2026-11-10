@@ -187,9 +187,9 @@ export default function RacketFinder() {
           <button
             key={option.value}
             onClick={() => choose(current.key, option.value)}
-            className="w-full text-left rounded-xl border border-border bg-surface p-4 hover:border-lime-dark hover:bg-lime/5 transition-colors group"
+            className="w-full text-left rounded-xl border border-border bg-surface p-4 hover:border-lime-dark hover:bg-lime/5 focus-visible:border-lime-dark focus-visible:bg-lime/5 transition-colors group"
           >
-            <div className="font-bold group-hover:text-lime-ink dark:group-hover:text-foreground">
+            <div className="font-bold group-hover:text-lime-ink dark:group-hover:text-foreground group-focus-visible:text-lime-ink dark:group-focus-visible:text-foreground">
               {option.label}
             </div>
             <div className="text-sm text-muted mt-0.5">{option.hint}</div>

@@ -16,13 +16,13 @@ export default function RelatedArticles({ articles }: { articles: ArticleMeta[] 
             <Link
               key={article.slug}
               href={`/${CATEGORY_ROUTES[article.category]}/${article.slug}`}
-              className="group rounded-xl border border-border bg-surface p-4 hover:border-brand/40 hover:shadow-sm transition-all"
+              className="group rounded-xl border border-border bg-surface p-4 hover:border-brand/40 hover:shadow-sm focus-visible:border-brand/40 focus-visible:shadow-sm transition-all"
             >
               <span className={`inline-flex items-center gap-1 rounded-full ${style.bg} ${style.text} px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide mb-2`}>
                 <span aria-hidden="true">{style.icon}</span>
                 {CATEGORY_LABELS[article.category].label}
               </span>
-              <h3 className="text-sm font-bold leading-snug group-hover:text-brand transition-colors">
+              <h3 className="text-sm font-bold leading-snug group-hover:text-brand group-focus-visible:text-brand transition-colors">
                 {article.title}
               </h3>
             </Link>

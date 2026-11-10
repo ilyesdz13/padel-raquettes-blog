@@ -12,7 +12,7 @@ export default function FeaturedArticle({ article }: { article: ArticleMeta }) {
     <div className="mx-auto max-w-6xl px-4 sm:px-6 -mt-8 sm:-mt-10 relative z-10">
       <Link
         href={`/${routeSegment}/${article.slug}`}
-        className="group grid sm:grid-cols-[1fr_auto] items-center gap-6 rounded-3xl border border-border bg-surface p-6 sm:p-8 shadow-xl shadow-black/5 hover:shadow-2xl hover:-translate-y-0.5 transition-all"
+        className="group grid sm:grid-cols-[1fr_auto] items-center gap-6 rounded-3xl border border-border bg-surface p-6 sm:p-8 shadow-xl shadow-black/5 hover:shadow-2xl hover:-translate-y-0.5 focus-visible:shadow-2xl focus-visible:-translate-y-0.5 transition-all"
       >
         <div>
           <div className="flex items-center gap-2 mb-3">
@@ -24,7 +24,7 @@ export default function FeaturedArticle({ article }: { article: ArticleMeta }) {
               {CATEGORY_LABELS[article.category].label}
             </span>
           </div>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-snug group-hover:text-brand transition-colors">
+          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight leading-snug group-hover:text-brand group-focus-visible:text-brand transition-colors">
             {article.title}
           </h2>
           <p className="mt-3 text-muted line-clamp-2 max-w-2xl">{article.description}</p>
@@ -36,12 +36,12 @@ export default function FeaturedArticle({ article }: { article: ArticleMeta }) {
               {" · "}
               {article.readingMinutes} min de lecture
             </span>
-            <span className="font-semibold text-foreground/70 group-hover:translate-x-0.5 transition-transform">
+            <span className="font-semibold text-foreground/70 group-hover:translate-x-0.5 group-focus-visible:translate-x-0.5 transition-transform">
               Lire l&apos;article <span aria-hidden="true">→</span>
             </span>
           </div>
         </div>
-        <div className="hidden sm:block w-24 h-32 rounded-2xl bg-gradient-to-br from-navy to-navy-2 p-3 shrink-0 -rotate-3 group-hover:rotate-0 transition-transform">
+        <div className="hidden sm:block w-24 h-32 rounded-2xl bg-gradient-to-br from-navy to-navy-2 p-3 shrink-0 -rotate-3 group-hover:rotate-0 group-focus-visible:rotate-0 transition-transform">
           <RacketIllustration shape={article.category === "comparatif" ? "diamant" : "goutte"} />
         </div>
       </Link>

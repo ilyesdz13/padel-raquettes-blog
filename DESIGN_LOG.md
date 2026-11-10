@@ -3,6 +3,31 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-10 (2)
+
+- **Amélioration** : parité clavier pour les effets visuels de survol qui n'existaient
+  jusqu'ici qu'au survol souris (`hover:`/`group-hover:`). Plusieurs cartes et liens
+  entièrement cliquables changent de couleur de titre, se soulèvent légèrement ou affichent
+  une ombre au survol — `ArticleCard` (titre, flèche « Lire »), `FeaturedArticle` (titre,
+  flèche « Lire l'article », rotation de l'illustration), `RelatedArticles` (bordure, titre)
+  et les boutons de réponse du quiz `RacketFinder` (bordure, fond, couleur du texte). Un
+  utilisateur qui navigue au clavier (`Tab`) atteignait déjà ces éléments avec l'anneau de
+  focus global (2026-10-07), mais ne recevait aucun des autres signaux visuels pourtant
+  donnés à un utilisateur souris — par exemple le titre d'une carte d'article qui passe en
+  couleur de marque, ou la bordure verte qui apparaît sur une réponse du quiz au survol.
+  Chaque classe `hover:`/`group-hover:` concernée reçoit désormais son équivalent exact
+  `focus-visible:`/`group-focus-visible:`, avec les mêmes valeurs et les mêmes tokens de
+  couleur déjà utilisés (`--brand`, `--lime-ink`, `--foreground`) — aucune nouvelle couleur
+  introduite, aucun changement pour un visiteur à la souris ou au tactile.
+- **Fichiers** : `src/components/ArticleCard.tsx`, `src/components/FeaturedArticle.tsx`,
+  `src/components/RelatedArticles.tsx`, `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité clavier — ces composants portent une grande partie de la
+  navigation interne du site (listings, page d'accueil, maillage « À lire aussi ») ainsi que
+  le quiz de recommandation, l'outil de conversion principal ; un utilisateur clavier qui ne
+  perçoit que l'anneau de focus générique, sans les repères visuels donnés à un utilisateur
+  souris sur ces mêmes éléments, reçoit une expérience sensiblement plus pauvre pour naviguer
+  et choisir une réponse.
+
 ## 2026-11-10
 
 - **Amélioration** : ajout d'une couleur de thème (`theme-color`) pour la barre d'interface du
