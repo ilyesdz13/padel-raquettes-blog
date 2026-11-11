@@ -56,7 +56,7 @@ export default function CookieConsent() {
           Ce site utilise des cookies publicitaires (Google AdSense) pour afficher des
           annonces personnalisées et financer sa gratuité. Vous pouvez accepter ou refuser
           ces cookies — voir notre page{" "}
-          <Link href="/mentions-legales" className="underline hover:text-foreground">
+          <Link href="/mentions-legales" className="underline hover:text-foreground focus-visible:text-foreground">
             mentions légales
           </Link>
           .
@@ -64,7 +64,7 @@ export default function CookieConsent() {
         <div className="flex gap-2 shrink-0">
           <button
             onClick={decline}
-            className="rounded-full border border-border px-4 py-3 text-sm font-semibold hover:bg-foreground/5 transition-colors"
+            className="rounded-full border border-border px-4 py-3 text-sm font-semibold hover:bg-foreground/5 focus-visible:bg-foreground/5 transition-colors"
           >
             Refuser
           </button>

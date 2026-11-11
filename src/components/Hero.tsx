@@ -43,7 +43,7 @@ export default function Hero() {
             </Link>
             <Link
               href="/comparatifs"
-              className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold text-white hover:bg-white/10 transition-colors"
+              className="rounded-full border border-white/20 px-6 py-3 text-sm font-bold text-white hover:bg-white/10 focus-visible:bg-white/10 transition-colors"
             >
               Voir les comparatifs
             </Link>

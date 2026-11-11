@@ -3,6 +3,37 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-11 (2)
+
+- **Amélioration** : poursuite de la parité clavier pour les effets de survol encore sans
+  équivalent `focus-visible`, sur les derniers éléments interactifs du site qui n'avaient pas
+  encore reçu cette correction malgré plusieurs itérations précédentes consacrées exactement à
+  ce motif (cartes et liens de texte le 2026-11-10, bouton CTA principal `bg-lime` plus tôt
+  aujourd'hui). Occurrences corrigées : les trois liens de navigation principale du `Header`
+  (desktop et mobile) ainsi que son bouton burger et ses deux boutons « Trouver ma raquette »
+  (`hover:bg-navy-2`), les cinq liens du pied de page (`Footer`, `hover:text-lime`), les liens
+  du fil d'Ariane (`Breadcrumb`, `hover:text-foreground`), le lien « mentions légales » et le
+  bouton « Refuser » de la bannière cookies (`CookieConsent`), les boutons « Refaire le test »
+  et « Comprendre les critères en détail » ainsi que le lien « Question précédente » de l'outil
+  `RacketFinder`, et le bouton « Sommaire » (`<summary>`) de `TableOfContents`. Dans chaque cas,
+  un utilisateur à la souris percevait déjà un changement de couleur de texte ou de fond au
+  survol, mais un utilisateur clavier qui atteint le même élément ne recevait que l'anneau de
+  focus générique, sans ce second signal visuel. Chaque occurrence reçoit désormais son
+  équivalent exact `focus-visible:`, avec la même valeur déjà utilisée par `hover:` — aucune
+  nouvelle couleur introduite, aucun changement pour un visiteur à la souris ou au tactile. Ce
+  sweep couvre, à notre connaissance, l'ensemble des styles `hover:` encore sans contrepartie
+  clavier restant sur le site à ce jour.
+- **Fichiers** : `src/components/Header.tsx`, `src/components/Footer.tsx`,
+  `src/components/Breadcrumb.tsx`, `src/components/CookieConsent.tsx`,
+  `src/components/RacketFinder.tsx`, `src/components/TableOfContents.tsx`,
+  `src/components/Hero.tsx` (bouton « Voir les comparatifs », `hover:bg-white/10`).
+- **Pourquoi** : accessibilité clavier — `Header` et `Footer` apparaissent sur l'intégralité des
+  pages du site et portent la navigation principale ; `RacketFinder` est l'outil de conversion
+  principal ; `Breadcrumb`, `TableOfContents` et `CookieConsent` figurent sur la quasi-totalité
+  des pages d'article ou dès la première visite. Un utilisateur clavier qui ne perçoit pas le
+  même retour visuel qu'un utilisateur souris sur ces éléments très fréquents reçoit une
+  expérience de navigation sensiblement plus pauvre.
+
 ## 2026-11-11
 
 - **Amélioration** : parité clavier pour l'effet de survol du bouton d'appel à l'action

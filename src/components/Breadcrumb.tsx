@@ -12,7 +12,7 @@ export default function Breadcrumb({
           {item.href ? (
             <Link
               href={item.href}
-              className="-mx-1 -my-3 inline-block px-1 py-3 hover:text-foreground transition-colors"
+              className="-mx-1 -my-3 inline-block px-1 py-3 hover:text-foreground focus-visible:text-foreground transition-colors"
             >
               {item.label}
             </Link>

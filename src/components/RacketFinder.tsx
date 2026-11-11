@@ -129,13 +129,13 @@ export default function RacketFinder() {
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={restart}
-            className="rounded-full border border-border px-5 py-3 text-sm font-bold hover:bg-foreground/5 transition-colors"
+            className="rounded-full border border-border px-5 py-3 text-sm font-bold hover:bg-foreground/5 focus-visible:bg-foreground/5 transition-colors"
           >
             Refaire le test
           </button>
           <Link
             href="/guides/comment-choisir-sa-raquette-de-padel"
-            className="rounded-full bg-navy px-5 py-3 text-sm font-bold text-white hover:bg-navy-2 transition-colors text-center"
+            className="rounded-full bg-navy px-5 py-3 text-sm font-bold text-white hover:bg-navy-2 focus-visible:bg-navy-2 transition-colors text-center"
           >
             Comprendre les critères en détail
           </Link>
@@ -200,7 +200,7 @@ export default function RacketFinder() {
       {step > 0 && (
         <button
           onClick={() => setStep((s) => s - 1)}
-          className="mt-6 -mx-2 -my-3 inline-flex items-center rounded-lg px-2 py-3 text-sm text-muted hover:text-foreground transition-colors"
+          className="mt-6 -mx-2 -my-3 inline-flex items-center rounded-lg px-2 py-3 text-sm text-muted hover:text-foreground focus-visible:text-foreground transition-colors"
         >
           <span aria-hidden="true">←</span> Question précédente
         </button>

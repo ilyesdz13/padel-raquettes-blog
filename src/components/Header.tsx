@@ -47,7 +47,7 @@ export default function Header() {
               className={`rounded-full px-3.5 py-1.5 transition-colors ${
                 isActive(link.href)
                   ? "text-foreground bg-foreground/5"
-                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5"
+                  : "text-foreground/70 hover:text-foreground hover:bg-foreground/5 focus-visible:text-foreground focus-visible:bg-foreground/5"
               }`}
             >
               {link.label}
@@ -56,7 +56,7 @@ export default function Header() {
           <Link
             href="/trouver-ma-raquette"
             aria-current={isActive("/trouver-ma-raquette") ? "page" : undefined}
-            className="ml-2 inline-flex rounded-full bg-navy px-4 py-1.5 text-white hover:bg-navy-2 transition-colors"
+            className="ml-2 inline-flex rounded-full bg-navy px-4 py-1.5 text-white hover:bg-navy-2 focus-visible:bg-navy-2 transition-colors"
           >
             Trouver ma raquette
           </Link>
@@ -68,7 +68,7 @@ export default function Header() {
           aria-label={open ? "Fermer le menu" : "Ouvrir le menu"}
           aria-expanded={open}
           aria-controls="menu-mobile"
-          className="sm:hidden inline-flex h-11 w-11 items-center justify-center rounded-full text-foreground/80 hover:bg-foreground/5 transition-colors"
+          className="sm:hidden inline-flex h-11 w-11 items-center justify-center rounded-full text-foreground/80 hover:bg-foreground/5 focus-visible:bg-foreground/5 transition-colors"
         >
           <svg viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
             {open ? (
@@ -95,7 +95,7 @@ export default function Header() {
               className={`rounded-lg px-3 py-3 transition-colors ${
                 isActive(link.href)
                   ? "text-foreground bg-foreground/5"
-                  : "text-foreground/80 hover:bg-foreground/5"
+                  : "text-foreground/80 hover:bg-foreground/5 focus-visible:bg-foreground/5"
               }`}
             >
               {link.label}
@@ -105,7 +105,7 @@ export default function Header() {
             href="/trouver-ma-raquette"
             onClick={() => setOpen(false)}
             aria-current={isActive("/trouver-ma-raquette") ? "page" : undefined}
-            className="mt-1 inline-flex justify-center rounded-full bg-navy px-4 py-3 text-white hover:bg-navy-2 transition-colors"
+            className="mt-1 inline-flex justify-center rounded-full bg-navy px-4 py-3 text-white hover:bg-navy-2 focus-visible:bg-navy-2 transition-colors"
           >
             Trouver ma raquette
           </Link>
