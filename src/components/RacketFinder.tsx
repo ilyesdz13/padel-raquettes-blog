@@ -110,7 +110,7 @@ export default function RacketFinder() {
                         href={url}
                         target="_blank"
                         rel="nofollow sponsored noopener noreferrer"
-                        className="inline-flex rounded-full bg-lime px-5 py-3 text-sm font-bold text-lime-ink hover:bg-lime-dark transition-colors"
+                        className="inline-flex rounded-full bg-lime px-5 py-3 text-sm font-bold text-lime-ink hover:bg-lime-dark focus-visible:bg-lime-dark transition-colors"
                       >
                         {isReady ? "Voir le prix sur Amazon" : "Rechercher sur Amazon"}
                         <span className="sr-only"> (ouvre un nouvel onglet)</span>

@@ -27,7 +27,7 @@ export default function FinderCTA({ variant = "inline" }: { variant?: "inline" |
         </div>
         <Link
           href="/trouver-ma-raquette"
-          className="mt-5 sm:mt-0 inline-flex shrink-0 rounded-full bg-lime px-6 py-3 text-sm font-bold text-lime-ink hover:bg-lime-dark transition-colors"
+          className="mt-5 sm:mt-0 inline-flex shrink-0 rounded-full bg-lime px-6 py-3 text-sm font-bold text-lime-ink hover:bg-lime-dark focus-visible:bg-lime-dark transition-colors"
         >
           Lancer le test
         </Link>

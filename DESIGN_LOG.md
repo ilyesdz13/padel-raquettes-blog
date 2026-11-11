@@ -3,6 +3,33 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-11
+
+- **Amélioration** : parité clavier pour l'effet de survol du bouton d'appel à l'action
+  principal (fond jaune-citron `bg-lime`, texte navy `text-lime-ink`), qui assombrit son fond
+  au survol souris (`hover:bg-lime-dark`) sans qu'aucun équivalent `focus-visible:bg-lime-dark`
+  n'existe. Ce même motif (signal visuel donné à la souris mais absent au clavier au-delà de
+  l'anneau de focus générique) avait déjà été corrigé le 2026-11-10 sur plusieurs cartes et
+  liens de texte (`ArticleCard`, `FeaturedArticle`, `RelatedArticles`, les réponses du quiz
+  `RacketFinder`), mais ce bouton plein, le plus utilisé du site pour l'affiliation et la
+  conversion, n'avait pas encore reçu cette parité : les boutons « Voir le prix sur Amazon »
+  (`ProductCard`, `ComparisonTable`, écran de résultat de `RacketFinder`), « Accepter » de la
+  bannière cookies (`CookieConsent`), « Lancer le test » (`FinderCTA`) et « Trouver ma raquette
+  en 30 secondes » (`Hero`) s'assombrissaient bien à la souris, mais un utilisateur qui les
+  atteint au clavier ne percevait que l'anneau de focus générique, sans le changement de fond
+  que reçoit un visiteur à la souris sur ce même bouton. Chaque occurrence reçoit désormais
+  `focus-visible:bg-lime-dark`, la même valeur déjà utilisée par `hover:`, sans aucune nouvelle
+  couleur introduite ni changement pour un visiteur à la souris ou au tactile.
+- **Fichiers** : `src/components/ProductCard.tsx`, `src/components/ComparisonTable.tsx`,
+  `src/components/RacketFinder.tsx`, `src/components/CookieConsent.tsx`,
+  `src/components/FinderCTA.tsx`, `src/components/Hero.tsx`.
+- **Pourquoi** : accessibilité clavier / conversion — ce bouton plein jaune-citron porte la
+  quasi-totalité des liens affiliés Amazon du site ainsi que les principaux appels à l'action
+  (consentement cookies, test de recommandation, CTA de la page d'accueil) ; un utilisateur
+  clavier qui ne perçoit pas le même retour visuel qu'un utilisateur souris sur l'élément le
+  plus déterminant pour la conversion du site reçoit une expérience sensiblement plus pauvre au
+  moment précis où elle compte le plus.
+
 ## 2026-11-10 (2)
 
 - **Amélioration** : parité clavier pour les effets visuels de survol qui n'existaient
