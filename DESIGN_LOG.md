@@ -3,6 +3,31 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-12 (2)
+
+- **Amélioration** : ajout de `tabIndex={-1}` sur la balise `<main id="contenu-principal">` du
+  layout racine, cible du lien d'évitement (« Aller au contenu principal ») ajouté le
+  2026-10-24. Ce lien pointe bien vers `#contenu-principal`, mais un élément `<main>` ordinaire
+  n'est pas focusable par défaut : en l'activant au clavier, la page défilait visuellement
+  jusqu'au contenu, mais le focus clavier restait sur le lien lui-même plutôt que de se
+  déplacer dans le contenu principal — un utilisateur qui appuyait ensuite sur `Tab` repartait
+  donc du lien d'évitement, juste avant la navigation du `Header`, exactement la répétition que
+  ce lien est censé permettre d'éviter. `tabIndex={-1}` rend l'élément programmatique-ment
+  focusable (ciblable par un lien d'ancrage ou un script) sans l'ajouter à l'ordre de tabulation
+  normal de la page, le usage standard recommandé pour ce type de cible de lien d'évitement.
+  `focus:outline-none` évite qu'un grand rectangle de focus n'apparaisse autour de toute la zone
+  de contenu lors de cette prise de focus programmatique (ce `<main>` n'est jamais atteint par
+  une tabulation normale, seulement par ce lien d'évitement, donc aucun indicateur de focus
+  visuel n'est perdu pour la navigation clavier habituelle). Aucun changement visuel au-delà de
+  cette suppression de l'anneau de focus générique sur `<main>` lui-même ; le lien d'évitement et
+  le reste du site restent identiques.
+- **Fichiers** : `src/app/layout.tsx`.
+- **Pourquoi** : accessibilité clavier — le lien d'évitement ajouté le 2026-10-24 figure sur
+  l'intégralité des pages du site mais ne remplissait pas complètement son rôle sans cette
+  cible focusable ; cette correction complète cette amélioration précédente pour que
+  l'activation du lien déplace réellement le focus clavier dans le contenu principal, pas
+  seulement le défilement visuel de la page.
+
 ## 2026-11-12
 
 - **Amélioration** : ajout de `aria-hidden="true"` sur le séparateur « · » placé entre la date

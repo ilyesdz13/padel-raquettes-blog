@@ -109,7 +109,7 @@ window.gtag = gtag;`,
           Aller au contenu principal
         </a>
         <Header />
-        <main id="contenu-principal" className="flex-1 w-full">{children}</main>
+        <main id="contenu-principal" tabIndex={-1} className="flex-1 w-full focus:outline-none">{children}</main>
         <Footer />
         <CookieConsent />
         <Script
