@@ -1819,6 +1819,62 @@
       "adidas-match-light-3-5-2026",
       "wilson-accent-lt-2026"
     ],
+    "published": true
+  },
+  {
+    "slug": "meilleure-raquette-padel-joueur-regulier",
+    "title": "Meilleure raquette de padel pour un joueur régulier (2 à 3 séances par semaine)",
+    "category": "guide",
+    "targetKeyword": "raquette padel joueur régulier fréquence jeu",
+    "productIds": [
+      "wilson-accent-2026",
+      "head-extreme-motion-2026",
+      "nox-at10-12k-alum-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-optix-v2-lite-vs-adidas-match-noir-vert",
+    "title": "Wilson Optix V2 Lite vs Adidas Match 3.3 Black Lime : quelle raquette d'entrée de gamme ultra-légère choisir ?",
+    "category": "comparatif",
+    "targetKeyword": "wilson optix v2 lite vs adidas match 3.3 black lime",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "adidas-match-noir-vert-3-5-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "wilson-optix-v2-lite-vs-nox-at-genius",
+    "title": "Wilson Optix V2 Lite vs Nox AT10 Genius Attack 18K : de l'initiation ultra-légère à la raquette signature pro",
+    "category": "comparatif",
+    "targetKeyword": "wilson optix v2 lite vs nox at genius comparatif",
+    "productIds": [
+      "wilson-optix-v2-lite-lilac-2026",
+      "nox-at-genius-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "raquette-padel-joueur-ambidextre",
+    "title": "Raquette de padel pour un joueur ambidextre : faut-il adapter son matériel ?",
+    "category": "article",
+    "targetKeyword": "raquette padel joueur ambidextre",
+    "productIds": [
+      "wilson-accent-2026",
+      "wilson-accent-lt-2026"
+    ],
+    "published": false
+  },
+  {
+    "slug": "assurer-raquette-padel-casse-accidentelle",
+    "title": "Faut-il assurer sa raquette de padel contre la casse accidentelle ?",
+    "category": "article",
+    "targetKeyword": "assurance raquette padel casse accidentelle",
+    "productIds": [
+      "wilson-bela-pro-v3-2026",
+      "bullpadel-vertex-04-pro-2026"
+    ],
     "published": false
   }
 ]
