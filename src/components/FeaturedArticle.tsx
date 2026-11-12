@@ -33,7 +33,7 @@ export default function FeaturedArticle({ article }: { article: ArticleMeta }) {
               <time dateTime={article.date}>
                 {new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
               </time>
-              {" · "}
+              <span aria-hidden="true"> · </span>
               {article.readingMinutes} min de lecture
             </span>
             <span className="font-semibold text-foreground/70 group-hover:translate-x-0.5 group-focus-visible:translate-x-0.5 transition-transform">

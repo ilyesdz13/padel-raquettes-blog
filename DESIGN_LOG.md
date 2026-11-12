@@ -3,6 +3,27 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-12
+
+- **Amélioration** : ajout de `aria-hidden="true"` sur le séparateur « · » placé entre la date
+  de publication et le temps de lecture, aux trois endroits où cette paire d'informations
+  s'affiche : la carte d'article (`ArticleCard`, utilisée dans les listings de catégories et la
+  page d'accueil), le bloc « À la une » de la page d'accueil (`FeaturedArticle`) et l'en-tête de
+  chaque page d'article (`ArticleView`). Ce symbole est purement décoratif — il ne porte aucune
+  information que la structure (deux informations successives) ne porte déjà — exactement le
+  même motif que le séparateur « / » du fil d'Ariane, déjà masqué aux lecteurs d'écran le
+  2026-11-04, mais qui n'avait jamais été étendu à ce « · », présent sur un nombre au moins aussi
+  grand de pages. Un lecteur d'écran annonçait jusqu'ici ce caractère comme un mot à part entière
+  (par exemple « point médian ») entre la date et la durée de lecture, un bruit redondant sur
+  l'une des informations les plus répétées du site. Aucun changement visuel : le texte et le
+  séparateur restent affichés à l'identique.
+- **Fichiers** : `src/components/ArticleCard.tsx`, `src/components/FeaturedArticle.tsx`,
+  `src/components/ArticleView.tsx`.
+- **Pourquoi** : accessibilité — ces trois emplacements affichent la paire date/temps de lecture
+  sur la quasi-totalité des pages du site (accueil, listings de catégories, pages d'article) ;
+  masquer ce séparateur purement visuel élimine un bruit redondant déjà éliminé sur l'équivalent
+  du fil d'Ariane, sans qu'aucune information ne soit perdue.
+
 ## 2026-11-11 (2)
 
 - **Amélioration** : poursuite de la parité clavier pour les effets de survol encore sans

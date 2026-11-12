@@ -35,7 +35,7 @@ export default function ArticleView({ article }: { article: Article }) {
           <time dateTime={article.date}>
             {new Date(article.date).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
           </time>
-          {" · "}
+          <span aria-hidden="true"> · </span>
           {article.readingMinutes} min de lecture
         </div>
       </header>
