@@ -3,6 +3,29 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-13
+
+- **Amélioration** : parité clavier pour trois derniers effets de survol encore sans équivalent
+  `focus-visible`, malgré un sweep précédent (2026-11-11 (2)) qui pensait avoir couvert
+  l'ensemble des occurrences restantes du site. Trois cas avaient échappé à ce sweep : les liens
+  vers chaque section dans le `Sommaire` (`TableOfContents`, `hover:underline` sur les liens
+  d'ancre vers les titres, distinct du bouton « Sommaire » lui-même déjà corrigé), le lien
+  « Tout voir » de la page d'accueil (`hover:underline`, vers la liste des guides) et le bouton
+  « Retour à l'accueil » de la page 404 (`not-found.tsx`, `hover:bg-navy-2`). Dans chaque cas, un
+  utilisateur à la souris percevait déjà un soulignement ou un changement de fond au survol,
+  mais un utilisateur clavier qui atteint le même élément ne recevait que l'anneau de focus
+  générique. Chaque occurrence reçoit désormais son équivalent exact `focus-visible:`, avec la
+  même valeur déjà utilisée par `hover:` — aucune nouvelle couleur introduite, aucun changement
+  pour un visiteur à la souris ou au tactile.
+- **Fichiers** : `src/components/TableOfContents.tsx`, `src/app/page.tsx`,
+  `src/app/not-found.tsx`.
+- **Pourquoi** : accessibilité clavier — le sommaire apparaît en tête de la quasi-totalité des
+  pages d'article, le lien « Tout voir » sur la page d'accueil, et la page 404 est le point de
+  récupération proposé à tout visiteur arrivé sur une URL invalide ; un utilisateur clavier qui
+  ne perçoit pas le même retour visuel qu'un utilisateur souris sur ces éléments reçoit une
+  expérience de navigation plus pauvre, malgré cette correction déjà jugée complète partout
+  ailleurs sur le site.
+
 ## 2026-11-12 (2)
 
 - **Amélioration** : ajout de `tabIndex={-1}` sur la balise `<main id="contenu-principal">` du
