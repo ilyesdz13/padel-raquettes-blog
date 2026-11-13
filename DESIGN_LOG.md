@@ -3,6 +3,32 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-13 (2)
+
+- **Amélioration** : déplacement explicite du focus clavier vers le titre de la question (ou
+  du résultat) à chaque changement d'étape du quiz `RacketFinder`, l'outil de conversion
+  principal du site. Jusqu'ici, répondre à une question, revenir à la précédente, arriver sur
+  l'écran de résultat ou cliquer sur « Refaire le test » remplaçait entièrement le sous-arbre
+  contenant le bouton qui venait d'être activé : l'élément focalisé disparaissait du DOM et le
+  focus clavier retombait silencieusement sur `<body>`. Un utilisateur de lecteur d'écran était
+  déjà prévenu de ce changement par les annonces `aria-live` existantes (2026-10-25 (2),
+  2026-11-04), mais un utilisateur clavier seul (sans lecteur d'écran) perdait sa position à
+  chaque étape et devait retabuler depuis le tout début de la page pour continuer le test — un
+  comportement d'autant plus pénalisant qu'il se répète cinq fois de suite sur le principal
+  parcours de conversion du site. Le titre de chaque étape (`<h2>`, question ou résultat) reçoit
+  désormais `tabIndex={-1}` et une référence partagée (`useRef`) ; un `useEffect` déclenché sur
+  changement de `step` y déplace le focus après le montage initial (ignoré au premier rendu pour
+  ne pas voler le focus naturel à l'arrivée sur la page), selon le même principe déjà établi pour
+  la cible du lien d'évitement sur `<main>` (2026-11-12 (2)). Aucun changement visuel : les
+  titres, boutons et mise en page du quiz restent identiques pour un visiteur à la souris ou au
+  tactile.
+- **Fichiers** : `src/components/RacketFinder.tsx`.
+- **Pourquoi** : accessibilité clavier / conversion — `RacketFinder` est l'outil de
+  recommandation principal du site, celui qui mène directement aux liens affiliés ; un
+  utilisateur clavier qui perd sa position à chaque question, sans aucun lecteur d'écran pour le
+  prévenir du changement, reçoit une expérience sensiblement plus pénible sur le parcours le plus
+  déterminant pour la conversion du site, au point de pouvoir l'amener à abandonner le test.
+
 ## 2026-11-13
 
 - **Amélioration** : parité clavier pour trois derniers effets de survol encore sans équivalent

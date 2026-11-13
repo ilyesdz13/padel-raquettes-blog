@@ -28,6 +28,11 @@ export default function CookieConsent() {
     if (stored === "accepted") {
       updateConsent(true);
     } else if (stored !== "declined") {
+      // Volontaire : la bannière doit démarrer masquée côté serveur comme côté
+      // client (pas d'accès à localStorage pendant le rendu SSR) pour éviter
+      // tout écart d'hydratation, puis se révéler une fois le choix déjà fait
+      // connu, après le montage.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setVisible(true);
     }
   }, []);

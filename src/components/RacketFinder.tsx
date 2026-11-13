@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { FINDER_QUESTIONS, recommendRackets, type FinderAnswers } from "@/lib/finder";
 import { buildAffiliateLink, hasRealImage } from "@/lib/products";
@@ -12,9 +12,24 @@ type Answers = Partial<Record<keyof FinderAnswers, string>>;
 export default function RacketFinder() {
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<Answers>({});
+  const headingRef = useRef<HTMLHeadingElement>(null);
+  const hasMounted = useRef(false);
 
   const total = FINDER_QUESTIONS.length;
   const isDone = step >= total;
+
+  // Chaque changement d'étape (question suivante, précédente, résultat, ou
+  // redémarrage du test) remplace entièrement le bouton qui vient d'être
+  // activé : sans ce déplacement explicite du focus, un utilisateur clavier
+  // (sans lecteur d'écran) perd sa position et retombe sur <body>, obligé de
+  // retabuler depuis le haut de la page pour continuer le test.
+  useEffect(() => {
+    if (!hasMounted.current) {
+      hasMounted.current = true;
+      return;
+    }
+    headingRef.current?.focus();
+  }, [step]);
 
   function choose(key: keyof FinderAnswers, value: string) {
     setAnswers((prev) => ({ ...prev, [key]: value }));
@@ -37,7 +52,7 @@ export default function RacketFinder() {
           <span className="inline-flex rounded-full bg-lime px-3 py-1 text-xs font-bold text-lime-ink mb-3">
             VOTRE RÉSULTAT
           </span>
-          <h2 className="text-2xl sm:text-3xl font-extrabold tracking-tight">
+          <h2 ref={headingRef} tabIndex={-1} className="text-2xl sm:text-3xl font-extrabold tracking-tight">
             Nos 3 raquettes pour votre profil
           </h2>
           <p className="text-muted mt-2 text-sm max-w-lg mx-auto">
@@ -178,7 +193,12 @@ export default function RacketFinder() {
         {`Question ${step + 1} sur ${total} : ${current.question}`}
       </p>
 
-      <h2 id="finder-question" className="text-xl sm:text-2xl font-extrabold tracking-tight mb-6 text-balance">
+      <h2
+        ref={headingRef}
+        tabIndex={-1}
+        id="finder-question"
+        className="text-xl sm:text-2xl font-extrabold tracking-tight mb-6 text-balance"
+      >
         {current.question}
       </h2>
 
