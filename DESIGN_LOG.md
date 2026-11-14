@@ -3,6 +3,27 @@
 Historique des améliorations apportées au design du site, une entrée par exécution de la
 routine quotidienne (voir `DESIGN_PLAYBOOK.md`). La plus récente en premier.
 
+## 2026-11-14
+
+- **Amélioration** : ajout d'une balise `<caption>` masquée visuellement (`sr-only`,
+  « Tableau comparatif des raquettes ») sur le `<table>` du composant `ComparisonTable`. Ce
+  tableau porte déjà une sémantique de région nommée sur son conteneur
+  (`role="region"`, `aria-label="Tableau comparatif des raquettes"`, 2026-10-23 (2)), ce qui
+  permet à un utilisateur de lecteur d'écran qui navigue par landmarks de l'identifier. Mais un
+  utilisateur qui navigue directement par les commandes de tableau de son lecteur d'écran (un
+  mode de navigation distinct, propre aux données tabulaires) n'avait jusqu'ici aucun nom
+  associé à l'élément `<table>` lui-même : seul l'en-tête de colonne et les cellules étaient
+  perceptibles, sans intitulé global du tableau dans ce mode. Un `<caption>` est l'élément HTML
+  standard prévu pour cet usage, complémentaire à la région nommée déjà en place plutôt que
+  redondant avec elle. Aucun changement visuel : le texte est uniquement perceptible par les
+  technologies d'assistance.
+- **Fichiers** : `src/components/ComparisonTable.tsx`.
+- **Pourquoi** : accessibilité — `ComparisonTable` porte le lien affilié principal de chaque
+  ligne et s'affiche systématiquement en tête des articles `comparatif` ; un tableau de données
+  sans `<caption>` manque d'un repère standard pour un utilisateur de lecteur d'écran qui
+  navigue en mode tableau plutôt que par landmarks, un mode de navigation non couvert par la
+  région nommée déjà existante.
+
 ## 2026-11-13 (2)
 
 - **Amélioration** : déplacement explicite du focus clavier vers le titre de la question (ou

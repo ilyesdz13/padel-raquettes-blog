@@ -14,6 +14,7 @@ export default function ComparisonTable({ ids }: { ids: string[] }) {
       tabIndex={0}
     >
       <table className="w-full text-sm">
+        <caption className="sr-only">Tableau comparatif des raquettes</caption>
         <thead>
           <tr className="bg-navy text-left text-white">
             <th scope="col" className="px-4 py-3 font-bold">Raquette</th>
